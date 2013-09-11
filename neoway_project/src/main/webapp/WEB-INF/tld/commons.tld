@@ -12,7 +12,7 @@
 
     <tag>
       <name>page</name>
-      <tag-class>cn.javass.common.pagination.NavigationTag</tag-class>
+      <tag-class>cn.neoway.common.pagination.NavigationTag</tag-class>
       <body-content>JSP</body-content>
       <description>create navigation for paging</description>
       <attribute>
@@ -36,7 +36,7 @@
     </tag>
      <tag>
       <name>pageV2</name>
-      <tag-class>cn.javass.common.pagination.NavigationTagV2</tag-class>
+      <tag-class>cn.neoway.common.pagination.NavigationTagV2</tag-class>
       <body-content>JSP</body-content>
       <description>create navigation for paging</description>
       <attribute>
