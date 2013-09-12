@@ -21,50 +21,53 @@ import java.util.Date;
 @Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 public class UserModel extends AbstractModel {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id", nullable = false)
+
     private int id;
     
     
-    @Pattern(regexp = "[A-Za-z0-9]{5,20}", message = "{username.illegal}") //java validator验证（用户名字母数字组成，长度为5-10）
+
     private String username;
     
-    @NotEmpty(message = "{email.illegal}")
-    @Email(message = "{email.illegal}") //错误消息会自动到MessageSource中查找
+
     private String email;
     
-    @Pattern(regexp = "[A-Za-z0-9]{5,20}", message = "{password.illegal}") 
+
     private String password;
     
-    @DateFormat( message="{register.date.error}")//自定义的验证器
+
     private Date registerDate;
-    
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id", nullable = false)
     public int getId() {
         return id;
     }
     public void setId(int id) {
         this.id = id;
     }
+    @Pattern(regexp = "[A-Za-z0-9]{5,20}", message = "{username.illegal}") //java validator验证（用户名字母数字组成，长度为5-10）
     public String getUsername() {
         return username;
     }
     public void setUsername(String username) {
         this.username = username;
     }
+    @NotEmpty(message = "{email.illegal}")
+    @Email(message = "{email.illegal}") //错误消息会自动到MessageSource中查找
     public String getEmail() {
         return email;
     }
     public void setEmail(String email) {
         this.email = email;
     }
+    @Pattern(regexp = "[A-Za-z0-9]{5,20}", message = "{password.illegal}")
     public String getPassword() {
         return password;
     }
     public void setPassword(String password) {
         this.password = password;
     }
-
+    @DateFormat( message="{register.date.error}")//自定义的验证器
     public Date getRegisterDate() {
         return registerDate;
     }

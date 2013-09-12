@@ -24,6 +24,13 @@
         </fileset>
       </configuration>
     </facet>
+    <facet type="hibernate" name="Hibernate">
+      <configuration>
+        <datasource-map>
+          <unit-entry name="sessionFactory" value="9ebf190e-05bd-419a-b22b-513cd5e06d28" />
+        </datasource-map>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
@@ -70,6 +77,7 @@
     <orderEntry type="library" name="Maven: net.sf.ehcache:ehcache-core:2.5.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.shiro:shiro-spring:1.2.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.shiro:shiro-web:1.2.2" level="project" />
+    <orderEntry type="library" name="Maven: org.hibernate:hibernate-core:4.2.4.Final" level="project" />
   </component>
 </module>
 

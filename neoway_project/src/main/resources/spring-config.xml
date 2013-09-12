@@ -122,6 +122,7 @@
                 /images/** = anon
                 /css/** = anon
                 /index = anon
+                /register=anon
                 /login = anon
                 /user/** =  anon
                 /generatImage = anon

@@ -91,7 +91,8 @@ public class SaltAwareJdbcRealm extends JdbcRealm {
         ResultSet rs = null;
         String password = null;
         try {
-            ps = conn.prepareStatement(authenticationQuery);
+            String sql = "select password from users where user_name = ?";
+            ps = conn.prepareStatement(sql);
             ps.setString(1, username);
 
             // Execute query
@@ -117,5 +118,4 @@ public class SaltAwareJdbcRealm extends JdbcRealm {
 
         return password;
     }
-
 }

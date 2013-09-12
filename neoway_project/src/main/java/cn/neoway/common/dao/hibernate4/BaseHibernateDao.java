@@ -15,6 +15,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 
 import javax.persistence.Id;
 import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 import java.lang.reflect.ParameterizedType;
 import java.util.*;
 import java.util.Map.Entry;
@@ -33,13 +34,21 @@ public abstract class BaseHibernateDao<M extends java.io.Serializable, PK extend
     @SuppressWarnings("unchecked")
     public BaseHibernateDao() {
         this.entityClass = (Class<M>) ((ParameterizedType) getClass().getGenericSuperclass()).getActualTypeArguments()[0];
-        Field[] fields = this.entityClass.getDeclaredFields();
+     /*   Field[] fields = this.entityClass.getDeclaredFields();        //如果注解在方法上面
         for(Field f : fields) {
             if(f.isAnnotationPresent(Id.class)) {
                 this.pkName = f.getName();
             }
+        }*/
+        Method[] methods = this.entityClass.getDeclaredMethods();
+        for(Method m : methods) {
+            if(m.isAnnotationPresent(Id.class)) {
+                String methodName = m.getName().trim();
+                this.pkName = methodName.substring(4,methodName.length());//获得缺少首字母的属性名
+                String firstChar  =methodName.substring(3,4).toLowerCase();//获得首字母并转成小写
+                pkName = firstChar + pkName;
+            }
         }
-        
         Assert.notNull(pkName);
         //TODO @Entity name not null
         HQL_LIST_ALL = "from " + this.entityClass.getSimpleName() + " order by " + pkName + " desc";

@@ -22,7 +22,7 @@
 
             $(document).ready(function(){
 
-            var time = $(".login_fail_times").val();
+            var time = $(".error_time").val();
             if(time >= 3){
 
                 $("#captcha").append("验证码:<img src='generatImage' class='captcha_img' onclick='javascript:changeImg()'><br/><input type='text' name='captcha_value'/>" +
@@ -35,13 +35,11 @@
     </script>
 </head>
 <body>
-<p>==${error_info}</p>
-<input class="login_fail_times" value="${login_fail_times}" style="visibility: hidden"/>
-
-<form action="login" method="post">
+<p>==${error_msg}</p>
+<form action="register" method="post">
     用户名:<input type="text" name="username"/> <br/>
     密码:<input type="password" name="password"/><br/>
-    <p id="captcha"></p>
-    <input type="submit" value="登录"/></form>
+    邮箱::<input type="email" name="email"/><br/>
+    <input type="submit" value="注册"/></form>
 </body>
 </html>
