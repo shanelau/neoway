@@ -3,8 +3,13 @@ package cn.neoway.cloud.controller;
 
 import cn.neoway.cloud.bean.Users;
 import cn.neoway.cloud.model.LoginCommand;
+import cn.neoway.cloud.model.UserQueryModel;
 import cn.neoway.cloud.model.UserRegisterModel;
 import cn.neoway.cloud.service.UserInfoService;
+import cn.neoway.common.Constants;
+import cn.neoway.common.pagination.Page;
+import cn.neoway.common.shiro.realm.MD5;
+import cn.neoway.common.web.support.editor.DateEditor;
 import com.octo.captcha.service.CaptchaServiceException;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
@@ -15,12 +20,17 @@ import org.apache.shiro.session.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.ServletRequestUtils;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
+import java.util.Date;
 
 /**
  * Created with IntelliJ IDEA.
@@ -34,15 +44,15 @@ public class UserLoginController{
     @Resource(name = "imageCaptchaService")
     private com.octo.captcha.service.image.ImageCaptchaService imageCaptchaService;
     @Autowired
-    @Qualifier("userInfoService")
-    private UserInfoService userInfoService;
+    @Qualifier("userService")
+    private UserInfoService userService;
 
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String login() {
         return "login";
     }
     @RequestMapping(value = "/login", method = {RequestMethod.POST})
-    public ModelAndView list( LoginCommand model, HttpServletRequest request) {
+    public ModelAndView login( LoginCommand model, HttpServletRequest request) {
         ModelAndView mav= new ModelAndView();
 
         int times = 0;
@@ -51,6 +61,7 @@ public class UserLoginController{
         if(obj!=null)
             times = (int) obj;
        boolean isResponseCorrect  = validateCaptchaImage(request);
+        isResponseCorrect = true;
        if(!isResponseCorrect){      //验证失败
            mav.setViewName("login");
            mav.addObject("error_info","验证码错误");
@@ -58,7 +69,8 @@ public class UserLoginController{
            return mav;
        }
         LoginCommand command = model;
-        UsernamePasswordToken token = new UsernamePasswordToken(command.getUsername(),command.getPassword());
+        String password = MD5.MD5Encode(command.getPassword().trim());
+        UsernamePasswordToken token = new UsernamePasswordToken(command.getUsername(),password);
         token.setRememberMe(true);
         try{
 
@@ -84,19 +96,18 @@ public class UserLoginController{
     public ModelAndView register(UserRegisterModel model) {
         UserRegisterModel registerModel = model;
         ModelAndView mv = new ModelAndView();
-        Users user = userInfoService.findUserByName(registerModel.getUsername());
+        Users user = userService.findUserByName(registerModel.getUsername());
         if(user!=null){
             mv.addObject("error_msg","用户名已经存在。");
             mv.setViewName("register");
             return mv;
         }
         Users user_info = new Users();
-        PasswordService svc = new DefaultPasswordService();
-        String encrypted = svc.encryptPassword(registerModel.getPassword());
+        String password = MD5.MD5Encode(registerModel.getPassword().trim());
         user_info.setUserName(registerModel.getUsername());
-        user_info.setPassword(encrypted);
+        user_info.setPassword(password);
         user_info.setEmail(registerModel.getEmail());
-        userInfoService.save(user_info);
+        userService.save(user_info);
         mv.setViewName("index");
         return mv;
     }
@@ -115,6 +126,33 @@ public class UserLoginController{
             //should not happen, may be thrown if the id is not valid
         }
         return isResponseCorrect;
+    }
+    @RequestMapping(value = "/user", method = {RequestMethod.GET})
+    public String list(HttpServletRequest request, Model model) {
+
+        setCommonData(model);
+        model.addAttribute(Constants.COMMAND, new Users());
+
+        int pn = ServletRequestUtils.getIntParameter(request, "pn", 1);
+        Integer id = ServletRequestUtils.getIntParameter(request, "id", -1);
+        boolean pre = ServletRequestUtils.getBooleanParameter(request, "pre", false);
+        Page<Users> page = null;
+        if(id > 0) {
+            if(pre) {
+                page = userService.pre(id, pn);
+            }
+            else {
+                page = userService.next(id, pn);
+            }
+        }
+        else {
+            page = userService.listAll(pn);
+        }
+        request.setAttribute("page", page);
+        return "user/list";
+    }
+    private void setCommonData(Model model) {
+        //设置通用属性
     }
 
 }

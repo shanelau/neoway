@@ -1,6 +1,7 @@
 package cn.neoway.cloud.dao;
 
 import cn.neoway.cloud.bean.Users;
+import cn.neoway.cloud.model.UserQueryModel;
 import cn.neoway.common.dao.IBaseDao;
 
 import java.util.List;
@@ -13,7 +14,7 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 public interface UserInfoDao extends IBaseDao<Users, Integer> {
-    List<Users> query(int pn, int pageSize, Users command);
-    int countQuery(Users command);
+    List<Users> query(int pn, int pageSize, UserQueryModel command);
+    int countQuery(UserQueryModel command);
     Users findByUserName(String username);
 }

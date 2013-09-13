@@ -144,15 +144,6 @@
     <bean id="jdbcRealm" class="cn.neoway.common.shiro.realm.SaltAwareJdbcRealm">
         <property name="name" value="jdbcRealm"/>
         <property name="dataSource" ref="dataSource"/>
-        <property name="credentialsMatcher">
-            <!-- The 'bootstrapDataPopulator' Sha256 hashes the password
-                 (using the username as the salt) then base64 encodes it: -->
-            <bean class="org.apache.shiro.authc.credential.HashedCredentialsMatcher">
-                <property name="hashAlgorithmName" value="SHA-256"/>
-                <!-- true means hex encoded, false means base64 encoded -->
-                <property name="storedCredentialsHexEncoded" value="false"/>
-            </bean>
-        </property>
     </bean>
     <bean id="imageCaptchaService" class="com.octo.captcha.service.image.DefaultManageableImageCaptchaService">
         <constructor-arg type="com.octo.captcha.service.captchastore.CaptchaStore" index="0">

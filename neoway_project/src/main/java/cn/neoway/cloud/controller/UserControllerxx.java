@@ -1,5 +1,7 @@
-package cn.neoway.cloud.controller;
 
+/*
+package cn.neoway.cloud.controller;
+import cn.neoway.cloud.bean.Users;
 import cn.neoway.cloud.model.UserModel;
 import cn.neoway.cloud.model.UserQueryModel;
 import cn.neoway.cloud.service.UserService;
@@ -20,7 +22,7 @@ import javax.validation.Valid;
 import java.util.Date;
 
 
-@Controller
+
 public class UserController {
 
     @Autowired
@@ -32,12 +34,12 @@ public class UserController {
     public String list(HttpServletRequest request, Model model) {
 
         setCommonData(model);
-        model.addAttribute(Constants.COMMAND, new UserModel());
+        model.addAttribute(Constants.COMMAND, new Users());
 
         int pn = ServletRequestUtils.getIntParameter(request, "pn", 1);
         Integer id = ServletRequestUtils.getIntParameter(request, "id", -1);
         boolean pre = ServletRequestUtils.getBooleanParameter(request, "pre", false);
-        Page<UserModel> page = null;
+        Page<Users> page = null;
         if(id > 0) {
             if(pre) {
                 page = userService.pre(id, pn);
@@ -83,7 +85,7 @@ public class UserController {
     public String toAdd(Model model) {
         
         if(!model.containsAttribute(Constants.COMMAND)) {
-            model.addAttribute(Constants.COMMAND, new UserModel());
+            model.addAttribute(Constants.COMMAND, new Users());
         }
         setCommonData(model);
         return "user/add";
@@ -117,7 +119,7 @@ public class UserController {
     }
     
     @RequestMapping(value = "/user/{id}/update", method = {RequestMethod.PUT})
-    public String update(Model model, @ModelAttribute("command") @Valid UserModel command, BindingResult result) {
+    public String update(Model model, @ModelAttribute("command") @Valid Users command, BindingResult result) {
         if(result.hasErrors()) {
             model.addAttribute(Constants.COMMAND, command);
             return toUpdate(model, command.getId());
@@ -144,3 +146,4 @@ public class UserController {
   
     
 }
+                                 */

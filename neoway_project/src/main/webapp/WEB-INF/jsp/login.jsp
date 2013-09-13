@@ -43,5 +43,6 @@
     密码:<input type="password" name="password"/><br/>
     <p id="captcha"></p>
     <input type="submit" value="登录"/></form>
+<a href="register">注册</a>
 </body>
 </html>

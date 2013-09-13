@@ -1,10 +1,6 @@
-package cn.javass.demo.dao.hibernate4;
+package cn.neoway.demo.dao.hibernate4;
 
-import cn.javass.common.Constants;
-import cn.javass.common.dao.hibernate4.BaseHibernateDao;
 import org.junit.Test;
-
-import java.io.Serializable;
 
 /**
  * Created with IntelliJ IDEA.

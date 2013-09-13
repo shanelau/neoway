@@ -1,5 +1,5 @@
 package cn.neoway.cloud.dao;
-
+     /*
 import cn.neoway.cloud.model.UserModel;
 import cn.neoway.cloud.model.UserQueryModel;
 import cn.neoway.common.dao.IBaseDao;
@@ -14,3 +14,4 @@ public interface UserDao extends IBaseDao<UserModel, Integer> {
     int countQuery(UserQueryModel command);
 
 }
+       */

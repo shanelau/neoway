@@ -1,7 +1,5 @@
 package cn.neoway.cloud.dao.hibernate4;
 
-import cn.neoway.cloud.dao.UserDao;
-import cn.neoway.cloud.model.UserModel;
 import cn.neoway.cloud.model.UserQueryModel;
 import cn.neoway.common.dao.hibernate4.BaseHibernateDao;
 import org.springframework.stereotype.Repository;
@@ -12,7 +10,7 @@ import java.util.List;
  * User: Zhang Kaitao
  * Date: 11-12-26 下午4:19
  * Version: 1.0
- */
+
 @Repository("UserDao")
 public class UserHibernate4DaoImpl extends BaseHibernateDao<UserModel, Integer> implements UserDao {
 
@@ -43,3 +41,4 @@ public class UserHibernate4DaoImpl extends BaseHibernateDao<UserModel, Integer> 
     }
 
 }
+ */

@@ -18,12 +18,18 @@
  */
 package cn.neoway.common.shiro.realm;
 
+import cn.neoway.cloud.bean.Users;
+import cn.neoway.cloud.service.UserInfoService;
+import junit.framework.Assert;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.realm.jdbc.JdbcRealm;
+import org.apache.shiro.subject.SimplePrincipalCollection;
 import org.apache.shiro.util.ByteSource;
 import org.apache.shiro.util.JdbcUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -37,7 +43,9 @@ import java.sql.SQLException;
 public class SaltAwareJdbcRealm extends JdbcRealm {
 
     private static final Logger log = LoggerFactory.getLogger(SaltAwareJdbcRealm.class);
-
+    @Autowired
+    @Qualifier("userService")
+    private UserInfoService userService;
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
         UsernamePasswordToken upToken = (UsernamePasswordToken) token;
@@ -53,21 +61,13 @@ public class SaltAwareJdbcRealm extends JdbcRealm {
         try {
             conn = dataSource.getConnection();
 
-            String password = getPasswordForUser(conn, username);
+            Users users = userService.findUserByName(username);
 
-            if (password == null) {
+            if (users.getPassword() == null) {
                 throw new UnknownAccountException("No account found for user [" + username + "]");
             }
 
-            SimpleAuthenticationInfo saInfo = new SimpleAuthenticationInfo(username, password, getName());
-            /**
-             * This (very bad) example uses the username as the salt in this sample app.  DON'T DO THIS IN A REAL APP!
-             *
-             * Salts should not be based on anything that a user could enter (attackers can exploit this).  Instead
-             * they should ideally be cryptographically-strong randomly generated numbers.
-             */
-            saInfo.setCredentialsSalt(ByteSource.Util.bytes(username));
-
+            SimpleAuthenticationInfo saInfo = new SimpleAuthenticationInfo(username, users.getPassword(), getName());
             info = saInfo;
 
         } catch (SQLException e) {

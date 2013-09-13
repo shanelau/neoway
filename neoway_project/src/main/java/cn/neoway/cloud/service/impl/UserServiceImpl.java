@@ -1,9 +1,6 @@
 package cn.neoway.cloud.service.impl;
 
-import cn.neoway.cloud.dao.UserDao;
-import cn.neoway.cloud.model.UserModel;
 import cn.neoway.cloud.model.UserQueryModel;
-import cn.neoway.cloud.service.UserService;
 import cn.neoway.common.dao.IBaseDao;
 import cn.neoway.common.pagination.Page;
 import cn.neoway.common.pagination.PageUtil;
@@ -19,7 +16,7 @@ import org.springframework.stereotype.Service;
  * Date: 12-1-4 上午11:06
  * Version: 1.0
  */
-
+ /*
 @Service("UserService")
 public class UserServiceImpl extends BaseService<UserModel, Integer> implements UserService {
 
@@ -43,4 +40,4 @@ public class UserServiceImpl extends BaseService<UserModel, Integer> implements 
     }
 
    
-}
+}     */

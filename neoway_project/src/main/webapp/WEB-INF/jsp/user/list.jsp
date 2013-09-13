@@ -17,12 +17,12 @@
         </tr>
         <c:forEach items="${page.items}" var="t" varStatus="status">
         <tr>
-                        <td>${ t.id }</td>
-                        <td>${ t.username }</td>
+                        <td>${ t.userId }</td>
+                        <td>${ t.userName }</td>
                         <td>${ t.email }</td>
                         <td>${ t.password }</td>
                         <td>${ t.registerDate }</td>
-                        <td><a href="<c:url value='/user/${t.id}/delete'/>">删除</a>|<a href="<c:url value='/user/${t.id}/update'/>">修改</a></td>
+                        <td><a href="<c:url value='/user/${t.userId}/delete'/>">删除</a>|<a href="<c:url value='/user/${t.userId}/update'/>">修改</a></td>
         </tr>
         </c:forEach>
     </table>

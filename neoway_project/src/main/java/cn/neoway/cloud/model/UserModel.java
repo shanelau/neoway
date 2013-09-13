@@ -16,10 +16,10 @@ import java.util.Date;
  * Date: 12-1-4 下午3:12
  * Version: 1.0
  */
-@Entity
-@Table(name = "tbl_user")
-@Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
-public class UserModel extends AbstractModel {
+//@Entity
+//@Table(name = "tbl_user")
+//@Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
+/*public class UserModel extends AbstractModel {
 
 
     private int id;
@@ -98,4 +98,4 @@ public class UserModel extends AbstractModel {
     
     
     
-}
+}                          */
