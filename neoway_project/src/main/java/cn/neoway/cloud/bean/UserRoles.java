@@ -1,5 +1,7 @@
 package cn.neoway.cloud.bean;
 
+import cn.neoway.common.model.AbstractModel;
+
 import javax.persistence.Basic;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -14,7 +16,7 @@ import javax.persistence.ManyToOne;
  */
 @javax.persistence.Table(name = "user_roles", schema = "", catalog = "neoway")
 @Entity
-public class UserRoles {
+public class UserRoles extends AbstractModel{
     private int userRoleId;
 
     @javax.persistence.Column(name = "user_role_id")
@@ -61,7 +63,6 @@ public class UserRoles {
     }
 
     private Users usersByUserId;
-
     @ManyToOne
     @javax.persistence.JoinColumn(name = "user_id", referencedColumnName = "user_id")
     public Users getUsersByUserId() {
@@ -82,5 +83,9 @@ public class UserRoles {
 
     public void setRolesByRoleId(Roles rolesByRoleId) {
         this.rolesByRoleId = rolesByRoleId;
+    }
+    @Override
+    public String toString(){
+        return getUserRoleId()+"\t"+getUsersByUserId().getUserName()+"\t"+getRolesByRoleId().getRoleDesc()+"\t"+getUserRoleDesc();
     }
 }

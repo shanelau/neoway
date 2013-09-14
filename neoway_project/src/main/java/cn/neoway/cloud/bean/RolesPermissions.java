@@ -1,5 +1,7 @@
 package cn.neoway.cloud.bean;
 
+import cn.neoway.common.model.AbstractModel;
+
 import javax.persistence.Basic;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -14,7 +16,7 @@ import javax.persistence.ManyToOne;
  */
 @javax.persistence.Table(name = "roles_permissions", schema = "", catalog = "neoway")
 @Entity
-public class RolesPermissions {
+public class RolesPermissions extends AbstractModel{
     private int rolePeriId;
 
     @javax.persistence.Column(name = "role_peri_id")
@@ -81,5 +83,9 @@ public class RolesPermissions {
 
     public void setRolesByRoleId(Roles rolesByRoleId) {
         this.rolesByRoleId = rolesByRoleId;
+    }
+    @Override
+    public String toString(){
+        return getRolesByRoleId().getRoleName()+"\t"+getRolePeriDesc()+"\t"+getPermissionsByPeriId().getPeriDesc()+"\t";
     }
 }

@@ -1,5 +1,7 @@
 package cn.neoway.cloud.bean;
 
+import cn.neoway.common.model.AbstractModel;
+
 import javax.persistence.Basic;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -14,7 +16,7 @@ import java.util.Collection;
  * To change this template use File | Settings | File Templates.
  */
 @Entity
-public class Roles {
+public class Roles extends AbstractModel{
     private int roleId;
 
     @javax.persistence.Column(name = "role_id")

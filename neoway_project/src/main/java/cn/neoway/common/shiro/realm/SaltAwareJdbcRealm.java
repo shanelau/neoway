@@ -18,12 +18,23 @@
  */
 package cn.neoway.common.shiro.realm;
 
-import cn.neoway.cloud.bean.Users;
+import cn.neoway.cloud.bean.*;
+import cn.neoway.cloud.service.RolePermissionService;
 import cn.neoway.cloud.service.UserInfoService;
+import cn.neoway.cloud.service.UserRolesService;
 import junit.framework.Assert;
+import net.sf.json.JSON;
+import net.sf.json.JSONArray;
+import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
+import org.apache.shiro.authz.AuthorizationException;
+import org.apache.shiro.authz.AuthorizationInfo;
+import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.jdbc.JdbcRealm;
+import org.apache.shiro.session.Session;
+import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.subject.SimplePrincipalCollection;
+import org.apache.shiro.subject.Subject;
 import org.apache.shiro.util.ByteSource;
 import org.apache.shiro.util.JdbcUtils;
 import org.slf4j.Logger;
@@ -31,10 +42,14 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 
+import javax.annotation.Resource;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 /**
  * Realm that exists to support salted credentials.  The JdbcRealm implementation needs to be updated in a future
@@ -46,6 +61,16 @@ public class SaltAwareJdbcRealm extends JdbcRealm {
     @Autowired
     @Qualifier("userService")
     private UserInfoService userService;
+
+    @Autowired
+    @Qualifier("RolePermissionService")
+    RolePermissionService rolePermissionService;
+
+    @Autowired
+    @Qualifier("UserRolesService")
+    UserRolesService userRolesService;
+
+
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
         UsernamePasswordToken upToken = (UsernamePasswordToken) token;
@@ -63,13 +88,15 @@ public class SaltAwareJdbcRealm extends JdbcRealm {
 
             Users users = userService.findUserByName(username);
 
-            if (users.getPassword() == null) {
+            if (users == null) {
                 throw new UnknownAccountException("No account found for user [" + username + "]");
             }
 
             SimpleAuthenticationInfo saInfo = new SimpleAuthenticationInfo(username, users.getPassword(), getName());
             info = saInfo;
-
+            Subject currentUser = SecurityUtils.getSubject();
+            Session session = currentUser.getSession();
+            session.setAttribute("currUser",users);
         } catch (SQLException e) {
             final String message = "There was a SQL error while authenticating user [" + username + "]";
             if (log.isErrorEnabled()) {
@@ -84,38 +111,36 @@ public class SaltAwareJdbcRealm extends JdbcRealm {
 
         return info;
     }
+    @Override
+    protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals) {
 
-    private String getPasswordForUser(Connection conn, String username) throws SQLException {
+        //null usernames are invalid
+        if (principals == null) {
+            throw new AuthorizationException("PrincipalCollection method argument cannot be null.");
+        }
+        Subject currentUser = SecurityUtils.getSubject();
+        Session session = currentUser.getSession();
+       // String username = (String) getAvailablePrincipal(principals);
+        Users users = (Users)session.getAttribute("currUser");
+        Set<String> roleNames = new HashSet<String>();
+        Set<String> permissions = new HashSet<String>();;
+        List<UserRoles> list = userRolesService.findByUserId(users.getUserId());
+        for(UserRoles userRoles : list){
+            Roles role = userRoles.getRolesByRoleId();
+            if(role!=null){
+                roleNames.add(role.getRoleName());               //×°Åä½ÇÉ«
+                List<RolesPermissions> perList = rolePermissionService.findPermissionByRoleId(role.getRoleId());
+                for(RolesPermissions rp :perList){
+                    Permissions p = rp.getPermissionsByPeriId();
+                        permissions.add(p.getPeriName());
 
-        PreparedStatement ps = null;
-        ResultSet rs = null;
-        String password = null;
-        try {
-            String sql = "select password from users where user_name = ?";
-            ps = conn.prepareStatement(sql);
-            ps.setString(1, username);
-
-            // Execute query
-            rs = ps.executeQuery();
-
-            // Loop over results - although we are only expecting one result, since usernames should be unique
-            boolean foundResult = false;
-            while (rs.next()) {
-
-                // Check to ensure only one row is processed
-                if (foundResult) {
-                    throw new AuthenticationException("More than one user row found for user [" + username + "]. Usernames must be unique.");
                 }
-
-                password = rs.getString(1);
-
-                foundResult = true;
             }
-        } finally {
-            JdbcUtils.closeResultSet(rs);
-            JdbcUtils.closeStatement(ps);
         }
 
-        return password;
+        SimpleAuthorizationInfo info = new SimpleAuthorizationInfo(roleNames);
+        info.setStringPermissions(permissions);
+        return info;
+
     }
 }

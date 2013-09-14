@@ -23,7 +23,7 @@
             $(document).ready(function(){
 
             var time = $(".login_fail_times").val();
-            if(time >= 3){
+            if(time == -3){
 
                 $("#captcha").append("验证码:<img src='generatImage' class='captcha_img' onclick='javascript:changeImg()'><br/><input type='text' name='captcha_value'/>" +
                         "<a href='javascript:changeImg()'>换一张</a>" );

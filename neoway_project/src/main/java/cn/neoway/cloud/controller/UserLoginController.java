@@ -30,6 +30,7 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
+import java.sql.Timestamp;
 import java.util.Date;
 
 /**
@@ -41,7 +42,8 @@ import java.util.Date;
  */
 @Controller
 public class UserLoginController{
-    @Resource(name = "imageCaptchaService")
+    @Autowired
+    @Qualifier("imageCaptchaService")
     private com.octo.captcha.service.image.ImageCaptchaService imageCaptchaService;
     @Autowired
     @Qualifier("userService")
@@ -107,6 +109,7 @@ public class UserLoginController{
         user_info.setUserName(registerModel.getUsername());
         user_info.setPassword(password);
         user_info.setEmail(registerModel.getEmail());
+        user_info.setRegisterDate(new Timestamp(System.currentTimeMillis()));
         userService.save(user_info);
         mv.setViewName("index");
         return mv;
