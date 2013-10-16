@@ -158,6 +158,12 @@
         TableManaged.init();
 
     });
+    (function(){
+        $(document).ready(function(){
+            $("ul.page-sidebar-menu li").removeClass("active");
+            $("ul.page-sidebar-menu li.user_advice").addClass("active");
+        });
+    })($);
 </script>
 </body>
 

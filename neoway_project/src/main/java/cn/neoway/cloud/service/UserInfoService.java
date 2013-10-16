@@ -19,4 +19,5 @@ public interface UserInfoService extends IBaseService<Users, Integer> {
     Users findUserByName(String username);
 
     List<Users> listByKeyword(String keyword);
+
 }

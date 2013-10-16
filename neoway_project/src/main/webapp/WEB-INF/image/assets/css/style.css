@@ -116,6 +116,8 @@ a:hover { text-decoration: none; }
 
 .subscribe form {
     margin-top: 24px;
+    text-align: center;
+    margin:0 auto;
 }
 
 .subscribe form input {

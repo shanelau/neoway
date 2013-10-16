@@ -114,14 +114,16 @@
     <!--appache shiro框架  认证和授权-->
     <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
         <property name="securityManager" ref="securityManager"/>
-        <property name="loginUrl" value="/login_neoway"/>
+        <property name="loginUrl" value="/login"/>
         <property name="filterChainDefinitions">
             <value>
                 /js/** = anon
                 /image/** = anon
                 /css/** = anon
-                /login = anon
                 /register = anon
+                /user/i_forget_password = anon
+                /user/reset_password = anon
+                /error = anon
                 /user_advice = anon
                 /plan/** = authc
                 /index = authc

@@ -29,27 +29,18 @@
 
     <div class="span12 page-500">
 
-        <div class=" number">
+        <div class="number">
 
-            404
+            OOP!
 
         </div>
 
         <div class=" details">
 
-            <h3>哇哦, 咱们出了点小问题.</h3>
-
-            <p>
-
-                我们正在尽力抢修!<br />
-
-                请等会再来访问,或者您反问的页面不存在.<br /><br />
-                ${exception.getMessage()}
-            </p>
-
+            <h2>${msg}.</h2>
 
         </div>
-        <p>  <a href="javascript:void(0);" onclick="history.go(-1)">返回刚才页面</a><br/><br/></p>
+        <p>  <a href="login">返回主页</a><br/><br/></p>
 
     </div>
 

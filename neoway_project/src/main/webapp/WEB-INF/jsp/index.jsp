@@ -18,6 +18,7 @@
     <!-- BEGIN PAGE LEVEL STYLES -->
     <link rel="stylesheet" type="text/css" href="css/select2_metro.css" />
     <link rel="stylesheet" href="css/DT_bootstrap.css" />
+    <link rel="stylesheet" href="image/assets/css/my.css">
 
     <!-- END PAGE LEVEL STYLES -->
 
@@ -29,7 +30,6 @@
 <!-- BEGIN BODY -->
 
 <body class="page-header-fixed">
-
 <!-- BEGIN HEADER -->
 
 <%@include file="inc/top.jsp"%>
@@ -92,11 +92,11 @@
 
                     <div class="portlet box green">
                         <div class="portlet-title">
-                            <div class="caption"><i class="icon-user"></i>待处理计划单</div>
+                            <div class="caption"><i class="icon-user"></i>部分计划单</div>
 
                         </div>
                         <div class="portlet-body">
-                            <table class="table table-striped table-bordered table-hover" id="sample_2">
+                            <table class="table table-striped table-bordered table-hover">
                                 <thead>
                                 <tr>
                                     <th>序号</th>
@@ -143,7 +143,7 @@
                             已经通过审核的计划单 </em> <i class="icon-briefcase top-news-icon"></i> </a>
                         <a href="#" class="btn blue"> <span>我是生产人员</span> <em> <i class="icon-tags"></i> USA,
                             生产人员</em> <i class="icon-globe top-news-icon"></i> </a>
-                        <a href="user_info" class="btn black"> <span>我的信息设置</span> <em> <i class="icon-tags"></i> USA,
+                        <a href="user/user_info" class="btn black"> <span>我的信息设置</span> <em> <i class="icon-tags"></i> USA,
                             个人信息</em> <i class="icon-globe top-news-icon"></i> </a></div>
                 </div>
             </div>
@@ -163,7 +163,6 @@
 
 <!-- BEGIN PAGE LEVEL PLUGINS -->
 
-<script type="text/javascript" src="js/select2.min.js"></script>
 <script type="text/javascript" src="js/jquery.dataTables.js"></script>
 <script type="text/javascript" src="js/DT_bootstrap.js"></script>
 

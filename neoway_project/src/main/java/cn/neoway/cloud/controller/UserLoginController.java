@@ -26,7 +26,10 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpServletRequest;
 import java.sql.Timestamp;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.UUID;
 
 /**
  * Created with IntelliJ IDEA.
@@ -44,13 +47,13 @@ public class UserLoginController{
     @Qualifier("UserInfoService")
     private UserInfoService userService;
 
-    @RequestMapping(value = "/login_register", method = RequestMethod.GET)
+    @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String login() {
-        return "login_register";
+        return "user/login";
     }
-    @RequestMapping(value = "/login", method = {RequestMethod.POST})
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
     public ModelAndView login( LoginCommand model, HttpServletRequest request) {
-        ModelAndView mav= new ModelAndView("login_register");
+        ModelAndView mav= new ModelAndView("user/login");
 
         int times = 0;
         Session session = SecurityUtils.getSubject().getSession();     //用户session
@@ -60,7 +63,7 @@ public class UserLoginController{
        boolean isResponseCorrect  = validateCaptchaImage(request);
         isResponseCorrect = true;
        if(!isResponseCorrect){      //验证失败
-           mav.setViewName("login_register");
+           mav.setViewName("user/login");
            mav.addObject("error_info","验证码错误");
            mav.addObject("login_fail_times",times);
            return mav;
@@ -71,7 +74,7 @@ public class UserLoginController{
             mav.addObject("error_info","用户名不存在。");
             return mav;
         }else if(!u.getUserState()){
-            mav.setViewName("login_register");
+            mav.setViewName("user/login");
             mav.addObject("error_info","您的账号被冻结了,等待管理员处理。");
             return mav;
         }
@@ -87,7 +90,7 @@ public class UserLoginController{
         }catch (AuthenticationException e){
             e.printStackTrace();
             times++;
-            mav.setViewName("login_register");
+            mav.setViewName("user/login");
             mav.addObject("error_info","用户名或者密码错误");
             mav.addObject("login_fail_times",times);
         }
@@ -97,7 +100,7 @@ public class UserLoginController{
 
     @RequestMapping(value = "/register", method = {RequestMethod.GET})
     public String register() {
-        return "register";
+        return "user/register";
     }
     @RequestMapping(value = "/register", method = {RequestMethod.POST})
     public ModelAndView register(UserRegisterModel model) {
@@ -106,7 +109,7 @@ public class UserLoginController{
         Users user = userService.findUserByName(registerModel.getUsername());
         if(user!=null){
             mv.addObject("error_info","用户名已经存在。");
-            mv.setViewName("login_register");
+            mv.setViewName("user/login");
             return mv;
         }
         Users user_info = new Users();
@@ -126,7 +129,7 @@ public class UserLoginController{
             error_info ="注册失败,用户名和邮箱可能已经存在";
         }
         mv.addObject("error_info",error_info);
-        mv.setViewName("login_register");
+        mv.setViewName("user/login");
         return mv;
     }
     private boolean validateCaptchaImage(HttpServletRequest request) {
@@ -174,14 +177,14 @@ public class UserLoginController{
     }
     @RequestMapping(value = "/logut")
     public ModelAndView logut(){
-        ModelAndView model = new ModelAndView("login_register");
+        ModelAndView model = new ModelAndView("user/login");
         Subject currentUser = SecurityUtils.getSubject();
         currentUser.logout();
         return model;
     }
-    @RequestMapping(value = "/user_info")
+    @RequestMapping(value = "/user/user_info")
     public  ModelAndView userInfo(){
-        ModelAndView modelAndView = new ModelAndView("user_info");
+        ModelAndView modelAndView = new ModelAndView("user/user_info");
         Subject currentUser = SecurityUtils.getSubject();
         Users users = (Users) currentUser.getSession().getAttribute("currUser");
         Users u = userService.get(users.getUserId());
@@ -190,7 +193,7 @@ public class UserLoginController{
     }
     @RequestMapping(value = "/user/update",method = RequestMethod.POST)
     public ModelAndView updateUserInfo(Users users){
-        ModelAndView modelAndView = new ModelAndView("redirect:/user_info");
+        ModelAndView modelAndView = new ModelAndView("redirect:/user/user_info");
         Users u = userService.get(users.getUserId());
         String msg = "";
         if(u != null){
@@ -206,16 +209,16 @@ public class UserLoginController{
                 msg = "update fail:"+e.getMessage();
             }
         }
-        modelAndView.addObject("user_update_msg",msg);
+        modelAndView.addObject("msg",msg);
         return modelAndView;
     }
-    @RequestMapping(value = "/user_password",method = RequestMethod.POST)
+    @RequestMapping(value = "/user/user_password",method = RequestMethod.POST)
     public ModelAndView updatePassword(HttpServletRequest request,RedirectAttributes  redirectAttributes){
         String currentPassword= request.getParameter("curr_password");
         String newPassword= request.getParameter("new_password");
         String confimPassword= request.getParameter("confim_password");
         String msg = "更新失败";
-        ModelAndView model = new ModelAndView("redirect:/user_info");
+        ModelAndView model = new ModelAndView("redirect:/user/user_info");
 
         if(currentPassword !=null && newPassword!=null && confimPassword != null){
             Subject currentUser = SecurityUtils.getSubject();
@@ -243,16 +246,16 @@ public class UserLoginController{
         model.addObject("msg", msg);
         return  model;
     }
-    @RequestMapping(value = "/user_list")
+    @RequestMapping(value = "/user/user_list")
     public ModelAndView userList(){
-        ModelAndView model = new ModelAndView("user_list");
+        ModelAndView model = new ModelAndView("user/user_list");
         List<Users> list = userService.listAll();
         model.addObject("userList",list);
         return model;
     }
-    @RequestMapping(value = "/lock_user")
+    @RequestMapping(value = "/user/lock_user")
     public ModelAndView lockUser(HttpServletRequest request){
-        ModelAndView model = new ModelAndView("redirect:user_list");
+        ModelAndView model = new ModelAndView("redirect:/user/user_list");
         String _userId =  request.getParameter("userId");
         String _userState = request.getParameter("userState");
         String msg = "";
@@ -277,6 +280,123 @@ public class UserLoginController{
         userService.update(u);
         msg = "更新成功";
         model.addObject("msg",msg);
+        return model;
+    }
+
+    /**
+     * 忘记密码,生成找回密码的链接
+     * @param request
+     * @param userName
+     * @return
+     */
+    @RequestMapping(value = "/user/i_forget_password")
+    @ResponseBody
+    public Map forgetPass(HttpServletRequest request,String userName){
+        Users users = userService.findUserByName(userName);
+        Map map = new HashMap<String ,String >();
+        String msg = "";
+        if(users == null){              //用户名不存在
+            msg = "用户名不存在,你不会忘记用户名了吧?";
+            map.put("msg",msg);
+            return map;
+        }
+        try{
+            String secretKey= UUID.randomUUID().toString();  //密钥
+            Timestamp outDate = new Timestamp(System.currentTimeMillis()+30*60*1000);//30分钟后过期
+            long date = outDate.getTime()/1000*1000;                  //忽略毫秒数
+            users.setValidataCode(secretKey);
+            users.setRegisterDate(outDate);
+            userService.update(users);    //保存到数据库
+            String key = users.getUserName()+"$"+date+"$"+secretKey;
+            String digitalSignature = MD5.MD5Encode(key);                 //数字签名
+
+            String emailTitle = "有方云密码找回";
+            String path = request.getContextPath();
+            String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+            String resetPassHref =  basePath+"user/reset_password?sign="+digitalSignature+"&userName="+users.getUserName();
+            String emailContent = "请勿回复本邮件.点击下面的链接,重设密码<br/><a href="+resetPassHref +" target='_BLANK'>点击我重新设置密码</a>" +
+                    "<br/>tips:本邮件超过30分钟,链接将会失效，需要重新申请'找回密码'"+key+"\t"+digitalSignature;
+            System.out.print(resetPassHref);
+            SendMail.getInstatnce().sendHtmlMail(emailTitle,emailContent,users.getEmail());
+            msg = "操作成功,已经发送找回密码链接到您邮箱。请在30分钟内重置密码";
+        }catch (Exception e){
+            e.printStackTrace();
+            msg="邮箱不存在？未知错误,联系管理员吧。";
+        }
+        map.put("msg",msg);
+        return map;
+    }
+
+    @RequestMapping(value = "/user/reset_password",method = RequestMethod.POST)
+    @ResponseBody
+    public Map resetPwd(String userName,String password,String passwordConfirm){
+        String msg = "";
+        Map map = new HashMap();
+        map.put("success","false");
+        if(password == null || password.equals("") || passwordConfirm==null || passwordConfirm.equals("")){
+            msg = "密码和确认密码不能为空";
+            map.put("msg",msg);
+            return map;
+        }
+        if(!password.equals(passwordConfirm)){
+            msg = "两次输入的密码不相等";
+            map.put("msg",msg);
+            return map;
+        }
+        try{
+            Users users = userService.findUserByName(userName);
+            String pass = MD5.MD5Encode(password);
+            users.setPassword(pass);
+            users.setRegisterDate(null);
+            users.setValidataCode("");
+            userService.update(users);
+            msg = "修改成功,3秒后跳转到登录界面;。";
+        }catch (Exception e){
+            e.printStackTrace();
+            msg = "密码修改失败";
+        }
+        map.put("success","true");
+        map.put("msg",msg);
+        return map;
+    }
+
+    /**
+     * 验证重置密码的链接是否正确
+     * @param sign
+     * @param userName
+     * @return
+     */
+    @RequestMapping(value = "/user/reset_password",method = RequestMethod.GET)
+    public ModelAndView checkResetLink(String sign,String userName){
+        ModelAndView model = new ModelAndView("error");
+        String msg = "";
+        if(sign.equals("") || userName.equals("")){
+            msg="链接不完整,请重新生成";
+            model.addObject("msg",msg) ;
+            return model;
+        }
+        Users users = userService.findUserByName(userName);
+        if(users == null){
+            msg = "链接错误,无法找到匹配用户,请重新申请找回密码.";
+            model.addObject("msg",msg) ;
+            return model;
+        }
+        Timestamp outDate = users.getRegisterDate();
+        if(outDate.getTime() <= System.currentTimeMillis()){         //表示已经过期
+            msg = "链接已经过期,请重新申请找回密码.";
+            model.addObject("msg",msg) ;
+            return model;
+        }
+        String key = users.getUserName()+"$"+outDate.getTime()/1000*1000+"$"+users.getValidataCode();          //数字签名
+        String digitalSignature = MD5.MD5Encode(key);
+        System.out.println(key+"\t"+digitalSignature);
+        if(!digitalSignature.equals(sign)) {
+            msg = "链接不正确,是否已经过期了?重新申请吧";
+            model.addObject("msg",msg) ;
+            return model;
+        }
+        model.setViewName("user/reset_password");  //返回到修改密码的界面
+        model.addObject("userName",userName);
         return model;
     }
 

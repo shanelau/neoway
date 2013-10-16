@@ -9,6 +9,7 @@
 <link href="<c:url value='css/uniform.default.css'/>" rel="stylesheet" type="text/css"/>
 <link href="<c:url value='css/jquery-ui-1.10.3.custom.min.css'/>" rel="stylesheet" type="text/css" />
 
+
 <!--[if lte IE 6]>
 <link rel="stylesheet" type="text/css" href="<c:url value='css/bootstrap-ie6.css'/>">
 <![endif]-->

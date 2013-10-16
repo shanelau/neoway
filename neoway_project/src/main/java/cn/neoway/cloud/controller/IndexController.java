@@ -38,10 +38,6 @@ public class IndexController {
     public String planDealList(){
         return "plan/create_module_plan";
     }
-    @RequestMapping(value = "/login_neoway")
-    public String loginAndRegister(){
-        return "login_register";
-    }
     @RequestMapping(value = "/user_advice")
     public ModelAndView userAdvice(){
         ModelAndView model = new ModelAndView("user_advice");

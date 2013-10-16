@@ -1,6 +1,7 @@
 package cn.neoway.common.mail;
 
-import java.util.Date; 
+import java.io.UnsupportedEncodingException;
+import java.util.Date;
 import java.util.Properties;
 import javax.mail.Address; 
 import javax.mail.BodyPart; 
@@ -8,11 +9,8 @@ import javax.mail.Message;
 import javax.mail.MessagingException; 
 import javax.mail.Multipart; 
 import javax.mail.Session; 
-import javax.mail.Transport; 
-import javax.mail.internet.InternetAddress; 
-import javax.mail.internet.MimeBodyPart; 
-import javax.mail.internet.MimeMessage; 
-import javax.mail.internet.MimeMultipart; 
+import javax.mail.Transport;
+import javax.mail.internet.*;
 
 /** 
 * 简单邮件（不带附件的邮件）发送器 
@@ -22,7 +20,7 @@ public class SimpleMailSender  {
   * 以文本格式发送邮件 
   * @param mailInfo 待发送的邮件的信息 
   */ 
-	public boolean sendTextMail(MailSenderInfo mailInfo) { 
+	public boolean sendTextMail(MailSenderInfo mailInfo) throws UnsupportedEncodingException {
 	  // 判断是否需要身份认证 
 	  MyAuthenticator authenticator = null; 
 	  Properties pro = mailInfo.getProperties();
@@ -42,9 +40,10 @@ public class SimpleMailSender  {
 	  // 创建邮件的接收者地址，并设置到邮件消息中 
 	  Address to = new InternetAddress(mailInfo.getToAddress()); 
 	  mailMessage.setRecipient(Message.RecipientType.TO,to); 
-	  // 设置邮件消息的主题 
-	  mailMessage.setSubject(mailInfo.getSubject()); 
-	  // 设置邮件消息发送的时间 
+	  // 设置邮件消息的主题
+      sun.misc.BASE64Encoder enc = new sun.misc.BASE64Encoder();
+      mailMessage.setSubject(MimeUtility.encodeText(mailInfo.getSubject(), "UTF-8", "B"));      //解决linux邮件title乱码
+	  // 设置邮件消息发送的时间
 	  mailMessage.setSentDate(new Date()); 
 	  // 设置邮件消息的主要内容 
 	  String mailContent = mailInfo.getContent(); 

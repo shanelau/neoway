@@ -6,9 +6,6 @@ import cn.neoway.cloud.service.RolePermissionService;
 import cn.neoway.cloud.service.RoleService;
 import cn.neoway.cloud.service.UserInfoService;
 import cn.neoway.cloud.service.UserRolesService;
-import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.session.Session;
-import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -44,15 +41,15 @@ public class RoleController {
     RoleService roleService;
 
     public ModelAndView getAllRole(){
-        ModelAndView model = new ModelAndView("user_roles");
+        ModelAndView model = new ModelAndView("user/user_roles");
         List<UserRoles> userRolesList = userRolesService.listAll();
 
         model.addObject("userRolesList",userRolesList);
         return model;
     }
-    @RequestMapping(value = "/user_roles")
+    @RequestMapping(value = "/user/user_roles")
     public ModelAndView getRoleAndPermission(HttpServletRequest request){
-        ModelAndView model = new ModelAndView("user_roles");
+        ModelAndView model = new ModelAndView("user/user_roles");
         String _userId = request.getParameter("userId");
         int userId = Integer.parseInt(_userId);
         Users users = userService.get(userId);
@@ -76,7 +73,7 @@ public class RoleController {
         model.addObject("list",list);
         return model;
     }
-    @RequestMapping(value = "/update_user_role")
+    @RequestMapping(value = "/user/update_user_role")
     public ModelAndView deleteUserRole(HttpServletRequest request){
         ModelAndView model = new ModelAndView();
         String msg = "";
@@ -101,7 +98,7 @@ public class RoleController {
             e.printStackTrace();
             msg = "更新失败"   ;
         }
-        model.setViewName("redirect:/user_roles?userId="+_userId);
+        model.setViewName("redirect:/user/user_roles?userId="+_userId);
         model.addObject("msg", msg);
         return model;
     }

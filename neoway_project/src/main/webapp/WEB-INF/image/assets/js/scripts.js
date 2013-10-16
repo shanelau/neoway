@@ -13,6 +13,7 @@ jQuery(document).ready(function() {
         Form validation
     */
 	 $('.login-form').submit(function(){
+
         $(this).find("label[for='username']").html('用户名');
         $(this).find("label[for='password']").html('密码');
 
@@ -28,6 +29,7 @@ jQuery(document).ready(function() {
             $(this).find("label[for='password'] span").fadeIn('medium');
             return false;
         }
+         $(".login_register").showLoading();
     });
 	
 		$('.register-form').submit(function(){
@@ -52,11 +54,25 @@ jQuery(document).ready(function() {
             $(this).find("label[for='email'] span").fadeIn('medium');
             return false;
         }
+         $(".login_register").showLoading();
     });
 		$('.forget-form').submit(function(){
-			$(this).find("label[for='email']").html('邮箱');	
-			$(this).find("label[for='email']").append("<span style='display:none' class='red'> - 请输入有一个有效的邮箱.</span>");
-            $(this).find("label[for='email'] span").fadeIn('medium');
+            var userName =  $(this).find("input[name='userName']").val();
+            if(userName == ''){
+			    $(this).find("label[for='email']").append("<span style='display:none' class='red'> - 不能什么也不输入.</span>");
+                $(this).find("label[for='email'] span").fadeIn('medium');
+                return false;
+            }
+            $(".login_register").showLoading();
+            $.post(
+                'user/i_forget_password',
+                {'userName':userName},
+                function(data){
+                    $(".login_register").hideLoading();
+                   alert(data.msg);
+                },
+                'json'
+            );
             return false;
 		});
 

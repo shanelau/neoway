@@ -1,6 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
+<meta charset="utf-8">
 <%@include file="../inc/taglib.jsp" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <!--[if !IE]><!-->
 <html lang="en" class="no-js">
 <!--<![endif]-->
@@ -18,6 +19,7 @@
     <%@include file="../inc/import.jsp" %>
     <link rel="stylesheet" type="text/css" href="css/datetimepicker.css"/>
     <link rel="stylesheet" type="text/css" href="css/bootstrap-fileupload.css"/>
+    <link rel="stylesheet" href="image/assets/css/showLoading.css"/>
 
     <style>
         .ui-autocomplete {
@@ -25,6 +27,9 @@
             overflow-y: auto;
             /* prevent horizontal scrollbar */
             overflow-x: hidden;
+        }
+        .ui-autocomplete-loading {
+            background: white url('../../image/img/ui-anim_basic_16x16.gif') right center no-repeat;
         }
 
             /* IE 6 doesn't support max-height
@@ -351,9 +356,10 @@
                         <input class="span9 m-wrap" type="text" placeholder="输入需要抄送的邮箱账号，用‘,’隔开" name="sendEmail"
                                value="${project.sendEmail}">
                     </div>
-                    <c:if test="${userTypeId == Constants.PLAN_STATE_BASE && project.proStateTypeByProPlanStateId.proPlanStateId == Constants.PLAN_STATE_BASE}">
+                    <c:if test="${userTypeId == 1 && project.proStateTypeByProPlanStateId.proPlanStateId == 1}">
                     <div class="form-actions ">
-                        <button type="submit" class="btn blue submit_project"><i class="icon-ok"></i> 提交</button>
+
+                                    <button type="submit" class="btn blue submit_project"><i class="icon-ok"></i> 提交</button>
                         <button type="reset" class="btn">取消</button>
                     </div>
                     </c:if>
@@ -426,7 +432,7 @@
                         </div>
 
                     </fieldset>
-                    <c:if test="${userTypeId == Constants.PLAN_STATE_CONF && project.proStateTypeByProPlanStateId.proPlanStateId ==  Constants.PLAN_STATE_CONF}">
+                    <c:if test="${userTypeId == 2 && project.proStateTypeByProPlanStateId.proPlanStateId == 2}">
                     <div class="form-actions ">
                         <button type="submit" class="btn blue"><i class="icon-ok"></i> 提交</button>
                         <button type="reset" class="btn">取消</button>
@@ -516,7 +522,7 @@
                             </div>
                         </div>
                     </fieldset>
-                    <c:if test="${userTypeId ==  Constants.PLAN_STATE_PROTECH && project.proStateTypeByProPlanStateId.proPlanStateId == Constants.PLAN_STATE_PROTECH}">
+                    <c:if test="${userTypeId ==  3 && project.proStateTypeByProPlanStateId.proPlanStateId == 3}">
                     <div class="form-actions ">
                         <button type="submit" class="btn blue"><i class="icon-ok"></i> 提交</button>
                         <button type="reset" class="btn">取消</button>
@@ -577,7 +583,7 @@
                         </c:forEach>
                         </tbody>
                     </table>
-                    <c:if test="${userTypeId == Constants.PLAN_STATE_PROTECH && project.proStateTypeByProPlanStateId.proPlanStateId == Constants.PLAN_STATE_PROTECH}">
+                    <c:if test="${userTypeId == 3 && project.proStateTypeByProPlanStateId.proPlanStateId == 3}">
                     <div class="form-actions ">
                         <button type="submit" class="btn blue"><i class="icon-ok"></i> 提交</button>
                         <button type="reset" class="btn">取消</button>
@@ -878,7 +884,7 @@
     </div>
 </div>
 </fieldset>
-<c:if test="${userTypeId == Constants.PLAN_STATE_PROTECH && project.proStateTypeByProPlanStateId.proPlanStateId == Constants.PLAN_STATE_PROTECH}">
+<c:if test="${userTypeId == 3 && project.proStateTypeByProPlanStateId.proPlanStateId == 3}">
 <div class="form-actions ">
     <button type="submit" class="btn blue"><i class="icon-ok"></i> 提交</button>
     <button type="reset" class="btn">取消</button>
@@ -903,8 +909,8 @@
                         href="javascript:;" class="reload"></a> <a href="javascript:;" class="remove"></a></div>
             </div>
             <div class="portlet-body">
-                <div class="alert alert-error"><strong>提示!</strong>选择'同意',处理意见和处理人都无效。选择'不同意',则请输入处理意见，指定处理人。</div>
-                <form class="form-horizontal">
+                <div class="alert alert-error"><strong>提示!</strong>选择'同意',系统将提醒下一个人处理本计划单。选择'不同意',则请输入处理意见，指定处理人。</div>
+                <form class="form-horizontal" name="shenpi">
 
                     <table class="responsive table table-bordered">
                         <thead>
@@ -988,6 +994,7 @@
 <script type="text/javascript" src="js/jquery.json-2.4.min.js"></script>
 <script type="text/javascript" src="js/jquery.form.js"></script>
 <script src="js/script/my.js"></script>
+<script src="image/assets/js/jquery.showLoading.js"></script>
 <script>
 
     jQuery(document).ready(function () {
@@ -1008,21 +1015,24 @@
     (function () {
         $(document).ready(function () {
             $("#file_up").bind("click", function () {
-                //  $("form[name='file_up']").submit();
+                $("form[name='file_up']").showLoading();
                 $(".up_msg").remove();
                 $("form[name='file_up']").ajaxSubmit({
                     success: function (msg) {//文件上传成功后执行,msg为服务器端返回的信息
                         $(".close_btn").before("<div class='alert alert-success up_msg'> <strong>" + msg + "</strong></div>");
+                        $("form[name='file_up']").hideLoading();
                     }
                 });
                 return false;	//防止刷新？
             });
             $("#file_type_up_btn").bind("click", function () {
+                $("form[name='add_file_type']").showLoading();
                 $(".up_msg").remove();
                 $("form[name='add_file_type']").ajaxSubmit({
                     success: function (msg) {//文件上传成功后执行,msg为服务器端返回的信息
                         $(".close_btn").before("<div class='alert alert-success up_msg'> <strong>" + msg + "</strong></div>");
                         location.reload();
+                        $("form[name='add_file_type']").hideLoading();
                     }
                 });
                 return false;	//防止刷新？
@@ -1086,12 +1096,12 @@
                 alert("您选择了'不同意'，请指定处理人来处理这个问题");
                return;
             }
-            alert("点击确定后提交,我们将发送邮件给下一个处理人。等耐心等待几秒")
-               // alert(data.planUserListId1+"\t"+data.currState+"\t "+data.isPass+"\t"+data.dealAdvice+"\t "+data.dealUser);
+            $("form[name='shenpi']").showLoading();
             $.post(
                     'plan/shenpi',
                     data,
                     function(data){
+                        $("form[name='shenpi']").hideLoading();
                         if(data.result == false){
                             alert(data.msg);
                         }
@@ -1107,6 +1117,7 @@
                 alert("请选择一个文件");
                 return false;
             }
+            $("form[name='conf_form']").showLoading();
         });
     })($);
 </script>

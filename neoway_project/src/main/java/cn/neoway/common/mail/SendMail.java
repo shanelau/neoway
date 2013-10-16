@@ -2,6 +2,7 @@ package cn.neoway.common.mail;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.UnsupportedEncodingException;
 import java.util.Properties;
 
 /**
@@ -30,10 +31,10 @@ public class SendMail {
         return sendMail;
     }
 
-    public static void main(String[] args){
+/*    public static void main(String[] args){
               new SendMail().sendMail("发给你", "测试邮件", "kissliux@qq.com");
-    }
-    public void sendMail(String title,String content,String toAddress){
+    }*/
+    public void sendMail(String title,String content,String toAddress) throws UnsupportedEncodingException {
 
         sms.sendTextMail(getSimpleMailInfo(title,content,toAddress));//发送文体格式
     }

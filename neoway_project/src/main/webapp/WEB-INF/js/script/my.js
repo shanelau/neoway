@@ -46,4 +46,8 @@ $("input.users").autocomplete({
     close: function() {
         $( this ).removeClass( "ui-corner-top" ).addClass( "ui-corner-all" );
     }
+
+});
+$("form[name='project_info']").submit(function(){
+    $(this).showLoading();
 });

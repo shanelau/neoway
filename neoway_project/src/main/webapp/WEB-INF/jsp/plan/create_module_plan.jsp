@@ -1,9 +1,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
+<meta charset="utf-8">
 <%@include file="../inc/taglib.jsp" %>
 
-
 <!--[if !IE]><!-->
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/strict.dtd">
 
 <html lang="en" class="no-js">
 <!--<![endif]-->
@@ -21,6 +21,7 @@
     <%@include file="../inc/import.jsp" %>
     <link rel="stylesheet" type="text/css" href="css/datetimepicker.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap-fileupload.css" />
+    <link rel="stylesheet" href="image/assets/css/showLoading.css"/>
     <style>
         .ui-autocomplete {
             max-height: 300px;
@@ -31,6 +32,9 @@
             /* IE 6 doesn't support max-height
              * we use height instead, but this forces the menu to always be this tall
              */
+        .ui-autocomplete-loading {
+            background: white url('image/img/ui-anim_basic_16x16.gif') right center no-repeat;
+        }
         * html .ui-autocomplete {
             height: 100px;
         }
@@ -247,6 +251,7 @@
 <script type="text/javascript" src="js/jquery.form.js"></script>
 <script type="text/javascript" src="js/script/my.js"></script>
 <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script src="image/assets/js/jquery.showLoading.js"></script>
 
 <script>
 

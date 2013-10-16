@@ -49,18 +49,18 @@
 
             </ul>
         </li>
-        <li class=""> <a href="javascript:;"> <i class="icon-table"></i> <span class="title">用户信息</span> <span class="arrow "></span> </a>
+        <li class="user_info"> <a href="javascript:;"> <i class="icon-table"></i> <span class="title">用户信息</span> <span class="arrow "></span> </a>
             <ul class="sub-menu">
-                <li > <a href="user_list"> 所有用户 </a> </li>
-                <li > <a href="user_info"> 个人信息 </a> </li>
+                <li > <a href="user/user_list"> 所有用户 </a> </li>
+                <li > <a href="user/user_info"> 个人信息 </a> </li>
             </ul>
         </li>
         <li class=""> <a href="javascript:;"> <i class="icon-briefcase"></i> <span class="title">权限管理</span> <span class="arrow "></span> </a>
 
         </li>
-        <li class=""> <a href="javascript:;"> <i class="icon-briefcase"></i> <span class="title">其他</span> <span class="arrow "></span> </a>
+        <li class="user_advice"> <a href="javascript:;"> <i class="icon-briefcase"></i> <span class="title">其他</span> <span class="arrow "></span> </a>
             <ul class="sub-menu">
-                <li > <a href="advice_list">用户反馈 </a> </li>
+                <li > <a href="user/advice_list">用户反馈 </a> </li>
                 <li > <a href="image/assets/neoway计划单使用说明书.doc"> 系统帮助 </a> </li>
             </ul>
         </li>
