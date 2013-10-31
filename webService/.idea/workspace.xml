@@ -1,0 +1,1743 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_TEST_SOURCES" value="false" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" name="Default" comment="" />
+    <ignored path="mavenTest.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/pom.xml" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368164243784" ignored="false" />
+    <file path="$PROJECT_DIR$/../assm/src/cn/com/workway/web/action/business/ServiceOrderAction.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1364177171249" ignored="false" />
+    <file path="$PROJECT_DIR$/../assm/src/jdbc.properties" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1364202634537" ignored="false" />
+    <file path="/jdbc.properties" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367981235371" ignored="false" />
+    <file path="/a.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366773490036" ignored="false" />
+    <file path="$PROJECT_DIR$/../assm/src/cn/com/workway/web/action/BaseAction.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1364201346823" ignored="false" />
+    <file path="$PROJECT_DIR$/../assm/WebRoot/WEB-INF/web.xml" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1364449643128" ignored="false" />
+    <file path="/Dummy.txt" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369583556288" ignored="false" />
+    <file path="$PROJECT_DIR$/../assm/src/struts.xml" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1364260038623" ignored="false" />
+    <file path="$PROJECT_DIR$/../assm/src/cn/com/workway/web/action/MainAction.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1364375066293" ignored="false" />
+    <file path="/MainAction.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1364260059972" ignored="false" />
+    <file path="$PROJECT_DIR$/../assm/src/beans.xml" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367111458457" ignored="false" />
+    <file path="$PROJECT_DIR$/../assm/WebRoot/index.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1364260267544" ignored="false" />
+    <file path="/fragment.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369707956298" ignored="false" />
+    <file path="$PROJECT_DIR$/../abc/.idea/modules.xml" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1364268477065" ignored="false" />
+    <file path="$PROJECT_DIR$/../abc/.idea/workspace.xml" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1364268477065" ignored="false" />
+    <file path="/resources.properties" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1364520623597" ignored="false" />
+    <file path="$PROJECT_DIR$/../testmaven/pom.xml" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1364369319917" ignored="false" />
+    <file path="/UserHibernate4DaoImplTest.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1364372298270" ignored="false" />
+    <file path="$PROJECT_DIR$/../assm/src/log4j.properties" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1364449774913" ignored="false" />
+    <file path="/log4j.properties" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1364449774567" ignored="false" />
+    <file path="$PROJECT_DIR$/../assm/src/cn/com/workway/web/action/jiaban/JiaBanAction.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1364450350906" ignored="false" />
+    <file path="$PROJECT_DIR$/../testWeb2/web/WEB-INF/web.xml" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1364522001788" ignored="false" />
+    <file path="/a.dummy" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1364524169524" ignored="false" />
+    <file path="/BaseHibernateDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367547854952" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/webapp/WEB-INF/web.xml" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367559384418" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/pom.xml" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368164456165" ignored="false" />
+    <file path="/web.xml" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367559083889" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/resources/applicationContext.xml" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366881268201" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/resources/jdbc.properties" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367981236479" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/test/Test.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366772871139" ignored="false" />
+    <file path="/Test.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366772729396" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/workAttendance/web/a.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366773368777" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/dao/a.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366773490036" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/resources/log4j.properties" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366774677119" ignored="false" />
+    <file path="/applicationContext.xml" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366874798095" ignored="false" />
+    <file path="$PROJECT_DIR$/../hmims/src/main/webapp/WEB-INF/spring/app-context.xml" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366782687409" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/login/web/LoginController.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367918690577" ignored="false" />
+    <file path="/LoginController.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367919112973" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/resources/spring-servlet.xml" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368004781482" ignored="false" />
+    <file path="/spring-servlet.xml" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368004781482" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/webapp/META-INF/persistence.xml" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366794554845" ignored="false" />
+    <file path="/persistence.xml" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366874759791" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/login/realm/SaltAwareJdbcRealm.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367043391411" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/login/web/LoginCommand.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366853892557" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/webapp/WEB-INF/jsp/main/login.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369040432206" ignored="false" />
+    <file path="/login.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369040334469" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/web/validator/DateFormat.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366871633750" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/util/SpringContextUtil.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366871633750" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/service/impl/BaseService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1371612756292" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/pagination/PageUtil.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366871819187" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/dao/ICommonDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369643578662" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/web/validator/DateTimeFormat.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366871633750" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/dao/hibernate4/BaseHibernateDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367547912186" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/dao/util/OrderBy.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366871633750" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/web/support/editor/DateEditor.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366871633750" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/dao/hibernate4/CommonHibernateDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366872230610" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/pagination/NavigationTagV2.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366871633751" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/pagination/Page.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366871633750" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/service/ICommonService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369643604586" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/dao/util/ConditionQuery.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366871633750" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/pagination/IPageContext.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366871799411" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/util/KeySynchronizer.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366871633750" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/web/filter/BackURLFilter.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366871633750" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/service/IBaseService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1371612689011" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/web/filter/GZIPFilter.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366871635491" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/pagination/NavigationTag.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366871633750" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/model/AbstractModel.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369643525146" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/dao/IBaseDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369375314634" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/web/filter/GZIPResponseStream.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366871633750" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/web/filter/ImageFilter.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366871633750" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/web/view/JavassJstlView.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366871635491" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/service/impl/CommonService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369643598572" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/web/filter/ImageResponseStream.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366871633750" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/pagination/QuickPageContext.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366871633750" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/pagination/PageContext.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366871633750" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/web/validator/DateTimeFormatValidator.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366871633750" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/util/Assert.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366871633750" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/web/support/editor/EnumEditor.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366871633750" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/web/validator/DateFormatValidator.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366871633750" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/web/filter/ImageResponseWrapper.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366871633750" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/web/JavassContentNegotiatingViewResolver.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366871633750" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/Constants.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366871633750" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/web/support/editor/DateTimeEditor.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366871633750" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/web/filter/GZIPResponseWrapper.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366871633750" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/pay.iml" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368164458359" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/resources/META-INF/persistence.xml" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369708185387" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/test/cn/com/workway/pay/login/web/DaoSupportTest.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366878305637" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/test/cn/com/workway/pay/login/web/LoginControllerTest.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366878272180" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/dao/hibernate4/DaoSupportTest.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366878485939" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/test/web/DaoSupportTest.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366881325573" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/resources/beans.xml" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368178350105" ignored="false" />
+    <file path="$PROJECT_DIR$/../shiro_spring/pom.xml" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1366960720847" ignored="false" />
+    <file path="/beans.xml" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367912575621" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/login/dao/impl/Login.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367033837049" ignored="false" />
+    <file path="/Login.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367033790444" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/dao/ILoginDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369707274437" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/login/dao/impl/ILoginDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367033628385" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/login/dao/ILoginDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367033685277" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/login/service/LoginService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367034778272" ignored="false" />
+    <file path="/LoginService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367035037744" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/login/service/impl/LoginService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367035040948" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/login/service/impl/ILogService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367034690128" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/login/service/impl/ILoginService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367034961599" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/login/service/ILoginService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367034990919" ignored="false" />
+    <file path="/ILoginService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369645433739" ignored="false" />
+    <file path="/UserController.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367807414706" ignored="false" />
+    <file path="/SaltAwareJdbcRealm.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369709337041" ignored="false" />
+    <file path="$PROJECT_DIR$/../assm/src/cn/com/workway/utils/MD5.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367046346808" ignored="false" />
+    <file path="/MD5.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367043920145" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/test/META-INF/persistence.xml" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367049350902" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/workAttendance/bean/CommunicationAllowanceEntity.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367049342901" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/workAttendance/bean/EmployeeEntity.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367049343701" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/workAttendance/bean/EmployeeOverworkEntity.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367049344050" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/workAttendance/bean/EmployeeOverworkEntityPK.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367049344050" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/workAttendance/bean/FiveInsuranceEntity.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367049346390" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/workAttendance/bean/HoursingFundEntity.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367049347044" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/workAttendance/bean/OverworkEntity.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367049347913" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/workAttendance/bean/PayEntity.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367049348849" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/workAttendance/bean/PermissionsEntity.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367049349104" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/workAttendance/bean/RolesEntity.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367049349104" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/workAttendance/bean/RolesPermissionsEntity.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367049349791" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/workAttendance/bean/RolesPermissionsEntityPK.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367049349791" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/workAttendance/bean/UserRolesEntity.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367049350445" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/workAttendance/bean/UserRolesEntityPK.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367049350445" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/model/CommunicationAllowanceEntity.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367109787677" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/model/EmployeeEntity.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369708186571" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/model/EmployeeOverworkEntity.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367109788998" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/model/EmployeeOverworkEntityPK.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367109789564" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/model/FiveInsuranceEntity.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367981645666" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/model/HoursingFundEntity.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369381117945" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/model/OverworkEntity.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369297532411" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/model/PayEntity.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367109792934" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/model/PermissionsEntity.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367109793423" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/model/RolesEntity.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367109793423" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/model/RolesPermissionsEntity.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367109793838" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/model/RolesPermissionsEntityPK.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367109793838" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/model/UserRolesEntity.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367109794132" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/model/UserRolesEntityPK.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367109794132" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/SaltAwareJdbcRealm.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367114620456" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/PermissManager.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367114620456" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/webapp/WEB-INF/jsp/main/index.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1371620520070" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/util/poi/PoiManager.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369288167746" ignored="false" />
+    <file path="/PoiManager.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369288161901" ignored="false" />
+    <file path="/UserRoles.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369710307375" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/model/UserRoles.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369710429451" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/model/Employee.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369710477847" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/login/dao/impl/UserDaoImpl.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367908634997" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/login/dao/IUserDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367548854474" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/login/service/impl/UserServiceImpl.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367918643134" ignored="false" />
+    <file path="/UserServiceImpl.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367548707173" ignored="false" />
+    <file path="/Employee.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369710477006" ignored="false" />
+    <file path="/IUserService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367547426238" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/login/service/IUserService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367548908170" ignored="false" />
+    <file path="/IBaseDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369374472863" ignored="false" />
+    <file path="/IUserDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367548851319" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/model/Roles.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369707238417" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/webapp/WEB-INF/jsp/inc/header.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367830608960" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/webapp/WEB-INF/jsp/inc/taglib.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367891793352" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/webapp/WEB-INF/jsp/inc/import.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369360202725" ignored="false" />
+    <file path="/import.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367891849121" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/login/web/UserController.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367832092522" ignored="false" />
+    <file path="/index.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369298483966" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/webapp/WEB-INF/jsp/main/header.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367830351431" ignored="false" />
+    <file path="/header.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367813767733" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/webapp/WEB-INF/jsp/main/menu.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367821605179" ignored="false" />
+    <file path="/menu.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367821300002" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/webapp/WEB-INF/jsp/main/main.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368152379741" ignored="false" />
+    <file path="/main.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367891536862" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/webapp/css/main.css" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369108075976" ignored="false" />
+    <file path="/main.css" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369108065054" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/model/RolesPermissions.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369708592283" ignored="false" />
+    <file path="/RolesPermissions.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369708554419" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/model/Permissions.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369707238157" ignored="false" />
+    <file path="/Permissions.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367901899364" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/model/RolesPermissionsPK.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369707237647" ignored="false" />
+    <file path="/RolesPermissionsPK.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367905627001" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/compensation/web/CompensationCotroller.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367905956415" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/compensation/web/CompensationController.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367906510642" ignored="false" />
+    <file path="/CompensationController.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367908739761" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/salary/web/CompensationController.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367906538984" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/webapp/WEB-INF/jsp/salary/list.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368006681477" ignored="false" />
+    <file path="/list.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368064109276" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/salary/web/SalaryController.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367918909606" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/salary/service/ISalaryService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367910203739" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/salary/service/impl/SalaryService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367918909606" ignored="false" />
+    <file path="/SalaryService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369204122268" ignored="false" />
+    <file path="/ISalaryService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369203823603" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/salary/dao/ISalaryDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367910170545" ignored="false" />
+    <file path="/ISalaryDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369204013460" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/salary/dao/impl/SalaryDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367918893033" ignored="false" />
+    <file path="/SalaryDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369204060834" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/dao/impl/CommonHibernateDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369643591488" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/dao/impl/BaseHibernateDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367908319132" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/dao/impl/BaseDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369375326673" ignored="false" />
+    <file path="/SalaryController.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1371611478826" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/model/FiveInsurance.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367978466261" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/web/controller/LoginController.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369707299055" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/web/controller/SalaryController.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1371611490047" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/dao/login/impl/UserDaoImpl.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367918779836" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/dao/login/IUserDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367918643134" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/dao/login/realm/SaltAwareJdbcRealm.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367918690577" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/service/service/impl/UserServiceImpl.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367918841230" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/service/service/IUserService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367918690577" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/dao/IUserDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367918779836" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/dao/impl/UserDaoImpl.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368673603576" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/dao/realm/SaltAwareJdbcRealm.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367918806439" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/dao/SaltAwareJdbcRealm.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369709370635" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/dao/ISalaryDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369204017586" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/dao/impl/SalaryDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369204089429" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/service/ISalaryService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369203910332" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/service/SalaryService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367918915948" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/service/impl/UserServiceImpl.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367919155308" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/service/impl/SalaryService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369204140141" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/service/IUserService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367919048753" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/service/ILoginService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369707281722" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/service/impl/LoginServiceImpl.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369707293031" ignored="false" />
+    <file path="/LoginServiceImpl.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369645482541" ignored="false" />
+    <file path="/BaseDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369374454135" ignored="false" />
+    <file path="/FiveInsurance.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367978463076" ignored="false" />
+    <file path="/workway" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367980721992" ignored="false" />
+    <file path="/FiveInsuranceEntity.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367981644517" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/model/AttendanceEntity.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369097414391" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/model/AttendanceTypeEntity.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368073566280" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/webapp/WEB-INF/jsp/attendance/list.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368062946829" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/webapp/WEB-INF/jsp/attendance/listAtt.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369358722409" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/web/controller/AttendanceController.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369290456119" ignored="false" />
+    <file path="/AttendanceController.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369290453444" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/service/IAttendanceService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369202575810" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/service/impl/AttendanceService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1371614691695" ignored="false" />
+    <file path="/AttendanceService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1371614687998" ignored="false" />
+    <file path="/AttendanceEntity.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369097411956" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/dao/IAttendanceDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369290305721" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/dao/impl/AttendanceDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369290315095" ignored="false" />
+    <file path="/AttendanceDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369290150871" ignored="false" />
+    <file path="/IAttendanceDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369290293469" ignored="false" />
+    <file path="/IAttendanceService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369202574720" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/service/IAttendanceTypeService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369289862296" ignored="false" />
+    <file path="/IAttendanceTypeService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369289853888" ignored="false" />
+    <file path="/AttendanceTypeEntity.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368073564896" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/service/impl/AttendanceTypeService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369290336446" ignored="false" />
+    <file path="/AttendanceTypeService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369290333255" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/dao/IAttendanceTypeDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369290301205" ignored="false" />
+    <file path="/IAttendanceTypeDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368067506920" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/dao/impl/AttendanceTypeDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369290325858" ignored="false" />
+    <file path="/AttendanceTypeDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369290325858" ignored="false" />
+    <file path="/listAtt.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369116202029" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/webapp/WEB-INF/jsp/attendance/importAtt.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369040485701" ignored="false" />
+    <file path="/importAtt.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368772912886" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/web/controller/FiveInsuranceController.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369383113420" ignored="false" />
+    <file path="/FiveInsuranceController.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369383110350" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/webapp/WEB-INF/jsp/salary/importFiveIns.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368430130446" ignored="false" />
+    <file path="/importFiveIns.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368430130446" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/service/IFiveInsuranceService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369398870766" ignored="false" />
+    <file path="/IFiveInsuranceService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369398869716" ignored="false" />
+    <file path="/FiveInsuranceService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369398880356" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/service/impl/FiveInsuranceService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369398880356" ignored="false" />
+    <file path="/listFiveIns.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369361717354" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/webapp/WEB-INF/jsp/salary/listFiveIns.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369383169839" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/webapp/WEB-INF/jsp/salary/---listFiveInsNew.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368496718256" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/webapp/plugins/jquery-easyui-1.3.2/jquery.easyui.min.js" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369294645178" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/webapp/WEB-INF/jsp/salary/importHoursingFund.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368499602727" ignored="false" />
+    <file path="/importHoursingFund.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368498900904" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/web/controller/HouseFundController.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369381340306" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/service/IHouseFundService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369379478748" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/service/impl/HouseFundService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369379553454" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/dao/IHouseFundDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369379523037" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/dao/impl/HouseFundDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369379534310" ignored="false" />
+    <file path="/HouseFundController.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369380194845" ignored="false" />
+    <file path="/HouseFundService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369379553454" ignored="false" />
+    <file path="/HoursingFund.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368502432055" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/model/HoursingFund.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368502449750" ignored="false" />
+    <file path="/IHouseFundDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369379522113" ignored="false" />
+    <file path="/HouseFundDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369379534310" ignored="false" />
+    <file path="/IHouseFundService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369379477762" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/webapp/WEB-INF/jsp/salary/listHouseFund.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369379658939" ignored="false" />
+    <file path="/listHouseFund.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369379658939" ignored="false" />
+    <file path="/dealwithDataTool.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368504993538" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/webapp/WEB-INF/jsp/overwork/dealwithDataTool.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368505087199" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/web/controller/OverworkController.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369298520320" ignored="false" />
+    <file path="/OverworkController.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369297594032" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/service/IOverworkService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369297560280" ignored="false" />
+    <file path="/IOverworkService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369297559138" ignored="false" />
+    <file path="/Overwork.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368510099283" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/model/Overwork.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368510113996" ignored="false" />
+    <file path="/dealWithDataTool.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369188679366" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/webapp/WEB-INF/jsp/overwork/dealWithDataTool.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369188758354" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/webapp/WEB-INF/jsp/data/datagrid_data.json" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368608082882" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/dao/impl/LoginDaoImpl.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369708810792" ignored="false" />
+    <file path="/LoginDaoImpl.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369708786956" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/test/cn/com/workway/pay/dao/impl/LoginDaoImplTest.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369708420701" ignored="false" />
+    <file path="/LoginDaoImplTest.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369643784319" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/webapp/WEB-INF/jsp/attendance/templeteAtt.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368692778268" ignored="false" />
+    <file path="/templeteAtt.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368690761577" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/model/DepartmentEntity.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368759940200" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/model/UserinfoEntity.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368692778268" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/dao/IDepartmentDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369041609286" ignored="false" />
+    <file path="/IDepartmentDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368696591429" ignored="false" />
+    <file path="/DepartmentEntity.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368759923209" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/dao/impl/DepartmentDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368750863804" ignored="false" />
+    <file path="/DepartmentDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368696648378" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/test/cn/com/workway/pay/dao/impl/DepartmentDaoTest.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368777136531" ignored="false" />
+    <file path="/DepartmentDaoTest.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368757864822" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/model/DepartmentEntityPK.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368758165564" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/webapp/WEB-INF/jsp/attendance/templateTemplate.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368770990221" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/webapp/WEB-INF/jsp/attendance/templateDownload.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368771467751" ignored="false" />
+    <file path="/templateDownload.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1368771445637" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/model/AttendanceEntityPK.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369097393748" ignored="false" />
+    <file path="/BaseService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1371612754907" ignored="false" />
+    <file path="/IBaseService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1371612687191" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/service/impl/OverworkService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369297568675" ignored="false" />
+    <file path="/OverworkService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369297567676" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/dao/IOverworkDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369297575049" ignored="false" />
+    <file path="/IOverworkDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369297574325" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/dao/impl/OverworkDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369297582149" ignored="false" />
+    <file path="/OverworkDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369297581524" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/service/overworkTools/OverWorkType.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369187219257" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/service/overworkTools/OverWorkInfo.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369187219257" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/service/overworkTools/OverWorkCount.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369201108966" ignored="false" />
+    <file path="/OverWorkCount.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369200946951" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/service/overworkTools/T.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369192359701" ignored="false" />
+    <file path="/T.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369192359062" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/dao/impl/FiveInsuranceDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369398893240" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/webapp/WEB-INF/jsp/salary/listSalary.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1371613009375" ignored="false" />
+    <file path="/listSalary.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1371612901915" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/model/SalaryEntity.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369203854344" ignored="false" />
+    <file path="/SalaryEntity.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369203840487" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/webapp/js/main.js" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369293846107" ignored="false" />
+    <file path="/main.js" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369293791967" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/webapp/WEB-INF/jsp/overwork/listOverwork.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369362096580" ignored="false" />
+    <file path="/listOverwork.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369361939292" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/model/OverworkEntityPK.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369297474749" ignored="false" />
+    <file path="/OverworkEntity.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369297524779" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/model/HoursingFundEntityPK.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369365555003" ignored="false" />
+    <file path="/HoursingFundEntity.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369381038658" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/dao/IFiveInsuranceDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369398885876" ignored="false" />
+    <file path="/IFiveInsuranceDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369398885876" ignored="false" />
+    <file path="/FiveInsuranceDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369398893240" ignored="false" />
+    <file path="/ILoginDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369645492971" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/common/model/UserRolesPK.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1369707238157" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/webapp/WEB-INF/jsp/attendance/listAttCount.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1371620675110" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/web/controller/AttTimesCountController.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1371613508839" ignored="false" />
+    <file path="/AttTimesCountController.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1371613477164" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/service/IAttTimesCountService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1371614023247" ignored="false" />
+    <file path="$PROJECT_DIR$/../pay/src/main/java/cn/com/workway/pay/service/impl/AttTimesCountService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1371614278612" ignored="false" />
+    <file path="/AttTimesCountService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1371614230373" ignored="false" />
+    <file path="/listAttCount.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1371620459509" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/cn/neoway/cloud/service/impl/RolePermissionServiceImpl.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/cn/neoway/cloud/service/impl/UserInfoServiceImpl.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/cn/neoway/common/dao/IBaseDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/cn/neoway/common/dao/ICommonDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/cn/neoway/common/dao/util/OrderBy.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/cn/neoway/common/dao/util/ConditionQuery.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/cn/neoway/common/dao/hibernate4/BaseHibernateDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/cn/neoway/common/dao/hibernate4/CommonHibernateDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/cn/neoway/common/web/view/JavassJstlView.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/cn/neoway/common/web/filter/ImageResponseWrapper.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/cn/neoway/common/web/filter/BackURLFilter.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/cn/neoway/common/web/filter/GZIPResponseWrapper.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/cn/neoway/common/web/support/editor/DateTimeEditor.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/cn/neoway/common/web/support/editor/DateEditor.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/cn/neoway/common/web/validator/DateTimeFormat.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/cn/neoway/common/web/validator/DateFormat.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/cn/neoway/common/web/validator/DateFormatValidator.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/cn/neoway/common/web/validator/DateTimeFormatValidator.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/cn/neoway/common/model/AbstractModel.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/cn/neoway/common/shiro/realm/SaltAwareJdbcRealm.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/cn/neoway/common/service/IBaseService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/cn/neoway/common/service/ICommonService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/cn/neoway/common/service/impl/BaseService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/cn/neoway/common/service/impl/CommonService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/cn/neoway/common/pagination/Page.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/cn/neoway/common/pagination/NavigationTag.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/cn/neoway/common/pagination/NavigationTagV2.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/cn/neoway/common/pagination/IPageContext.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/cn/neoway/common/pagination/QuickPageContext.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/cn/neoway/common/pagination/PageUtil.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/cn/neoway/common/pagination/PageContext.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/jquery-1.10.2.min.js" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/application.js" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/My97DatePicker/calendar.js" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/My97DatePicker/config.js" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/My97DatePicker/WdatePicker.js" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/My97DatePicker/My97DatePicker.htm" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/My97DatePicker/lang/zh-tw.js" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/My97DatePicker/lang/zh-cn.js" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/My97DatePicker/lang/EN.js" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/My97DatePicker/skin/WdatePicker.css" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/My97DatePicker/skin/default/datepicker.css" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/My97DatePicker/skin/whyGreen/datepicker.css" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/css.css" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/webapp/WEB-INF/tld/commons.tld" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/cn/neoway/cloud/model/UserRolesQueryModel.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/cn/neoway/cloud/model/UserQueryModel.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/cn/neoway/cloud/service/UserInfoService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/cn/neoway/cloud/service/UserRolesService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/cn/neoway/cloud/service/RolePermissionService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/cn/neoway/cloud/service/impl/UserRolesServiceImpl.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383205933812" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <breakpoint_rules />
+    <ui_properties />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideWarnings" value="true" />
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
+    <option name="HIDE_WARNINGS" value="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="mavenTest" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="WeatherService.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/jsr/cloud/Service/WeatherService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="4" selection-start="215" selection-end="215" vertical-scroll-proportion="0.23114355">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/test/cn/javass/demo/dao/hibernate4/UserHibernate4DaoImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/resources.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/javass/demo/web/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/javass/demo/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/inc/import.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/javass/common/dao/hibernate4/BaseHibernateDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/jsr/cloud/Service/WeatherService.java" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="C:\Program Files\apache-maven-3.1.0\.m2\repository" />
+        <option name="mavenHome" value="C:\Program Files\apache-maven-3.1.0" />
+        <option name="userSettingsFile" value="C:\Program Files\apache-maven-3.1.0\.m2\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="mavenTest Maven Webapp" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Profiles" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProfilesNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-4" />
+    <option name="y" value="-4" />
+    <option name="width" value="1288" />
+    <option name="height" value="1002" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>CDI(Contexts and Dependency Injection) issues</id>
+          </State>
+          <State>
+            <id>Error handling</id>
+          </State>
+          <State>
+            <id>FreeMarker inspections</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>HTML</id>
+          </State>
+          <State>
+            <id>Internationalization issues</id>
+          </State>
+          <State>
+            <id>JSP Inspections</id>
+          </State>
+          <State>
+            <id>JUnit issues</id>
+          </State>
+          <State>
+            <id>Java EE issues</id>
+          </State>
+          <State>
+            <id>Spring Model</id>
+          </State>
+          <State>
+            <id>Spring SecuritySpring Model</id>
+          </State>
+          <State>
+            <id>Spring Web FlowSpring Model</id>
+          </State>
+          <State>
+            <id>Spring Web ServicesSpring Model</id>
+          </State>
+          <State>
+            <id>TestNG</id>
+          </State>
+          <State>
+            <id>Web Services</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>JUnit issues</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource ProjectPane="true" />
+      <autoscrollFromSource ProjectPane="true" />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weatherService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weatherService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="neoway_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weatherService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="neoway_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weatherService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="neoway_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="neoway" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weatherService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="neoway_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cloud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weatherService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="neoway_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cloud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="options.lastSelected" value="project.propCompiler" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="cn.javass.demo.dao.hibernate4" />
+      <recent name="cn.javass.common.service.impl" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 7.0">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local">
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_mavenTest" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Cover" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="55637" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="JRebel" />
+      <RunnerSettings RunnerId="JRebel Debug">
+        <option name="DEBUG_PORT" value="55638" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method />
+    </configuration>
+    <configuration default="false" name="Tomcat 7.0" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8088/abc" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <deployment>
+        <artifact name="mavenTest:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/abc" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_mavenTest" />
+        <option name="HTTP_PORT" value="8088" />
+        <option name="JNDI_PORT" value="1090" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Cover" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="55637" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="JRebel" />
+      <RunnerSettings RunnerId="JRebel Debug">
+        <option name="DEBUG_PORT" value="55638" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="mavenTest:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 7.0" />
+    </list>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" name="Default" comment="" />
+      <created>1364173845318</created>
+      <updated>1364173845318</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="2">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-4" y="-4" width="1288" height="1002" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42735043" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5037936" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="JRebel" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.4969651" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852808" sideWeight="0.6700855" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33846155" sideWeight="0.4908953" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3176661" sideWeight="0.5726496" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43931624" sideWeight="0.4939302" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22230652" sideWeight="0.6666667" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33333334" sideWeight="0.46054628" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35384616" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="36" selection-start="585" selection-end="585" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1383205932234" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/delete.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="41" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/update.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="103" selection-start="1281" selection-end="1281" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MAVEN/mavenTest:mavenTest:1.0-SNAPSHOT">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MAVEN</ID>
+          <OriginalElement>mavenTest:mavenTest:1.0-SNAPSHOT</OriginalElement>
+          <nodes>
+            <node x="352.0" y="1000.0">org.hibernate:hibernate-validator:jar:5.0.0.CR2/com.fasterxml:classmate:jar:0.8.0</node>
+            <node x="448.0" y="520.0">org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-web:jar:3.2.2.RELEASE/org.springframework:spring-beans:jar:3.2.2.RELEASE</node>
+            <node x="440.0" y="1120.0">org.apache.shiro:shiro-spring:jar:1.2.1/org.apache.shiro:shiro-core:jar:1.2.1/commons-beanutils:commons-beanutils:jar:1.8.3</node>
+            <node x="136.0" y="1280.0">commons-collections:commons-collections:jar:3.2</node>
+            <node x="352.0" y="960.0">org.hibernate:hibernate-validator:jar:5.0.0.CR2/org.jboss.logging:jboss-logging:jar:3.1.1.GA</node>
+            <node x="136.0" y="1200.0">javax.validation:validation-api:jar:1.1.0.CR2</node>
+            <node x="608.0" y="880.0">org.hibernate:hibernate-core:jar:4.2.0.CR2/org.hibernate.common:hibernate-commons-annotations:jar:4.0.1.Final/org.jboss.logging:jboss-logging:jar:3.1.0.CR2</node>
+            <node x="312.0" y="760.0">org.hibernate:hibernate-core:jar:4.2.0.CR2/dom4j:dom4j:jar:1.6.1</node>
+            <node x="480.0" y="1040.0">org.hibernate:hibernate-validator:jar:5.0.0.CR2/org.glassfish.web:javax.el:jar:2.2.4/javax.el:javax.el-api:jar:2.2.4</node>
+            <node x="312.0" y="680.0">org.hibernate:hibernate-core:jar:4.2.0.CR2/org.jboss.logging:jboss-logging:jar:3.1.0.GA</node>
+            <node x="448.0" y="480.0">org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-web:jar:3.2.2.RELEASE/org.springframework:spring-aop:jar:3.2.2.RELEASE</node>
+            <node x="312.0" y="640.0">org.hibernate:hibernate-core:jar:4.2.0.CR2/antlr:antlr:jar:2.7.7</node>
+            <node x="136.0" y="640.0">org.hibernate:hibernate-core:jar:4.2.0.CR2</node>
+            <node x="256.0" y="40.0">javax.servlet:jsp-api:jar:2.0/javax.servlet:servlet-api:jar:2.4</node>
+            <node x="480.0" y="320.0">org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-context:jar:3.2.2.RELEASE/org.springframework:spring-expression:jar:3.2.2.RELEASE</node>
+            <node x="480.0" y="280.0">org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-context:jar:3.2.2.RELEASE/org.springframework:spring-core:jar:3.2.2.RELEASE</node>
+            <node x="136.0" y="1080.0">org.apache.shiro:shiro-spring:jar:1.2.1</node>
+            <node x="480.0" y="120.0">org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-context:jar:3.2.2.RELEASE/org.springframework:spring-aop:jar:3.2.2.RELEASE</node>
+            <node x="304.0" y="440.0">org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-web:jar:3.2.2.RELEASE</node>
+            <node x="440.0" y="1080.0">org.apache.shiro:shiro-spring:jar:1.2.1/org.apache.shiro:shiro-core:jar:1.2.1/org.slf4j:slf4j-api:jar:1.6.4</node>
+            <node x="136.0" y="0.0">junit:junit:jar:4.8.2</node>
+            <node x="136.0" y="1240.0">commons-lang:commons-lang:jar:2.2</node>
+            <node x="296.0" y="1160.0">org.apache.shiro:shiro-spring:jar:1.2.1/org.apache.shiro:shiro-web:jar:1.2.1</node>
+            <node x="432.0" y="1160.0">org.apache.shiro:shiro-spring:jar:1.2.1/org.apache.shiro:shiro-web:jar:1.2.1/org.apache.shiro:shiro-core:jar:1.2.1</node>
+            <node x="456.0" y="360.0">org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-core:jar:3.2.2.RELEASE/commons-logging:commons-logging:jar:1.1.1</node>
+            <node x="504.0" y="400.0">org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-expression:jar:3.2.2.RELEASE/org.springframework:spring-core:jar:3.2.2.RELEASE</node>
+            <node x="304.0" y="80.0">org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-beans:jar:3.2.2.RELEASE</node>
+            <node x="464.0" y="80.0">org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-beans:jar:3.2.2.RELEASE/org.springframework:spring-core:jar:3.2.2.RELEASE</node>
+            <node x="304.0" y="400.0">org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-expression:jar:3.2.2.RELEASE</node>
+            <node x="624.0" y="120.0">org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-context:jar:3.2.2.RELEASE/org.springframework:spring-aop:jar:3.2.2.RELEASE/aopalliance:aopalliance:jar:1.0</node>
+            <node x="448.0" y="440.0">org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-web:jar:3.2.2.RELEASE/aopalliance:aopalliance:jar:1.0</node>
+            <node x="352.0" y="920.0">org.hibernate:hibernate-validator:jar:5.0.0.CR2/javax.validation:validation-api:jar:1.1.0.CR1</node>
+            <node x="304.0" y="360.0">org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-core:jar:3.2.2.RELEASE</node>
+            <node x="448.0" y="560.0">org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-web:jar:3.2.2.RELEASE/org.springframework:spring-context:jar:3.2.2.RELEASE</node>
+            <node x="312.0" y="800.0">org.hibernate:hibernate-core:jar:4.2.0.CR2/org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar:1.0.1.Final</node>
+            <node x="480.0" y="240.0">org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-context:jar:3.2.2.RELEASE/org.springframework:spring-beans:jar:3.2.2.RELEASE</node>
+            <node x="352.0" y="1040.0">org.hibernate:hibernate-validator:jar:5.0.0.CR2/org.glassfish.web:javax.el:jar:2.2.4</node>
+            <node x="296.0" y="1080.0">org.apache.shiro:shiro-spring:jar:1.2.1/org.apache.shiro:shiro-core:jar:1.2.1</node>
+            <node x="136.0" y="920.0">org.hibernate:hibernate-validator:jar:5.0.0.CR2</node>
+            <node x="312.0" y="720.0">org.hibernate:hibernate-core:jar:4.2.0.CR2/org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:jar:1.0.0.Final</node>
+            <node x="136.0" y="40.0">javax.servlet:jsp-api:jar:2.0</node>
+            <node x="136.0" y="80.0">org.springframework:spring-webmvc:jar:3.2.2.RELEASE</node>
+            <node x="312.0" y="840.0">org.hibernate:hibernate-core:jar:4.2.0.CR2/org.javassist:javassist:jar:3.15.0-GA</node>
+            <node x="624.0" y="160.0">org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-context:jar:3.2.2.RELEASE/org.springframework:spring-aop:jar:3.2.2.RELEASE/org.springframework:spring-beans:jar:3.2.2.RELEASE</node>
+            <node x="136.0" y="1320.0">taglibs:standard:jar:1.1.2</node>
+            <node x="448.0" y="600.0">org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-web:jar:3.2.2.RELEASE/org.springframework:spring-core:jar:3.2.2.RELEASE</node>
+            <node x="312.0" y="880.0">org.hibernate:hibernate-core:jar:4.2.0.CR2/org.hibernate.common:hibernate-commons-annotations:jar:4.0.1.Final</node>
+            <node x="624.0" y="200.0">org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-context:jar:3.2.2.RELEASE/org.springframework:spring-aop:jar:3.2.2.RELEASE/org.springframework:spring-core:jar:3.2.2.RELEASE</node>
+            <node x="304.0" y="120.0">org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-context:jar:3.2.2.RELEASE</node>
+            <node x="0.0" y="0.0">mavenTest:mavenTest:1.0-SNAPSHOT</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="org.hibernate:hibernate-validator:jar:5.0.0.CR2" target="org.hibernate:hibernate-validator:jar:5.0.0.CR2/com.fasterxml:classmate:jar:0.8.0">
+              <point x="0.0" y="0.0" />
+              <point x="229.0" y="1015.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.hibernate:hibernate-core:jar:4.2.0.CR2" target="org.hibernate:hibernate-core:jar:4.2.0.CR2/dom4j:dom4j:jar:1.6.1">
+              <point x="0.0" y="0.0" />
+              <point x="209.0" y="775.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="javax.servlet:jsp-api:jar:2.0" target="javax.servlet:jsp-api:jar:2.0/javax.servlet:servlet-api:jar:2.4">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="mavenTest:mavenTest:1.0-SNAPSHOT" target="taglibs:standard:jar:1.1.2">
+              <point x="0.0" y="0.0" />
+              <point x="53.0" y="1335.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.apache.shiro:shiro-spring:jar:1.2.1/org.apache.shiro:shiro-web:jar:1.2.1" target="org.apache.shiro:shiro-spring:jar:1.2.1/org.apache.shiro:shiro-web:jar:1.2.1/org.apache.shiro:shiro-core:jar:1.2.1">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="mavenTest:mavenTest:1.0-SNAPSHOT" target="org.apache.shiro:shiro-spring:jar:1.2.1">
+              <point x="0.0" y="0.0" />
+              <point x="53.0" y="1095.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.hibernate:hibernate-validator:jar:5.0.0.CR2" target="org.hibernate:hibernate-validator:jar:5.0.0.CR2/org.glassfish.web:javax.el:jar:2.2.4">
+              <point x="0.0" y="0.0" />
+              <point x="229.0" y="1055.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:3.2.2.RELEASE" target="org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-expression:jar:3.2.2.RELEASE">
+              <point x="0.0" y="0.0" />
+              <point x="205.0" y="415.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-context:jar:3.2.2.RELEASE" target="org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-context:jar:3.2.2.RELEASE/org.springframework:spring-expression:jar:3.2.2.RELEASE">
+              <point x="0.0" y="0.0" />
+              <point x="377.0" y="335.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.hibernate:hibernate-core:jar:4.2.0.CR2" target="org.hibernate:hibernate-core:jar:4.2.0.CR2/org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:jar:1.0.0.Final">
+              <point x="0.0" y="0.0" />
+              <point x="209.0" y="735.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-context:jar:3.2.2.RELEASE/org.springframework:spring-aop:jar:3.2.2.RELEASE" target="org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-context:jar:3.2.2.RELEASE/org.springframework:spring-aop:jar:3.2.2.RELEASE/org.springframework:spring-beans:jar:3.2.2.RELEASE">
+              <point x="0.0" y="0.0" />
+              <point x="537.0" y="175.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-web:jar:3.2.2.RELEASE" target="org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-web:jar:3.2.2.RELEASE/aopalliance:aopalliance:jar:1.0">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-web:jar:3.2.2.RELEASE" target="org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-web:jar:3.2.2.RELEASE/org.springframework:spring-core:jar:3.2.2.RELEASE">
+              <point x="0.0" y="0.0" />
+              <point x="361.0" y="615.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.hibernate:hibernate-core:jar:4.2.0.CR2" target="org.hibernate:hibernate-core:jar:4.2.0.CR2/antlr:antlr:jar:2.7.7">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-beans:jar:3.2.2.RELEASE" target="org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-beans:jar:3.2.2.RELEASE/org.springframework:spring-core:jar:3.2.2.RELEASE">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:3.2.2.RELEASE" target="org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-web:jar:3.2.2.RELEASE">
+              <point x="0.0" y="0.0" />
+              <point x="205.0" y="455.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.hibernate:hibernate-validator:jar:5.0.0.CR2" target="org.hibernate:hibernate-validator:jar:5.0.0.CR2/javax.validation:validation-api:jar:1.1.0.CR1">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="mavenTest:mavenTest:1.0-SNAPSHOT" target="org.hibernate:hibernate-core:jar:4.2.0.CR2">
+              <point x="0.0" y="0.0" />
+              <point x="53.0" y="655.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-context:jar:3.2.2.RELEASE" target="org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-context:jar:3.2.2.RELEASE/org.springframework:spring-aop:jar:3.2.2.RELEASE">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.hibernate:hibernate-validator:jar:5.0.0.CR2/org.glassfish.web:javax.el:jar:2.2.4" target="org.hibernate:hibernate-validator:jar:5.0.0.CR2/org.glassfish.web:javax.el:jar:2.2.4/javax.el:javax.el-api:jar:2.2.4">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-core:jar:3.2.2.RELEASE" target="org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-core:jar:3.2.2.RELEASE/commons-logging:commons-logging:jar:1.1.1">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-web:jar:3.2.2.RELEASE" target="org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-web:jar:3.2.2.RELEASE/org.springframework:spring-aop:jar:3.2.2.RELEASE">
+              <point x="0.0" y="0.0" />
+              <point x="361.0" y="495.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.hibernate:hibernate-core:jar:4.2.0.CR2" target="org.hibernate:hibernate-core:jar:4.2.0.CR2/org.javassist:javassist:jar:3.15.0-GA">
+              <point x="0.0" y="0.0" />
+              <point x="209.0" y="855.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="mavenTest:mavenTest:1.0-SNAPSHOT" target="org.hibernate:hibernate-validator:jar:5.0.0.CR2">
+              <point x="0.0" y="0.0" />
+              <point x="53.0" y="935.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:3.2.2.RELEASE" target="org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-context:jar:3.2.2.RELEASE">
+              <point x="0.0" y="0.0" />
+              <point x="205.0" y="135.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-context:jar:3.2.2.RELEASE/org.springframework:spring-aop:jar:3.2.2.RELEASE" target="org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-context:jar:3.2.2.RELEASE/org.springframework:spring-aop:jar:3.2.2.RELEASE/aopalliance:aopalliance:jar:1.0">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.hibernate:hibernate-validator:jar:5.0.0.CR2" target="org.hibernate:hibernate-validator:jar:5.0.0.CR2/org.jboss.logging:jboss-logging:jar:3.1.1.GA">
+              <point x="0.0" y="0.0" />
+              <point x="229.0" y="975.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-expression:jar:3.2.2.RELEASE" target="org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-expression:jar:3.2.2.RELEASE/org.springframework:spring-core:jar:3.2.2.RELEASE">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:3.2.2.RELEASE" target="org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-beans:jar:3.2.2.RELEASE">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="mavenTest:mavenTest:1.0-SNAPSHOT" target="javax.validation:validation-api:jar:1.1.0.CR2">
+              <point x="0.0" y="0.0" />
+              <point x="53.0" y="1215.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-context:jar:3.2.2.RELEASE" target="org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-context:jar:3.2.2.RELEASE/org.springframework:spring-beans:jar:3.2.2.RELEASE">
+              <point x="0.0" y="0.0" />
+              <point x="377.0" y="255.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.apache.shiro:shiro-spring:jar:1.2.1" target="org.apache.shiro:shiro-spring:jar:1.2.1/org.apache.shiro:shiro-web:jar:1.2.1">
+              <point x="0.0" y="0.0" />
+              <point x="201.0" y="1175.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.apache.shiro:shiro-spring:jar:1.2.1" target="org.apache.shiro:shiro-spring:jar:1.2.1/org.apache.shiro:shiro-core:jar:1.2.1">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="mavenTest:mavenTest:1.0-SNAPSHOT" target="javax.servlet:jsp-api:jar:2.0">
+              <point x="0.0" y="0.0" />
+              <point x="53.0" y="55.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="mavenTest:mavenTest:1.0-SNAPSHOT" target="commons-lang:commons-lang:jar:2.2">
+              <point x="0.0" y="0.0" />
+              <point x="53.0" y="1255.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-context:jar:3.2.2.RELEASE" target="org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-context:jar:3.2.2.RELEASE/org.springframework:spring-core:jar:3.2.2.RELEASE">
+              <point x="0.0" y="0.0" />
+              <point x="377.0" y="295.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.apache.shiro:shiro-spring:jar:1.2.1/org.apache.shiro:shiro-core:jar:1.2.1" target="org.apache.shiro:shiro-spring:jar:1.2.1/org.apache.shiro:shiro-core:jar:1.2.1/org.slf4j:slf4j-api:jar:1.6.4">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.hibernate:hibernate-core:jar:4.2.0.CR2/org.hibernate.common:hibernate-commons-annotations:jar:4.0.1.Final" target="org.hibernate:hibernate-core:jar:4.2.0.CR2/org.hibernate.common:hibernate-commons-annotations:jar:4.0.1.Final/org.jboss.logging:jboss-logging:jar:3.1.0.CR2">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.hibernate:hibernate-core:jar:4.2.0.CR2" target="org.hibernate:hibernate-core:jar:4.2.0.CR2/org.jboss.logging:jboss-logging:jar:3.1.0.GA">
+              <point x="0.0" y="0.0" />
+              <point x="209.0" y="695.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.hibernate:hibernate-core:jar:4.2.0.CR2" target="org.hibernate:hibernate-core:jar:4.2.0.CR2/org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar:1.0.1.Final">
+              <point x="0.0" y="0.0" />
+              <point x="209.0" y="815.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="mavenTest:mavenTest:1.0-SNAPSHOT" target="commons-collections:commons-collections:jar:3.2">
+              <point x="0.0" y="0.0" />
+              <point x="53.0" y="1295.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="mavenTest:mavenTest:1.0-SNAPSHOT" target="org.springframework:spring-webmvc:jar:3.2.2.RELEASE">
+              <point x="0.0" y="0.0" />
+              <point x="53.0" y="95.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.hibernate:hibernate-core:jar:4.2.0.CR2" target="org.hibernate:hibernate-core:jar:4.2.0.CR2/org.hibernate.common:hibernate-commons-annotations:jar:4.0.1.Final">
+              <point x="0.0" y="0.0" />
+              <point x="209.0" y="895.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-web:jar:3.2.2.RELEASE" target="org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-web:jar:3.2.2.RELEASE/org.springframework:spring-beans:jar:3.2.2.RELEASE">
+              <point x="0.0" y="0.0" />
+              <point x="361.0" y="535.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="mavenTest:mavenTest:1.0-SNAPSHOT" target="junit:junit:jar:4.8.2">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-context:jar:3.2.2.RELEASE/org.springframework:spring-aop:jar:3.2.2.RELEASE" target="org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-context:jar:3.2.2.RELEASE/org.springframework:spring-aop:jar:3.2.2.RELEASE/org.springframework:spring-core:jar:3.2.2.RELEASE">
+              <point x="0.0" y="0.0" />
+              <point x="537.0" y="215.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.apache.shiro:shiro-spring:jar:1.2.1/org.apache.shiro:shiro-core:jar:1.2.1" target="org.apache.shiro:shiro-spring:jar:1.2.1/org.apache.shiro:shiro-core:jar:1.2.1/commons-beanutils:commons-beanutils:jar:1.8.3">
+              <point x="0.0" y="0.0" />
+              <point x="353.0" y="1135.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-web:jar:3.2.2.RELEASE" target="org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-web:jar:3.2.2.RELEASE/org.springframework:spring-context:jar:3.2.2.RELEASE">
+              <point x="0.0" y="0.0" />
+              <point x="361.0" y="575.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:3.2.2.RELEASE" target="org.springframework:spring-webmvc:jar:3.2.2.RELEASE/org.springframework:spring-core:jar:3.2.2.RELEASE">
+              <point x="0.0" y="0.0" />
+              <point x="205.0" y="375.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.7364963503649634" x="716.0" y="322.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>All</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="107" selection-start="526" selection-end="526" vertical-scroll-proportion="-0.8321168">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/update.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="103" selection-start="1281" selection-end="1281" vertical-scroll-proportion="0.681178">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/delete.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="41" selection-start="329" selection-end="329" vertical-scroll-proportion="0.21895006">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="36" selection-start="585" selection-end="585" vertical-scroll-proportion="-8.142858">
+          <folding>
+            <marker date="1383205932234" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/neoway/common/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/neoway/common/util/Assert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#18394#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/neoway/common/util/KeySynchronizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/neoway/cloud/controller/CaptchaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/neoway/cloud/dao/hibernate4/RolesPermissionDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/jsr/cloud/Service/WeatherService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="4" selection-start="215" selection-end="215" vertical-scroll-proportion="0.23114355">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>mavenTest:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="Copyright.UI">
+        <settings>
+          <last-edited>xx_xing</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>neoway_project</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.37512538" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+
