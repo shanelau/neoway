@@ -8,6 +8,7 @@
             overflowToDisk="false">
     </defaultCache>
 
+<!--
     <cache name="cn.neoway.demo.model.UserModel"
            maxElementsInMemory="2000"
            eternal="false"
@@ -15,6 +16,7 @@
            timeToLiveSeconds="3600"
            overflowToDisk="false">
     </cache>
+-->
 
 
     <cache

@@ -23,6 +23,7 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="neoway_project" />
+        <module name="weatherService" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.7" />

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="dataSource" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="5a8ae681-e4aa-4739-a559-66f1e457a852">
+    <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+    <jdbc-url>jdbc:mysql://localhost:3306/weather_cloud_db?useUnicode=true&amp;characterEncoding=UTF-8</jdbc-url>
+    <user-name>root</user-name>
+    <user-password>dfd8dfc5dfc5dfde</user-password>
+    <libraries/>
+  </data-source>
+  <data-source source="LOCAL" name="dbSource" product="MySQL" version="5.6.13-enterprise-commercial-advanced" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.26 ( Revision: ${bzr.revision-id} )" uuid="fdff3121-e676-4c23-a0ee-54aa6ad41827">
+    <extra-name-characters>#@</extra-name-characters>
+    <identifier-quote-string>`</identifier-quote-string>
+    <synchronize>true</synchronize>
+    <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+    <jdbc-url>jdbc:mysql://localhost:3306/weather_cloud_db?useUnicode=true&amp;characterEncoding=UTF-8</jdbc-url>
+    <user-name>root</user-name>
+    <user-password>df9bdf98df99</user-password>
+    <schema-pattern>weather_cloud_db.*</schema-pattern>
+    <default-schemas>weather_cloud_db.*</default-schemas>
+    <default-dialect>MySQL</default-dialect>
+    <libraries>
+      <library>
+        <url>jar://C:/Program Files/apache-maven-3.1.0/.m2/repository/mysql/mysql-connector-java/5.1.26/mysql-connector-java-5.1.26.jar!/</url>
+      </library>
+    </libraries>
+    <schema name="" catalog="weather_cloud_db"/>
+    <table name="city" schema="" catalog="weather_cloud_db" type="TABLE">
+      <column name="city_code" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12"/>
+      <column name="city_Name" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="city_code"/>
+      <exported-key name="fk_weather_city1" table="weather_info" schema="" catalog="weather_cloud_db" columns="city_code"/>
+    </table>
+    <table name="logs" schema="" catalog="weather_cloud_db" type="TABLE">
+      <column name="log_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="we_Id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="user_id" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="request_date" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" version="true"/>
+      <primary-key name="PRIMARY" columns="log_id"/>
+      <foreign-key name="FK_wea_log" columns="we_Id" ref-table="weather_info" ref-schema="" ref-catalog="weather_cloud_db" ref-columns="we_Id" update-rule="3" delete-rule="3" deferrability="2"/>
+    </table>
+    <table name="weather_info" schema="" catalog="weather_cloud_db" type="TABLE">
+      <column name="we_Id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="city_code" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="we_Info" sqlType="VARCHAR" length="2000" precision="0" nullable="true" jdbcType="12"/>
+      <column name="simple" sqlType="BIT" length="0" precision="0" nullable="true" jdbcType="-7"/>
+      <column name="update_time" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" version="true"/>
+      <primary-key name="PRIMARY" columns="we_Id"/>
+      <foreign-key name="fk_weather_city1" columns="city_code" ref-table="city" ref-schema="" ref-catalog="weather_cloud_db" ref-columns="city_code" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FK_wea_log" table="logs" schema="" catalog="weather_cloud_db" columns="we_Id"/>
+    </table>
+  </data-source>
+</component>
