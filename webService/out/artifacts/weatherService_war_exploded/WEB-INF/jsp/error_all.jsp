@@ -1,7 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 
-
 <!--[if !IE]><!-->
 <html lang="en" class="no-js">
 <!--<![endif]-->
@@ -40,15 +39,15 @@
 
             <p>
 
-                我们正在尽力抢修!<br />
+                我们正在尽力抢修!<br/>
 
-                请等会再来访问,或者您反问的页面不存在.<br /><br />
+                请等会再来访问,或者您反问的页面不存在.<br/><br/>
                 ${exception.getMessage()}
             </p>
 
 
         </div>
-        <p>  <a href="javascript:void(0);" onclick="history.go(-1)">返回刚才页面</a><br/><br/></p>
+        <p><a href="javascript:void(0);" onclick="history.go(-1)">返回刚才页面</a><br/><br/></p>
 
     </div>
 

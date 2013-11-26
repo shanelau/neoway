@@ -1,0 +1,23 @@
+Process: com.jsr.black
+Flags: 0x8be44
+Package: com.jsr.black v1 (1.0)
+Build: unknown
+
+java.lang.RuntimeException: Unable to instantiate service com.jsr.black.BlacklistService: java.lang.ClassNotFoundException: com.jsr.black.BlacklistService
+	at android.app.ActivityThread.handleCreateService(ActivityThread.java:2355)
+	at android.app.ActivityThread.access$1600(ActivityThread.java:133)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1285)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:137)
+	at android.app.ActivityThread.main(ActivityThread.java:4794)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:511)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:789)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:556)
+	at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.ClassNotFoundException: com.jsr.black.BlacklistService
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:61)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:501)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:461)
+	at android.app.ActivityThread.handleCreateService(ActivityThread.java:2352)
+	... 10 more

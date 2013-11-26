@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="1218485046">
+  <component name="DataSourceManagerImpl" format="xml" hash="3694540380">
     <data-source source="LOCAL" name="dataSource" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="5a8ae681-e4aa-4739-a559-66f1e457a852">
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/weather_cloud_db?useUnicode=true&amp;characterEncoding=UTF-8</jdbc-url>
@@ -13,10 +13,10 @@
       <identifier-quote-string>`</identifier-quote-string>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/weather_cloud_db?useUnicode=true&amp;characterEncoding=UTF-8</jdbc-url>
-      <user-name>root</user-name>
-      <user-password>df9bdf98df99</user-password>
-      <schema-pattern>weather_cloud_db.*</schema-pattern>
+      <jdbc-url>jdbc:mysql://127.0.0.1:3306/jsr_rom_db?useUnicode=true&amp;characterEncoding=UTF-8</jdbc-url>
+      <user-name>liux</user-name>
+      <user-password>dfc6dfc3dfdfdfd2</user-password>
+      <schema-pattern>jsr_rom_db.*</schema-pattern>
       <default-schemas>weather_cloud_db.*</default-schemas>
       <default-dialect>MySQL</default-dialect>
       <libraries>

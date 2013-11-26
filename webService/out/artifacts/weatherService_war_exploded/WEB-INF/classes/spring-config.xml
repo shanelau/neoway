@@ -12,7 +12,7 @@
        ">
 
     <!-- 扫描注解Bean -->
-    <context:component-scan base-package="cn.jsr.cloud">
+    <context:component-scan base-package="com.jsr">
         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
 
@@ -49,12 +49,18 @@
         <property name="statistics" value="${proxool.statistics}"/>
         <property name="simultaneousBuildThrottle" value="${proxool.simultaneous.build.throttle}"/>
     </bean>
+    <!-- 文件上传相关 -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!--one of the properties available;the maximum file size in bytes-->
+        <property name="maxUploadSize" value="1000000"/>
+        <property name="defaultEncoding" value="UTF-8"/>
+    </bean>
 
     <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
         <property name="packagesToScan">
             <list>
-                <value>cn.jsr.cloud</value>
+                <value>com.jsr</value>
             </list>
         </property>
         <property name="hibernateProperties">
@@ -108,7 +114,68 @@
     </tx:advice>
     <aop:config expose-proxy="true">
         <!-- 只对业务逻辑层实施事务 -->
-        <aop:pointcut id="txPointcut" expression="execution(* cn.jsr..service..*.*(..))"/>
+        <aop:pointcut id="txPointcut" expression="execution(* com.jsr..service..*.*(..))"/>
         <aop:advisor advice-ref="txAdvice" pointcut-ref="txPointcut"/>
     </aop:config>
+
+    <!--appache shiro框架  认证和授权-->
+    <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+        <property name="securityManager" ref="securityManager"/>
+        <property name="loginUrl" value="/login"/>
+        <property name="filterChainDefinitions">
+            <value>
+                /js/** = anon
+                /image/** = anon
+                /css/** = anon
+                /register = anon
+                /user/i_forget_password = anon
+                /user/reset_password = anon
+                /error_all = anon
+                /index = anon
+                /feedback/add = authc
+                /plan/** = authc
+                /user/** =  authc
+                /generatImage = anon
+                /admin/** = authc, roles[admin]
+                /docs/** = authc, perms[document:read]
+                /** = authc
+            </value>
+        </property>
+    </bean>
+
+    <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+        <!-- Single realm app.  If you have multiple realms, use the 'realms' property instead. -->
+        <property name="realm" ref="jdbcRealm"/>
+        <!-- By default the servlet container sessions will be used.  Uncomment this line
+             to use shiro's native sessions (see the JavaDoc for more): -->
+        <!-- <property name="sessionMode" value="native"/> -->
+    </bean>
+    <bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor"/>
+    <bean id="jdbcRealm" class="com.jsr.common.shiro.realm.SaltAwareJdbcRealm">
+        <property name="name" value="jdbcRealm"/>
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    <bean id="imageCaptchaService" class="com.octo.captcha.service.image.DefaultManageableImageCaptchaService">
+        <constructor-arg type="com.octo.captcha.service.captchastore.CaptchaStore" index="0">
+            <ref bean="fastHashMapCaptchaStore"/>
+        </constructor-arg>
+        <!--which captcha Engine you use-->
+        <constructor-arg type="com.octo.captcha.engine.CaptchaEngine" index="1">
+            <ref bean="captchaEngineEx"/>
+        </constructor-arg>
+        <constructor-arg index="2">
+            <value>180</value>
+        </constructor-arg>
+        <constructor-arg index="3">
+            <value>100000</value>
+        </constructor-arg>
+        <constructor-arg index="4">
+            <value>75000</value>
+        </constructor-arg>
+    </bean>
+    <bean id="fastHashMapCaptchaStore"
+          class="com.octo.captcha.service.captchastore.FastHashMapCaptchaStore"/>
+    <!--you can define more than one captcha engine here -->
+    <bean id="captchaEngineEx"
+          class="com.jsr.common.controller.CaptchaEngineEx"/>
 </beans>

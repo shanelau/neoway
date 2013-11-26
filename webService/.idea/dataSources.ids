@@ -12,10 +12,10 @@
     <identifier-quote-string>`</identifier-quote-string>
     <synchronize>true</synchronize>
     <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-    <jdbc-url>jdbc:mysql://localhost:3306/weather_cloud_db?useUnicode=true&amp;characterEncoding=UTF-8</jdbc-url>
-    <user-name>root</user-name>
-    <user-password>df9bdf98df99</user-password>
-    <schema-pattern>weather_cloud_db.*</schema-pattern>
+    <jdbc-url>jdbc:mysql://127.0.0.1:3306/jsr_rom_db?useUnicode=true&amp;characterEncoding=UTF-8</jdbc-url>
+    <user-name>liux</user-name>
+    <user-password>dfc6dfc3dfdfdfd2</user-password>
+    <schema-pattern>jsr_rom_db.*</schema-pattern>
     <default-schemas>weather_cloud_db.*</default-schemas>
     <default-dialect>MySQL</default-dialect>
     <libraries>
@@ -23,30 +23,120 @@
         <url>jar://C:/Program Files/apache-maven-3.1.0/.m2/repository/mysql/mysql-connector-java/5.1.26/mysql-connector-java-5.1.26.jar!/</url>
       </library>
     </libraries>
-    <schema name="" catalog="weather_cloud_db"/>
-    <table name="city" schema="" catalog="weather_cloud_db" type="TABLE">
+    <schema name="" catalog="jsr_rom_db"/>
+    <table name="city" schema="" catalog="jsr_rom_db" type="TABLE">
       <column name="city_code" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12"/>
       <column name="city_Name" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="city_code"/>
-      <exported-key name="fk_weather_city1" table="weather_info" schema="" catalog="weather_cloud_db" columns="city_code"/>
+      <exported-key name="weather_info_ibfk_1" table="weather_info" schema="" catalog="jsr_rom_db" columns="city_code"/>
     </table>
-    <table name="logs" schema="" catalog="weather_cloud_db" type="TABLE">
-      <column name="log_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <column name="we_Id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
-      <column name="user_id" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
-      <column name="request_date" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" version="true"/>
-      <primary-key name="PRIMARY" columns="log_id"/>
-      <foreign-key name="FK_wea_log" columns="we_Id" ref-table="weather_info" ref-schema="" ref-catalog="weather_cloud_db" ref-columns="we_Id" update-rule="3" delete-rule="3" deferrability="2"/>
+    <table name="fb_answer" schema="" catalog="jsr_rom_db" type="TABLE">
+      <column name="answer_Id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="user_Id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="fb_Id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="content" sqlType="VARCHAR" length="1000" precision="0" nullable="true" jdbcType="12"/>
+      <column name="reply_time" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" version="true"/>
+      <primary-key name="PRIMARY" columns="answer_Id"/>
+      <foreign-key name="FK_fb_answer" columns="fb_Id" ref-table="fb_feedbacks" ref-schema="" ref-catalog="jsr_rom_db" ref-columns="fb_Id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FK_users_answer" columns="user_Id" ref-table="users" ref-schema="" ref-catalog="jsr_rom_db" ref-columns="user_Id" update-rule="3" delete-rule="3" deferrability="2"/>
     </table>
-    <table name="weather_info" schema="" catalog="weather_cloud_db" type="TABLE">
+    <table name="fb_feedbacks" schema="" catalog="jsr_rom_db" type="TABLE">
+      <column name="fb_Id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="status_Id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="type_Id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="subject" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="content" sqlType="VARCHAR" length="1000" precision="0" nullable="true" jdbcType="12"/>
+      <column name="img_Path" sqlType="VARCHAR" length="300" precision="0" nullable="true" jdbcType="12"/>
+      <column name="version" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="fb_date" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" version="true"/>
+      <column name="ph_Imei" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="log_Path" sqlType="VARCHAR" length="300" precision="0" nullable="true" jdbcType="12"/>
+      <column name="contact" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="fb_Id"/>
+      <foreign-key name="FK_fb_status" columns="status_Id" ref-table="fb_statu" ref-schema="" ref-catalog="jsr_rom_db" ref-columns="status_Id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FK_feedBack_type" columns="type_Id" ref-table="fb_type" ref-schema="" ref-catalog="jsr_rom_db" ref-columns="type_Id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FK_fb_answer" table="fb_answer" schema="" catalog="jsr_rom_db" columns="fb_Id"/>
+    </table>
+    <table name="fb_statu" schema="" catalog="jsr_rom_db" type="TABLE">
+      <column name="status_Id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="status_Name" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="status_Desc" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="status_Id"/>
+      <exported-key name="FK_fb_status" table="fb_feedbacks" schema="" catalog="jsr_rom_db" columns="status_Id"/>
+    </table>
+    <table name="fb_type" schema="" catalog="jsr_rom_db" type="TABLE">
+      <column name="type_Id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="type_Name" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="type_Desc" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="type_Id"/>
+      <exported-key name="FK_feedBack_type" table="fb_feedbacks" schema="" catalog="jsr_rom_db" columns="type_Id"/>
+    </table>
+    <table name="permissions" schema="" catalog="jsr_rom_db" type="TABLE">
+      <column name="perm_Id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="perm_Name" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="perm_Desc" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="perm_Id"/>
+      <exported-key name="FK_roles_permissions2" table="roles_permissions" schema="" catalog="jsr_rom_db" columns="perm_Id"/>
+    </table>
+    <table name="roles" schema="" catalog="jsr_rom_db" type="TABLE">
+      <column name="role_Id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="role_Name" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="role_Desc" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="role_Id"/>
+      <exported-key name="FK_roles_permissions" table="roles_permissions" schema="" catalog="jsr_rom_db" columns="role_Id"/>
+      <exported-key name="FK_users_Roles2" table="users_roles" schema="" catalog="jsr_rom_db" columns="role_Id"/>
+    </table>
+    <table name="roles_permissions" schema="" catalog="jsr_rom_db" type="TABLE">
+      <column name="role_Id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="perm_Id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="role_Id,perm_Id"/>
+      <foreign-key name="FK_roles_permissions" columns="role_Id" ref-table="roles" ref-schema="" ref-catalog="jsr_rom_db" ref-columns="role_Id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FK_roles_permissions2" columns="perm_Id" ref-table="permissions" ref-schema="" ref-catalog="jsr_rom_db" ref-columns="perm_Id" update-rule="3" delete-rule="3" deferrability="2"/>
+    </table>
+    <table name="users" schema="" catalog="jsr_rom_db" type="TABLE">
+      <column name="user_Id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="user_Name" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="password" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12"/>
+      <column name="email" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="phone" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="nick" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="true_Name" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="sex" sqlType="VARCHAR" length="10" precision="0" nullable="true" jdbcType="12"/>
+      <column name="other" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12"/>
+      <column name="dept" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="statu" sqlType="BIT" length="0" precision="0" nullable="true" jdbcType="-7"/>
+      <column name="validata_code" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="reg_date" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <primary-key name="PRIMARY" columns="user_Id"/>
+      <exported-key name="FK_users_answer" table="fb_answer" schema="" catalog="jsr_rom_db" columns="user_Id"/>
+      <exported-key name="FK_users_Roles" table="users_roles" schema="" catalog="jsr_rom_db" columns="user_Id"/>
+    </table>
+    <table name="users_roles" schema="" catalog="jsr_rom_db" type="TABLE">
+      <column name="user_Id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="role_Id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="user_Id,role_Id"/>
+      <foreign-key name="FK_users_Roles" columns="user_Id" ref-table="users" ref-schema="" ref-catalog="jsr_rom_db" ref-columns="user_Id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FK_users_Roles2" columns="role_Id" ref-table="roles" ref-schema="" ref-catalog="jsr_rom_db" ref-columns="role_Id" update-rule="3" delete-rule="3" deferrability="2"/>
+    </table>
+    <table name="weather_info" schema="" catalog="jsr_rom_db" type="TABLE">
       <column name="we_Id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="city_code" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
       <column name="we_Info" sqlType="VARCHAR" length="2000" precision="0" nullable="true" jdbcType="12"/>
       <column name="simple" sqlType="BIT" length="0" precision="0" nullable="true" jdbcType="-7"/>
       <column name="update_time" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" version="true"/>
       <primary-key name="PRIMARY" columns="we_Id"/>
-      <foreign-key name="fk_weather_city1" columns="city_code" ref-table="city" ref-schema="" ref-catalog="weather_cloud_db" ref-columns="city_code" update-rule="3" delete-rule="3" deferrability="2"/>
-      <exported-key name="FK_wea_log" table="logs" schema="" catalog="weather_cloud_db" columns="we_Id"/>
+      <foreign-key name="weather_info_ibfk_1" columns="city_code" ref-table="city" ref-schema="" ref-catalog="jsr_rom_db" ref-columns="city_code" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="weather_logs_ibfk_1" table="weather_logs" schema="" catalog="jsr_rom_db" columns="we_Id"/>
+      <index name="fk_weather_city1" unique="false" columns="city_code"/>
+    </table>
+    <table name="weather_logs" schema="" catalog="jsr_rom_db" type="TABLE">
+      <column name="log_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="we_Id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="user_id" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="request_date" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" version="true"/>
+      <primary-key name="PRIMARY" columns="log_id"/>
+      <foreign-key name="weather_logs_ibfk_1" columns="we_Id" ref-table="weather_info" ref-schema="" ref-catalog="jsr_rom_db" ref-columns="we_Id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="FK_wea_log" unique="false" columns="we_Id"/>
     </table>
   </data-source>
 </component>
