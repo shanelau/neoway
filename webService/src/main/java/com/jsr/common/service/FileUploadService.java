@@ -39,7 +39,7 @@ public class FileUploadService {
         if (multipartResolver.isMultipart(multipartRequest)) {  //判断 request 是否有文件上传,即多部分请求...
             String logoPathDir = "upload" ;                     /** 构建文件保存的目录* */
             String logoRealPathDir = request.getSession().getServletContext()             /** 得到文件保存目录的真实路径* */
-                    .getRealPath(logoPathDir);
+                    .getRealPath("")+File.separator+"WEB-INF"+File.separator+logoPathDir;
 
             MultiValueMap<String, MultipartFile> multfiles = multipartRequest.getMultiFileMap();              // srcfname 是指 文件上传标签的 name=值
             for (String srcfname : multfiles.keySet()) {
@@ -58,8 +58,10 @@ public class FileUploadService {
                         String fileName = fileDirectory + File.separator + logImageName;                       /** 拼成完整的文件保存路径加文件* */
                         mfile.transferTo(new File(fileName));
                         String relativePath =logoPathDir+File.separator+srcfname+File.separator+ logImageName; //相对路径
-                        if(Constants.DEBUG_LOG)
+                        if(Constants.DEBUG_LOG){
                             logger.info(relativePath);
+                            logger.error(fileName);
+                        }
 
                         filesMap.put(srcfname,relativePath);
                     }

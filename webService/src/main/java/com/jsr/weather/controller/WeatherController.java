@@ -21,6 +21,7 @@ import java.sql.Timestamp;
  * To change this template use File | Settings | File Templates.
  */
 @Controller
+@RequestMapping(value = "/weather")
 public class WeatherController {
     @Autowired
     @Qualifier("LogsService")
@@ -44,7 +45,7 @@ public class WeatherController {
         return msg;
     }
 
-    @RequestMapping(value = "/weather_data/sk/{cityId}/{userId}", method = {RequestMethod.POST, RequestMethod.GET}, produces = "text/plain;charset=UTF-8")
+    @RequestMapping(value = "/simple/{cityId}/{userId}", method = {RequestMethod.POST, RequestMethod.GET}, produces = "text/plain;charset=UTF-8")
     @ResponseBody
     public String getWeatherSimple(@PathVariable String cityId, @PathVariable String userId) {
         WeatherRequestModel wrModel = new WeatherRequestModel(cityId, true, userId);  //匿名用户
@@ -56,7 +57,7 @@ public class WeatherController {
         }
     }
 
-    @RequestMapping(value = "/weather_data/full/{cityId}/{userId}", method = {RequestMethod.POST, RequestMethod.GET}, produces = "text/plain;charset=UTF-8")
+    @RequestMapping(value = "/full/{cityId}/{userId}", method = {RequestMethod.POST, RequestMethod.GET}, produces = "text/plain;charset=UTF-8")
     @ResponseBody
     public String getWeatherFull(@PathVariable String cityId, @PathVariable String userId) {
         WeatherRequestModel wrModel = new WeatherRequestModel(cityId, false, userId);  //匿名用户
@@ -89,7 +90,7 @@ public class WeatherController {
      * @param cityId city ID  匿名访问
      * @return
      */
-    @RequestMapping(value = "/weather_data/sk/{cityId}", method = {RequestMethod.POST, RequestMethod.GET}, produces = "text/plain;charset=UTF-8")
+    @RequestMapping(value = "/simple/{cityId}", method = {RequestMethod.POST, RequestMethod.GET}, produces = "text/plain;charset=UTF-8")
     @ResponseBody
     public String getWeatherSimpleAnon(@PathVariable String cityId) {
         WeatherRequestModel wrModel = new WeatherRequestModel(cityId, true, "anon");  //匿名用户
@@ -107,7 +108,7 @@ public class WeatherController {
      * @param cityId city ID  匿名访问
      * @return
      */
-    @RequestMapping(value = "/weather_data/full/{cityId}", method = {RequestMethod.POST, RequestMethod.GET}, produces = "text/plain;charset=UTF-8")
+    @RequestMapping(value = "/full/{cityId}", method = {RequestMethod.POST, RequestMethod.GET}, produces = "text/plain;charset=UTF-8")
     @ResponseBody
     public String getWeatherFullAnon(@PathVariable String cityId) {
         WeatherRequestModel wrModel = new WeatherRequestModel(cityId, false, "anon");  //匿名用户

@@ -1,0 +1,52 @@
+/* CSS Document */
+
+.login_img{
+	width:400px;
+	float:left;
+}
+.web_login{
+	float:right;
+	width:400px;
+}
+.ie_tip{
+	display:block;
+	margin-top:20px;
+}
+.web_pwd .forget_form .form-control{
+	margin-top:10px;
+}
+.web_login .btn{
+	height:40px;
+}
+.web_login .remember_me{
+	width:30px;
+}
+
+
+/*注册页面*/
+
+
+.register .form-group{
+	width:550px;
+	margin:0 auto;
+}
+.register .control-label{
+	float:left;
+	height:35px;
+	position:relative;
+}
+.register .col-sm-4{
+	float:left;
+	
+	width:300px;
+}
+.register .col-sm-4 input{
+	height:33px;
+}
+
+.register .container .inner{
+	height: 540px;
+}
+.register .btn{
+	height:40px;
+}

@@ -1,0 +1,68 @@
+body{
+	font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","WenQuanYi Micro Hei",sans-serif;
+	font-size: 14px;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	line-height: 1.333;
+
+}
+a {
+    text-decoration: none;
+}
+a:hover{
+	 text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+footer{
+	bottom: 0;
+    left: 0;
+    position:relative;
+    width: 100%;
+	background-color: #F0F0F0;
+    background-image: url("../images/foot_x.png");
+    background-repeat: repeat-x;
+    font-family: '微软雅黑';
+    height: 125px;
+    text-align: center;
+	margin: 0 auto;
+	color: #999999;
+}
+
+footer a{
+	color: #999999;
+	margin-left: 6px;
+    margin-right: 6px;
+}
+footer p{
+ margin:0;
+ padding:0;
+}
+
+.copyright_link {
+    padding-bottom: 18px;
+    padding-top: 48px;
+}
+
+.copyright_en, .copyright_cn {
+    display: inline;
+}
+

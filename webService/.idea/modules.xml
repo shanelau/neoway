@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://E:/云系统/志敏发来的/RomApp2/RomApp2.iml" filepath="E:/云系统/志敏发来的/RomApp2/RomApp2.iml" />
       <module fileurl="file://$PROJECT_DIR$/innosRomService.iml" filepath="$PROJECT_DIR$/innosRomService.iml" />
     </modules>
   </component>

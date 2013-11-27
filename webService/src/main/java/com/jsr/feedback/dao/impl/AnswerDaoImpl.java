@@ -5,6 +5,8 @@ import com.jsr.feedback.bean.FbAnswer;
 import com.jsr.feedback.dao.AnswerDao;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: liu.xing
@@ -14,4 +16,9 @@ import org.springframework.stereotype.Repository;
  */
 @Repository("AnswerDao")
 public class AnswerDaoImpl extends BaseHibernateDao<FbAnswer,Integer> implements AnswerDao {
+    public static String HQL_GET_ANSWER_BY_FBID= " from FbAnswer a where a.fbFeedbacksByFbId.fbId = ?";
+    @Override
+    public List<FbAnswer> getByFbId(int fbId) {
+        return list(HQL_GET_ANSWER_BY_FBID,-1,Integer.MAX_VALUE,fbId);
+    }
 }

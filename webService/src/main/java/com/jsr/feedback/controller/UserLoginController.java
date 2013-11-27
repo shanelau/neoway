@@ -1,6 +1,7 @@
 package com.jsr.feedback.controller;
 
 
+import com.jsr.feedback.FeedBackConstants;
 import com.jsr.feedback.bean.Users;
 import com.jsr.feedback.model.LoginCommand;
 import com.jsr.feedback.model.UserRegisterModel;
@@ -55,46 +56,37 @@ public class UserLoginController{
         return "user/login";
     }
     @RequestMapping(value = "/login", method = RequestMethod.POST)
-    public ModelAndView login( LoginCommand model, HttpServletRequest request) {
-        ModelAndView mav= new ModelAndView("user/login");
+    @ResponseBody
+    public Map login( LoginCommand model, HttpServletRequest request) {
 
         Session session = SecurityUtils.getSubject().getSession();     //用户session
 
        boolean isResponseCorrect  = validateCaptchaImage(request);
         isResponseCorrect = true;
        if(!isResponseCorrect){      //验证失败
-           mav.setViewName("user/login");
-           mav.addObject("error_info","验证码错误");
-           return mav;
+           return FeedBackConstants.getMessage(false,"验证码错误");
        }
         //检查是否被冻结
         Users u = userService.findUserByName(model.getUsername());
         if( u == null){
-            mav.addObject("error_info", "用户名不存在。");
-            logInfo(request,model.getUsername() , "登录失败");
-            return mav;
+            return FeedBackConstants.getMessage(false,"用户名不存在。");
         }else if(!u.getStatu()){
-            mav.setViewName("user/login");
-            mav.addObject("error_info","您的账号被冻结了,等待管理员处理。");
             logInfo(request,u.getUserName(),"登录失败尝试登录,账号被冻结");
-            return mav;
+            return FeedBackConstants.getMessage(false,"您的账号被冻结了,等待管理员处理。");
+
         }
         LoginCommand command = model;
         String password = MD5.MD5Encode(command.getPassword().trim());
         UsernamePasswordToken token = new UsernamePasswordToken(command.getUsername(),password);
         token.setRememberMe(true);
         try{
-
             SecurityUtils.getSubject().login(token);
-            mav.setViewName("redirect:index");
-            logInfo(request,u.getUserName(),"登录成功");
+            return FeedBackConstants.getMessage(true,"index");
         }catch (AuthenticationException e){
             e.printStackTrace();
-            mav.setViewName("user/login");
-            mav.addObject("error_info","用户名或者密码错误");
             logInfo(request,u.getUserName(),"登录失败,密码验证不成功");
+            return FeedBackConstants.getMessage(true,"用户名或者密码错误");
         }
-        return  mav;
     }
 
     @RequestMapping(value = "/register", method = {RequestMethod.GET})
@@ -102,14 +94,15 @@ public class UserLoginController{
         return "user/register";
     }
     @RequestMapping(value = "/register", method = {RequestMethod.POST})
-    public ModelAndView register(UserRegisterModel model,HttpServletRequest request) {
+    @ResponseBody
+    public Map register(UserRegisterModel model,HttpServletRequest request) {
         UserRegisterModel registerModel = model;
-        ModelAndView mv = new ModelAndView();
         Users user = userService.findUserByName(registerModel.getUsername());
         if(user!=null){
-            mv.addObject("error_info","用户名已经存在。");
-            mv.setViewName("user/login");
-            return mv;
+            Map map = new HashMap();
+            map.put(FeedBackConstants.TAG_STATUS,FeedBackConstants.STATUS_FAIL);
+            map.put(FeedBackConstants.TAG_MESSAGE, "用户名已经存在");
+            return map;
         }
         Users user_info = new Users();
         String password = MD5.MD5Encode(registerModel.getPassword().trim());
@@ -121,20 +114,17 @@ public class UserLoginController{
         user_info.setPhone(registerModel.getPhone());
         user_info.setStatu(false);  //默认设置为冻结状态  无法登录  需要管理审核
         user_info.setRegDate(new Timestamp(System.currentTimeMillis()));
-        String error_info = "";
         try{
             userService.save(user_info);
-            error_info = "注册成功,等待管理员审核。";
-            SendMail.getInstatnce().sendHtmlMail("用户注册，请审核","有一个用户注册了有方生产数据系统，请审核。<br/><br/>"+"用户名:<a>"+user_info.getUserName()+"</a>",SendMail.getUserName());   //发送邮件到管理员
+            SendMail.getInstatnce().sendHtmlMail("用户注册，请审核","有一个用户注册了JSR系统，请审核。<br/><br/>"+"用户名:<a>"+user_info.getUserName()+"</a>",SendMail.getUserName());   //发送邮件到管理员
             logInfo(request,user_info.getUserName(),"注册成功");
+            return FeedBackConstants.getMessage(true,"注册成功,等待管理员审核");
         }catch (Exception e){
             e.printStackTrace();
-            error_info ="注册失败,用户名和邮箱可能已经存在";
+            return FeedBackConstants.getMessage(true,"注册失败,用户名和邮箱可能已经存在");
         }
-        mv.addObject("error_info",error_info);
-        mv.setViewName("user/login");
-        return mv;
     }
+
     private boolean validateCaptchaImage(HttpServletRequest request) {
         Boolean isResponseCorrect = Boolean.FALSE;
         //remenber that we need an id to validate!

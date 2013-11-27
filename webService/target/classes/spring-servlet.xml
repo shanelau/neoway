@@ -32,35 +32,37 @@
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
 
-    <mvc:view-controller path="/" view-name="forward:/index"/>
+    <mvc:view-controller path="/" view-name="/index"/>
     <!-- 当在web.xml 中   DispatcherServlet使用 <url-pattern>/</url-pattern> 映射时，能映射静态资源 -->
-    <mvc:default-servlet-handler/>
+
     <!-- 静态资源映射 -->
-   <mvc:resources mapping="/images/**" location="/WEB-INF/images/"/>
-    <mvc:resources mapping="/css/**" location="/WEB-INF/css/"/>
-    <mvc:resources mapping="/js/**" location="/WEB-INF/js/"/>
-    <mvc:annotation-driven/>
+   <mvc:resources mapping="/images/**" location="/WEB-INF/images/" cache-period="3600"/>
+    <mvc:resources mapping="/css/**" location="/WEB-INF/css/" cache-period="3600"/>
+    <mvc:resources mapping="/dist/**" location="/WEB-INF/dist/" cache-period="3600"/>
+    <mvc:resources mapping="/js/**" location="/WEB-INF/js/" cache-period="3600"/>
+    <mvc:resources mapping="/upload/**" location="/WEB-INF/upload/" cache-period="3600"/>
+
     <!-- ========================= VIEW定义 ========================= -->
-    <!-- bean name view resolver-->
-    <bean class="org.springframework.web.servlet.view.BeanNameViewResolver" p:order="0"/>
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping" />
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
+        <property name="messageConverters">
+            <list>
+                <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+                    <property name="supportedMediaTypes">
+                        <list>
+                            <value>text/html;charset=UTF-8</value>
+                        </list>
+                    </property>
+                    <property name="objectMapper">
+                        <bean class="com.fasterxml.jackson.databind.ObjectMapper" />
+                    </property>
+                </bean>
+            </list>
+        </property>
+    </bean>
 
     <!-- 根据客户端的不同的请求决定不同的 view进行响应, 如 /blog/1.json /blog/1.xml -->
     <bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver" p:order="1">
-        <!-- 设置为true以忽略对Accept Header的支持-->
-        <!-- 扩展名至mimeType的映射,即 /user.json => application/json -->
-        <property name="favorPathExtension" value="false"/>
-
-        <!-- 用于开启 /userinfo/123?format=json 的支持 -->
-        <property name="favorParameter" value="false"/>
-
-        <property name="mediaTypes">  <!--favorPathExtension, favorParameter是true时才起作用  -->
-            <map>
-                <!--                <entry key="wml" value="text/vnd.wap.wml"/>-->
-                <!--                <entry key="vnd" value="application/vnd.wap.xhtml+xml"/>-->
-                <!--                <entry key="xhtml" value="application/xhtml+xml"/>-->
-                <entry key="html" value="*"/>
-            </map>
-        </property>
         <property name="viewResolvers">
             <list>
                 <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -71,29 +73,7 @@
                 </bean>
             </list>
         </property>
-        <!-- 可配置Not Found url
-        <property name="defaultViews">
-            <list>  
-                 <bean class="org.springframework.web.servlet.view.JstlView" p:url="/notfound"/>  
-            </list>  
-        </property>  -->
     </bean>
-
-
-    <!-- 默认的视图解析器 在上边的解析错误时使用 (默认使用html)- -->
-    <!--    <bean id="defaultViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver"
-              p:order="3">
-            <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
-            <property name="contentType" value="text/html"/>
-            <property name="prefix" value="/WEB-INF/jsp/"/>
-            <property name="suffix" value=".jsp"/>
-        </bean>-->
-
-    <!-- json view -->
-    <bean id="defaultJsonView" class="org.springframework.web.servlet.view.json.MappingJacksonJsonView"/>
-
-
-
     <!-- 控制器异常处理    -->
     <bean id="exceptionResolver" class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
         <property name="exceptionMappings">

@@ -16,6 +16,7 @@
         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
 
+    <!--加载属性文件-->
     <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
         <property name="locations">
             <list>
@@ -118,22 +119,22 @@
         <aop:advisor advice-ref="txAdvice" pointcut-ref="txPointcut"/>
     </aop:config>
 
-    <!--appache shiro框架  认证和授权-->
+    <!--apache shiro框架  认证和授权-->
     <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
         <property name="securityManager" ref="securityManager"/>
         <property name="loginUrl" value="/login"/>
         <property name="filterChainDefinitions">
             <value>
                 /js/** = anon
-                /image/** = anon
+                /images/** = anon
                 /css/** = anon
+                /dist/**=anon
                 /register = anon
                 /user/i_forget_password = anon
                 /user/reset_password = anon
                 /error_all = anon
-                /index = anon
+                /weather/** = anon
                 /feedback/add = anon
-                /plan/** = authc
                 /user/** =  authc
                 /generatImage = anon
                 /admin/** = authc, roles[admin]

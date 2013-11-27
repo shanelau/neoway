@@ -3,6 +3,8 @@ package com.jsr.feedback.service;
 import com.jsr.common.service.IBaseService;
 import com.jsr.feedback.bean.FbAnswer;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: liu.xing
@@ -11,4 +13,7 @@ import com.jsr.feedback.bean.FbAnswer;
  * coding for fun and coding my life!
  */
 public interface AnswerService extends IBaseService<FbAnswer,Integer>{
+    void saveAndModifyStatus(int fbId, String content) throws Exception;
+
+    List<FbAnswer> getByFbId(int fbId);
 }

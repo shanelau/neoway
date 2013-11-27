@@ -53,7 +53,6 @@ public class FbFeedbacksDaoImpl extends BaseHibernateDao<FbFeedbacks, Integer> i
         String count_hql = "select count(*) "+HQL+" ";
         String query_hql = HQL;
         String  sql= " where "+getSQLFromQueryModel(fbQueryModel)+getQueryParam(fbQueryModel.getSearch())+right+ addOrder("fb.fbId",fbQueryModel.getOrder());
-        System.out.println(query_hql + sql);
         long count = unique(count_hql+sql);
         List<FbFeedbacks> items = list(query_hql + sql, pn, pageSize);
         return  PageUtil.getPage((int)count, pn, items, pageSize);

@@ -8,15 +8,15 @@
             overflowToDisk="false">
     </defaultCache>
 
-    <!--
-        <cache name="com.neoway.demo.model.UserModel"
+
+        <cache name="com.jsr.feedback.bean.FbFeedbacks"
                maxElementsInMemory="2000"
                eternal="false"
                timeToIdleSeconds="3600"
                timeToLiveSeconds="3600"
                overflowToDisk="false">
         </cache>
-    -->
+
 
 
     <cache

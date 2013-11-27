@@ -3,7 +3,7 @@ package com.jsr.feedback.controller;
 import com.jsr.common.model.DataTableBean;
 import com.jsr.common.pagination.Page;
 import com.jsr.common.service.FileUploadService;
-import com.jsr.feedback.Constants;
+import com.jsr.feedback.FeedBackConstants;
 import com.jsr.feedback.model.FBQueryModel;
 import com.jsr.feedback.bean.FbFeedbacks;
 import com.jsr.feedback.bean.FbStatu;
@@ -19,12 +19,14 @@ import org.springframework.web.bind.ServletRequestUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.lang.reflect.Method;
 import java.sql.Timestamp;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -51,9 +53,28 @@ public class FeedbackController {
     @Qualifier("FileUploadService")
     FileUploadService fileUploadService;
 
+    @RequestMapping(value="/index")
+    public ModelAndView feedbackIndex(){
+        ModelAndView model = new ModelAndView("feedback/index");
+        List<FbStatu> statusList = fbStatuService.listAll();
+        List<FbType> typeList = fbTypeService.listAll();
+        for(FbStatu fbStatu:statusList){
+            fbStatu.setFbFeedbacksesByStatusId(null);
+        }
+        for(FbType fbType:typeList){
+            fbType.setFbFeedbacksesByTypeId(null);
+        }
+        model.addObject("statusList",statusList);
+        model.addObject("typeList",typeList);
+        return model;
+    }
+
     @RequestMapping(value="/add")
-    public String addFeedbackController(){
-        return "feedback/add";
+    public ModelAndView addFeedbackController(){
+        ModelAndView model = new ModelAndView("feedback/add");
+        List<FbType> typeList = fbTypeService.listAll();
+        model.addObject("typeList",typeList);
+        return model;
     }
 
     @RequestMapping(value="/add",method = RequestMethod.POST)
@@ -72,28 +93,26 @@ public class FeedbackController {
             fbFeedbacks.setFbTypeByTypeId(fbType);
         }
         fbFeedbacks.setFbDate(new Timestamp(System.currentTimeMillis()));
-        FbStatu fbStatu = fbStatuService.get(Constants.FEEDBACK_TYPE_ADD);
+        FbStatu fbStatu = fbStatuService.get(FeedBackConstants.FEEDBACK_STATUS_NEW);
         fbFeedbacks.setFbStatuByStatusId(fbStatu);
         try{
             Map<String,String> map = fileUploadService.addFileToDisk(request);
             fbFeedbacks = packFilePath(map,fbFeedbacks);
             FbFeedbacks fb = fbFeedbacksService.save(fbFeedbacks);
             if(fb != null){
-                Map resutlMap = new HashMap();
-                resutlMap.put(Constants.TAG_STATUS,Constants.STATUS_SUCCESS);
-                int random = (int)(Math.random()*Constants.RESPONSE_MESSAGE_SUCCESS.length);
-                resutlMap.put(Constants.TAG_MESSAGE,Constants.RESPONSE_MESSAGE_SUCCESS[random]);
-                return resutlMap;
+                return getResutl(FeedBackConstants.RESPONSE_MESSAGE_SUCCESS,FeedBackConstants.STATUS_SUCCESS);
             }
         }catch (Exception e){
             e.printStackTrace();
-
         }
-        Map resutlMap = new HashMap();
-        resutlMap.put(Constants.TAG_STATUS,Constants.STATUS_FAIL);
-        int random = (int)(Math.random()*Constants.RESPONSE_MESSAGE_FAIL.length);
-        resutlMap.put(Constants.TAG_MESSAGE,Constants.RESPONSE_MESSAGE_FAIL[random]);
-        return resutlMap;
+        return getResutl(FeedBackConstants.RESPONSE_MESSAGE_FAIL,FeedBackConstants.STATUS_FAIL);
+    }
+    public Map getResutl(String[] strs,String status){
+        Map map = new HashMap();
+        map.put(FeedBackConstants.TAG_STATUS, status);
+        int random = (int)(Math.random()* strs.length);
+        map.put(FeedBackConstants.TAG_MESSAGE, strs[random]);
+        return map;
     }
 
     /**
@@ -119,7 +138,7 @@ public class FeedbackController {
     public DataTableBean getPage(HttpServletRequest request,HttpServletResponse response){
         int startNum = ServletRequestUtils.getIntParameter(request, "iDisplayStart", 0);
         int sEcho = ServletRequestUtils.getIntParameter(request, "sEcho", 0);
-        int pageSize = ServletRequestUtils.getIntParameter(request, "iDisplayLength", Constants.DEFAULT_PAGE_SIZE);
+        int pageSize = ServletRequestUtils.getIntParameter(request, "iDisplayLength", FeedBackConstants.DEFAULT_PAGE_SIZE);
         String order = ServletRequestUtils.getStringParameter(request, "sSortDir_0","desc");
         String search = ServletRequestUtils.getStringParameter(request, "sSearch","");             //查询关键字
         String type = ServletRequestUtils.getStringParameter(request, "sSearch_0","");           //类别
@@ -128,7 +147,7 @@ public class FeedbackController {
 
         int pn = startNum/pageSize+1;
         Page<FbFeedbacks> page = fbFeedbacksService.list(pn, pageSize, fbQueryModel);
-        response.addHeader("Access-Control-Allow-Origin","*");  //同源请求
+        //response.addHeader("Access-Control-Allow-Origin","*");  //同源请求
         return new DataTableBean(page,sEcho);
     }
 
