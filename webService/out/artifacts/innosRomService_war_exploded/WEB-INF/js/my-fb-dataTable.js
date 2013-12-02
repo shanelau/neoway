@@ -38,7 +38,7 @@ function fnGetReplyInput(oTable, nTr ){
 		success:function(data){
             var objData = eval(data);
             $.each(objData, function (index, item) {
-                var answer ="<blockquote class='clearfix col-lg-9'><p>"+item.content+"</p>  <small>"+moment.unix(item.replyTime/1000).fromNow()+"</small></blockquote>"
+                var answer ="<blockquote class='clearfix col-lg-9'><p>"+ item.content+"</p>  <small>"+moment.unix(item.replyTime/1000).fromNow()+"  by  "+item.usersByUserId.userName+"</small></blockquote>"
                 answerStr+=answer;
             });
             return answerStr;

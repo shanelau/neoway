@@ -613,13 +613,13 @@
     <file path="/AnswerDaoImpl.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1385463615062" ignored="false" />
     <file path="/AnswerService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1385463408453" ignored="false" />
     <file path="/AnswerServiceImpl.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1385950360921" ignored="false" />
-    <file path="/AnswerController.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1385516518828" ignored="false" />
+    <file path="/AnswerController.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1385951043656" ignored="false" />
     <file path="/FBQueryModel.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1385435642171" ignored="false" />
     <file path="/FeedBackConstants.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1385627313515" ignored="false" />
     <file path="/AnswerServiceImplTest.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1385463730359" ignored="false" />
     <file path="/inc_js_css.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1385470882109" ignored="false" />
     <file path="/ehcache_hibernate.xml" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1385514845890" ignored="false" />
-    <file path="/my-fb-dataTable.js" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1385623284406" ignored="false" />
+    <file path="/my-fb-dataTable.js" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1385951158546" ignored="false" />
     <file path="/index.css" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1385605437859" ignored="false" />
     <file path="/head_menu.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1385605502156" ignored="false" />
     <file path="/login.html" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1385535953765" ignored="false" />
@@ -710,17 +710,7 @@
     <favorites_list name="mavenTest" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="resources.properties" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/resources.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="623" selection-end="623" vertical-scroll-proportion="0.41016334">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -738,8 +728,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/jsr/feedback/bean/FbAnswer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jsr/feedback/bean/FbFeedbacks.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jsr/feedback/bean/FbStatu.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jsr/feedback/bean/FbType.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jsr/feedback/bean/Permissions.java" />
@@ -748,12 +736,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/jsr/feedback/bean/Users.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jsr/feedback/bean/UsersRoles.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/login.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/my-fb-dataTable.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/jsr/feedback/dao/impl/FbFeedbacksDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/jsr/feedback/controller/FeedbackController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jsr/feedback/service/impl/AnswerServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/resources.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsr/feedback/bean/FbAnswer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsr/feedback/controller/AnswerController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/my-fb-dataTable.js" />
       </list>
     </option>
   </component>
@@ -863,6 +853,204 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="webService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weatherService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weatherService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weatherService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weatherService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weatherService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="feedback" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weatherService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="feedback" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weatherService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="feedback" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bean" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1450,7 +1638,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1288" height="1002" extended-state="1" />
+    <frame x="-4" y="-4" width="1288" height="1002" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32979977" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1475,7 +1663,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13754046" sideWeight="0.30388692" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33685446" sideWeight="0.4908953" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24110033" sideWeight="0.6808009" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27508092" sideWeight="0.6808009" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35689047" sideWeight="0.4939302" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="96" y="96" width="1088" height="802" />
       <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31685576" sideWeight="0.4640754" order="5" side_tool="true" content_ui="tabs" />
@@ -1552,24 +1740,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="42" selection-start="709" selection-end="714" vertical-scroll-proportion="-1.4154838">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="23" selection-start="3721" selection-end="3721" vertical-scroll-proportion="0.7725587">
-          <folding>
-            <marker date="1385949468859" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1385949468859" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1385949468859" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1580,13 +1750,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jsr/feedback/bean/UsersRoles.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="58" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/my-fb-dataTable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="58" selection-start="4250" selection-end="4250" vertical-scroll-proportion="0.4326329">
           <folding />
         </state>
       </provider>
@@ -1633,13 +1796,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsr/feedback/controller/AnswerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="39" selection-start="1361" selection-end="1361" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jsr/feedback/service/AnswerService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="9" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0">
@@ -1663,7 +1819,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/resources.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="623" selection-end="623" vertical-scroll-proportion="0.41016334">
+        <state line="16" column="0" selection-start="623" selection-end="623" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsr/feedback/controller/AnswerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="21" selection-start="1901" selection-end="1901" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsr/feedback/bean/FbAnswer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="14" selection-start="2039" selection-end="2039" vertical-scroll-proportion="0.33271375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsr/feedback/bean/Users.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="23" selection-start="797" selection-end="805" vertical-scroll-proportion="0.7973978">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/my-fb-dataTable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="182" selection-start="1815" selection-end="1815" vertical-scroll-proportion="0.8048327">
           <folding />
         </state>
       </provider>

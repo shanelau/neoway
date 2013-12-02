@@ -4,6 +4,7 @@ import com.jsr.common.service.FileUploadService;
 import com.jsr.feedback.FeedBackConstants;
 import com.jsr.feedback.bean.FbAnswer;
 import com.jsr.feedback.bean.FbFeedbacks;
+import com.jsr.feedback.bean.Users;
 import com.jsr.feedback.service.AnswerService;
 import com.jsr.feedback.service.FbFeedbacksService;
 import com.jsr.feedback.service.FbStatuService;
@@ -52,6 +53,15 @@ public class AnswerController {
     public List<FbAnswer> getByFbId(@RequestParam("fbId") int fbId, HttpServletResponse response){
         //response.addHeader("Access-Control-Allow-Origin","*");  //同源请求
         List<FbAnswer> list = answerService.getByFbId(fbId);
+        return answerFilter(list);
+    }
+    public List<FbAnswer> answerFilter(List<FbAnswer> list){
+        for(FbAnswer fbAnswer:list){
+           Users users = fbAnswer.getUsersByUserId();
+            users.setFbAnswersByUserId(null);
+            users.setUsersRolesesByUserId(null);
+            fbAnswer.setFbFeedbacksByFbId(null);
+        }
         return list;
     }
 

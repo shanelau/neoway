@@ -77,7 +77,7 @@ public class FbAnswer extends AbstractModel {
     }
 
     private Users usersByUserId;
-    @JsonIgnore
+
     @ManyToOne
     @javax.persistence.JoinColumn(name = "user_Id", referencedColumnName = "user_Id")
     public Users getUsersByUserId() {
@@ -89,7 +89,7 @@ public class FbAnswer extends AbstractModel {
     }
 
     private FbFeedbacks fbFeedbacksByFbId;
-    @JsonIgnore
+
     @ManyToOne
     @javax.persistence.JoinColumn(name = "fb_Id", referencedColumnName = "fb_Id")
     public FbFeedbacks getFbFeedbacksByFbId() {
