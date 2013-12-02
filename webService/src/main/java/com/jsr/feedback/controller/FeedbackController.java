@@ -76,6 +76,11 @@ public class FeedbackController {
         model.addObject("typeList",typeList);
         return model;
     }
+    @RequestMapping(value = "/multipleReply")
+    public String multipleRely(){
+        return "feedback/multipleReply";
+    }
+
 
     @RequestMapping(value="/add",method = RequestMethod.POST)
     @ResponseBody

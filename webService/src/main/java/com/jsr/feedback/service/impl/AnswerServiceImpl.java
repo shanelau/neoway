@@ -19,6 +19,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.sql.Timestamp;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -49,6 +50,23 @@ public class AnswerServiceImpl extends BaseService<FbAnswer,Integer> implements 
 
     @Override
     public void saveAndModifyStatus(int fbId, String content) throws Exception {
+        //推送到终端
+        pushToPhone(saveAnswer(fbId,content),content);
+    }
+
+    @Override
+    public List<FbAnswer> getByFbId(int fbId) {
+        return answerDao.getByFbId(fbId);
+    }
+
+    /**
+     *
+     * @param fbId        feedback编号
+     * @param content     回复的内容
+     * @return           feedback对象
+     * @throws Exception
+     */
+    public FbFeedbacks saveAnswer(int fbId, String content) throws Exception {
         FbFeedbacks fbFeedbacks = fbFeedbacksService.get(fbId);
         if(fbFeedbacks == null)
             throw new Exception("fbId not exist!");
@@ -60,19 +78,50 @@ public class AnswerServiceImpl extends BaseService<FbAnswer,Integer> implements 
 
         Subject currentUser = SecurityUtils.getSubject();
         Users users = (Users) currentUser.getSession().getAttribute("currUser");
-        //Users u = userService.get(users.getUserId());
         fbAnswer.setUsersByUserId(users);
         saveOrUpdate(fbAnswer);
-        //推送到终端
+        return fbFeedbacks;
+    }
+
+    /**
+     *
+     * @param fbFeedbacks     反馈对象
+     * @param message         回复的信息
+     */
+    public void pushToPhone(FbFeedbacks fbFeedbacks,String message){
         String imei = fbFeedbacks.getPhImei();
         if(FeedBackConstants.CAN_PUSH_TO_CLENT && imei!=null && !imei.equals("")){
-            PushManager.getInstance().sendMessage(FeedBackConstants.PUSH_FROM,fbFeedbacks.getPhImei(),content);
-            logger.info("推送到"+imei+":"+content);
+            PushManager.getInstance().sendMessage(FeedBackConstants.PUSH_FROM,fbFeedbacks.getPhImei(),message);
+            logger.info("推送到"+imei+":"+message);
+        }
+    }
+    /**
+     *
+     * @param imeis     手机的imei
+     * @param message   回复的信息
+     */
+    public void pushToPhone( List<String > imeis,String message){
+        if(FeedBackConstants.CAN_PUSH_TO_CLENT && imeis!=null && imeis.size()>0){
+            PushManager.getInstance().sendMessage(FeedBackConstants.PUSH_FROM,imeis,message);
+            logger.info("推送到"+imeis.toArray()+":"+message);
         }
     }
 
+
     @Override
-    public List<FbAnswer> getByFbId(int fbId) {
-        return answerDao.getByFbId(fbId);
+    public void saveReplyAll(int[] addr, String message) {
+        List imeis = new ArrayList();
+          for(int fbId:addr){
+              try {
+                  FbFeedbacks fb = saveAnswer(fbId, message);
+                  String phImei = fb.getPhImei();
+                  if(phImei !=null && !phImei.equals("")){
+                      imeis.add(phImei);
+                  }
+              } catch (Exception e) {
+                  e.printStackTrace();
+              }
+          }
+        pushToPhone(imeis,message);//推送到手机
     }
 }

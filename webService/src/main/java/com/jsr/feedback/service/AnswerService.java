@@ -16,4 +16,6 @@ public interface AnswerService extends IBaseService<FbAnswer,Integer>{
     void saveAndModifyStatus(int fbId, String content) throws Exception;
 
     List<FbAnswer> getByFbId(int fbId);
+
+    void saveReplyAll(int[] addr, String message);
 }

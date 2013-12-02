@@ -1,23 +1,17 @@
 package com.jsr.feedback.controller;
 
-import com.jsr.common.service.FileUploadService;
 import com.jsr.feedback.FeedBackConstants;
 import com.jsr.feedback.bean.FbAnswer;
-import com.jsr.feedback.bean.FbFeedbacks;
 import com.jsr.feedback.bean.Users;
 import com.jsr.feedback.service.AnswerService;
-import com.jsr.feedback.service.FbFeedbacksService;
-import com.jsr.feedback.service.FbStatuService;
-import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.beans.factory.annotation.Required;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletResponse;
-import java.sql.Timestamp;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
@@ -33,7 +27,6 @@ public class AnswerController {
     @Autowired
     @Qualifier("AnswerService")
     AnswerService answerService;
-
 
 
     @RequestMapping(value = "/add")
@@ -64,5 +57,39 @@ public class AnswerController {
         }
         return list;
     }
+    @RequestMapping(value = "/multiReply",method = RequestMethod.POST)
+    @ResponseBody
+    public Map mutipleReply(@RequestParam(value = "address" ,required = true) String address,@RequestParam(value = "message" ,required = true) String message){
+        int[] fbIds = null;
+        try{
+            address = address.trim();
+            if(address.contains(FeedBackConstants.SPLIT)){      //逗号隔开
+                String[] addr = address.split(FeedBackConstants.SPLIT);
+                fbIds = new int[addr.length];
+                for(int i=0;i<addr.length;i++){
+                    fbIds[i]=Integer.parseInt(addr[i].trim());      //获取到int类型的fbId
+                }
+            } else if(address.toLowerCase().contains(FeedBackConstants.TO)){      //输入的为范围
+                String[] addr = address.split(FeedBackConstants.TO);
+                int start = Integer.parseInt(addr[0].trim());
+                int end = Integer.parseInt(addr[1].trim());
+                int min = start<end?start:end;
+                int max = start>end?start:end;
+                fbIds = new int[max-min+1];
+                for(int j=0,i = min;i<=max;i++,j++){
+                    fbIds[j]=i;
+                }
+            }else{
+                fbIds = new int[]{Integer.parseInt(address)};
+            }
+
+            answerService.saveReplyAll(fbIds, message);
+            return FeedBackConstants.getMessage(true,"批量推送成功");
+        }catch (Exception e){
+            e.printStackTrace();
+            return FeedBackConstants.getMessage(false,"输入有误,系统报错啦");
+        }
+    }
+
 
 }

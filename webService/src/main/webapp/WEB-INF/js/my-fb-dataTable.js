@@ -107,6 +107,13 @@ function fnGetReplyInput(oTable, nTr ){
 			);
 			
 		})
+
+        /*$(document).on("click","#tb_fb_index tr", function() {
+            var sData = oTable.fnGetData( this );
+            //$(this).toggleClass('row_selected');
+            //alert(oTable.$('tr.row_selected')) ;
+            alert( 'The cell clicked on had the value of '+sData.content );
+        });*/
 }
 
 
@@ -117,7 +124,7 @@ $(document).ready(function() {
 	var oTable = $('#tb_fb_index').dataTable({
 		
 		"bProcessing": true,
-		"bServerSide": true,	
+		"bServerSide": true,
 		"sAjaxSource": "feedback/list",
 		"fnServerData": function ( sSource, aoData, fnCallback ) {
 			$.ajax( {
@@ -141,15 +148,13 @@ $(document).ready(function() {
 			},
 			{"sTitle":"","mDataProp":"imgPath","bVisible":false },
 			{"sTitle":"","mDataProp":"logPath","bVisible":false },
-			{"sTitle":"编号","mDataProp": "fbId","sWidth":"5%"},
+			{"sTitle":"编号","mDataProp": "fbId","sWidth":"8.2%"},
 			{"sTitle":"内容","mDataProp": "content","sWidth":"30%"},
             {"sTitle":"IMEI","mDataProp": "phImei","sWidth":"10%"},
 			{"sTitle":"版本","mDataProp": "version","sWidth":"10%"},
 			{"sTitle":"联系","mDataProp": "contact","sWidth":"10%"},
-
 			{"sTitle":"时间","mDataProp": "fbDate","sWidth":"10%",
-				
-				  "mRender": function ( data, type, full ) {				  
+				  "mRender": function ( data, type, full ) {
 					return moment.unix(data/1000).fromNow();
 				  }
 			},
@@ -179,6 +184,7 @@ $(document).ready(function() {
 			}
 		}
 	 } );
+
 	 
 	 detail_init(oTable);
 	 

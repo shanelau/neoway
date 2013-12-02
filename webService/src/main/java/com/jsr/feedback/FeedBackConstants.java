@@ -43,4 +43,8 @@ public class FeedBackConstants {
         }
         return map;
     }
+
+    public static final String SPLIT =",";
+
+    public static final String TO ="to";
 }

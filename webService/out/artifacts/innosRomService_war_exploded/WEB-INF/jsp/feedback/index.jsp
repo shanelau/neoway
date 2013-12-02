@@ -32,7 +32,8 @@
       <div id="less" class="bs-docs-section">
         <div class="page-header">
           <h1>反馈列表</h1>     
-        </div>    <form class="form-horizontal">
+        </div>
+        <form class="form-horizontal">
             <div class="form-group fb_type_choose">
              	 <label class="control-label fb_lable_text col-lg-2"><p class="text-danger">反馈类型</p></label>
                     <div class="col-lg-3">
@@ -43,7 +44,9 @@
                         </c:forEach>
                   </select>
                   </div>
+                <a class="btn btn-info btn-lg pull-right" target="_blank" href="feedback/multipleReply">批量回复</a>
               </div>
+
       </form>
       
       	<table id="tb_fb_index"  class="table-striped table table-hover table-responsive" >

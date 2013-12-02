@@ -25,7 +25,7 @@
             <h3 class="panel-title">请填写下面的表格</h3>
         </div>
         <div class="panel-body">
-            <form class="form-horizontal" name="add_fb_web" role="form" method="post" enctype="multipart/form-data">
+            <form class="form-horizontal" name="add_fb_web" role="form" action="feedback/add" method="post" enctype="multipart/form-data">
 
 
                 <div class="form-group">
