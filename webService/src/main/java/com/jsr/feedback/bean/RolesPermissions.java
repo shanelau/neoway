@@ -14,7 +14,7 @@ import javax.persistence.ManyToOne;
  * To change this template use File | Settings | File Templates.
  */
 @javax.persistence.IdClass(com.jsr.feedback.bean.RolesPermissionsPK.class)
-@javax.persistence.Table(name = "roles_permissions", schema = "", catalog = "jsr_rom_db")
+@javax.persistence.Table(name = "roles_permissions", schema = "")
 @Entity
 public class RolesPermissions extends AbstractModel {
     private int roleId;

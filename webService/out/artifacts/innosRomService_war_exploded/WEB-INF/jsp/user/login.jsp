@@ -31,17 +31,17 @@
                                 <div class="form-group" name="username">
                                     <label class="control-label"></label>
                                     <h5 class="ie_tip">账号</h5><input type="text" name="username" class="form-control"
-                                                                     placeholder="账号"  autofocus>
+                                                                     placeholder="账号" required autofocus>
                                 </div>
                                 <div class="form-group" name="password">
                                     <label class="control-label"></label>
-                                    <h5 class="ie_tip">密码</h5><input type="password" name="password"
+                                    <h5 class="ie_tip">密码</h5><input type="password" name="password"  required
                                                                      class="form-control" placeholder="密码" >
                                 </div>
                                 <label class="checkbox">
                                     <input type="checkbox" class="remember_me" value="remember-me">
                                     Remember me </label>
-                                <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+                                <button class="btn btn-lg btn-primary btn-block" data-loading-text="正在加载..." type="submit">登录</button>
                             </form>
                         </div>
                         <div class="bottom" style="display: block; "><a href="javascript:void(0);" class="link"
@@ -54,11 +54,14 @@
 
                     <div class="web_pwd" id="web_pwd">
                         <div class="forget_form">
-                            <form class="form-signin">
+                            <form class="form-forget" action="user/i_forget_password" method="post">
                                 <h2 class="form-signin-heading text-center">找回密码</h2>
-                                <h5 class="ie_tip">账号</h5><input type="text" class="form-control" placeholder="请输入用户账号"
-                                                                 required autofocus>
-                                <button class="btn btn-lg btn-block btn-success" type="submit">一键找回</button>
+                                <div class="form-group" name="username">
+                                <h5 class="ie_tip">账号</h5>
+                                    <input type="text" class="form-control" name="username" placeholder="请输入用户账号"
+                                           required autofocus>
+                                    </div>
+                                <button class="btn btn-lg btn-block btn-success" type="submit" data-loading-text="正在加载...">一键找回</button>
                             </form>
                         </div>
                         <div class="bottom" id="bottom_web" style="display: block; ">

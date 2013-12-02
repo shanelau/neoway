@@ -94,7 +94,7 @@ public class FbFeedbacksDaoImpl extends BaseHibernateDao<FbFeedbacks, Integer> i
         return "";
     }
     private String getQueryParam(String search) {
-       return " fb.fbId like "+"'%"+search+"%' " +" or fb.subject like "+"'%"+search+"%' " +" or fb.content like "+"'%"+search+"%' " +" or fb.version like "+"'%"+search+"%' " +" or fb.contact like "+"'%"+search+"%' ";
+       return " fb.fbId like "+"'%"+search+"%' " +" or fb.phImei like "+"'%"+search+"%' " +" or fb.content like "+"'%"+search+"%' " +" or fb.version like "+"'%"+search+"%' " +" or fb.contact like "+"'%"+search+"%' ";
     }
     private String addOrder(String index ,String orderTye){
         String orderSql =" order by "+index +" "+orderTye;

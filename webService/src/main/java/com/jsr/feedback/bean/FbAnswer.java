@@ -14,7 +14,7 @@ import java.sql.Timestamp;
  * Time: 下午9:37
  * To change this template use File | Settings | File Templates.
  */
-@javax.persistence.Table(name = "fb_answer", schema = "", catalog = "jsr_rom_db")
+@javax.persistence.Table(name = "fb_answer", schema = "")
 @Entity
 public class FbAnswer extends AbstractModel {
     private int answerId;

@@ -106,7 +106,7 @@ public class SaltAwareJdbcRealm extends JdbcRealm {
         for (UsersRoles userRoles : list) {
             Roles role = userRoles.getRolesByRoleId();
             if (role != null) {
-                roleNames.add(role.getRoleName());               //װ���ɫ
+                roleNames.add(role.getRoleName());
                 List<RolesPermissions> perList = rolePermissionService.findPermissionByRoleId(role.getRoleId());
                 for (RolesPermissions rp : perList) {
                     Permissions p = rp.getPermissionsByPermId();

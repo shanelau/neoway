@@ -30,7 +30,6 @@ public class WeatherController {
     @Autowired
     @Qualifier("WeatherInfoService")
     WeatherInfoService weatherInfoService;
-    PrintWriter out;
 
     @RequestMapping(value = "/getWeather", method = {RequestMethod.POST, RequestMethod.GET}, produces = "text/plain;charset=UTF-8")
     @ResponseBody

@@ -15,7 +15,7 @@ import java.util.Collection;
  * Time: 下午2:12
  * To change this template use File | Settings | File Templates.
  */
-@javax.persistence.Table(name = "city", schema = "", catalog = "jsr_rom_db")
+@javax.persistence.Table(name = "city", schema = "", catalog = "rom_server_db")
 @Entity
 public class City extends AbstractModel {
     private String cityCode;

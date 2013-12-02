@@ -8,10 +8,16 @@ function fnFormatDetails ( oTable, nTr )
 	var aData = oTable.fnGetData( nTr );
 	
 	var sDetail_img_log = "<div class='panel panel-primary'><div class='panel-heading'>反馈信息详细</div>"+
-	"<div class='panel-body'><div class='row'><div class='col-sm-4'><a href="+aData.imgPath+" target='_blank'  title='点击查看详细'>"+
-	"<img src="+aData.imgPath+" class='detail_img' ></a></div>"+
-	"<div class='col-sm-8'><iframe src="+aData.logPath+" class='detail_log'></iframe></div></div></div></div>";
-	 
+	"<div class='panel-body'><div class='row'>";
+    if(aData.imgPath!==null && aData.imgPath!=''){
+        sDetail_img_log+= "<div class='col-sm-4'><a href="+aData.imgPath+" target='_blank'  title='点击查看详细'>"+
+            "<img src="+aData.imgPath+" class='detail_img' ></a></div>";
+    }
+    if(aData.logPath!==null && aData.logPath!=''){
+        sDetail_img_log+="<div class='col-sm-8'><iframe src="+aData.logPath+" class='detail_log'></iframe></div> ";
+    }
+    sDetail_img_log+="</div></div></div>";
+
 	return sDetail_img_log;
 }
 /*显示回复框,可以直接推送消息*/
@@ -46,7 +52,7 @@ function fnGetReplyInput(oTable, nTr ){
 	function detail_init(oTable){
 		var this_Tr;
     	//详细信息按钮
-		$(document).on('click',"#tb_fb_index tbody td img", function () {
+		$(document).on('click',"#tb_fb_index tbody td img.onoff", function () {
 			
         	var nTr = $(this).parents('tr')[0];
 			if ( oTable.fnIsOpen(nTr) )
@@ -58,7 +64,7 @@ function fnGetReplyInput(oTable, nTr ){
 			{
 				this.src = img_close_path;
 				oTable.fnOpen( nTr, fnFormatDetails(oTable, nTr), 'details' );
-			}   
+			}
 		});
 		
 				
@@ -124,23 +130,23 @@ $(document).ready(function() {
 			});
 		},
 		"aoColumns": [
-			{"sTitle":"","mDataProp":null,"sDefaultContent":"","bSortable": false,"sWidth":"10%",
+			{"sTitle":"","mDataProp":null,"sDefaultContent":"","bSortable": false,"sWidth":"5%",
 			"mRender":function ( data, type, full ) {				  
 					if(full.imgPath == null && full.logPath==null){
 						 return null;
 					}else{
-						return "<img src="+img_open_path+">";
+						return "<img src="+img_open_path+" class='onoff'>";
 					}
 				  }
 			},
 			{"sTitle":"","mDataProp":"imgPath","bVisible":false },
 			{"sTitle":"","mDataProp":"logPath","bVisible":false },
-			{"sTitle":"编号","mDataProp": "fbId","sWidth":"10%"},
-			{"sTitle":"内容","mDataProp": "content","sWidth":"30%"}
-			,
+			{"sTitle":"编号","mDataProp": "fbId","sWidth":"5%"},
+			{"sTitle":"内容","mDataProp": "content","sWidth":"30%"},
+            {"sTitle":"IMEI","mDataProp": "phImei","sWidth":"10%"},
 			{"sTitle":"版本","mDataProp": "version","sWidth":"10%"},
 			{"sTitle":"联系","mDataProp": "contact","sWidth":"10%"},
-			
+
 			{"sTitle":"时间","mDataProp": "fbDate","sWidth":"10%",
 				
 				  "mRender": function ( data, type, full ) {				  

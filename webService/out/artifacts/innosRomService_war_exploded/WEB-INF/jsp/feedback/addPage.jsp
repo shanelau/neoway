@@ -31,7 +31,7 @@
                 <div class="form-group">
                     <label class="col-sm-2 control-label">问题描述</label>
                     <div class="col-sm-10">
-                        <textarea type="" class="col-sm-7"  rows="3" required> </textarea>
+                        <textarea type="" class="col-sm-7"  rows="3" name="content" required> </textarea>
                     </div>
                 </div>
                 <div class="form-group">
@@ -84,20 +84,25 @@
 </div>
 
 
-
-<%@include file="part/footer.jsp"%>
 </div>
-
+<%@include file="part/footer.jsp"%>
 <%@include file="part/inc_js.jsp"%>
  <script>
 	(function(){
         $(document).ready(function() {
             $("header li[name='feedback']").addClass("active");
-            $("form[name='add_fb_web']").ajaxForm({
-                  success:function(data){
-                      alert(data.message);
-                  }
+            $("form[name='add_fb_web']").submit(function(){
+
+                $("form[name='add_fb_web'] button[type='submit']").button("loading");
+                $("form[name='add_fb_web']").ajaxSubmit({
+                    success:function(data){
+                        $("form[name='add_fb_web'] button[type='submit']").button("reset");
+                        alert(data.message);
+                    }
+                });
+                return false;
             });
+
         });
 	})($);
 </script>

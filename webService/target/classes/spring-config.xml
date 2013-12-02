@@ -133,10 +133,13 @@
                 /user/i_forget_password = anon
                 /user/reset_password = anon
                 /error_all = anon
+                /error = anon
+                /generatImage = anon
                 /weather/** = anon
                 /feedback/add = anon
+                /index = authc
+                /feedback/** =authc
                 /user/** =  authc
-                /generatImage = anon
                 /admin/** = authc, roles[admin]
                 /docs/** = authc, perms[document:read]
                 /** = authc

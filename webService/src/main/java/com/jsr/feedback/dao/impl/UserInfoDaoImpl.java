@@ -18,13 +18,13 @@ import java.util.List;
 @Repository("UserInfoDao")
 public class UserInfoDaoImpl extends BaseHibernateDao<Users, Integer> implements UserInfoDao {
     private static final String HQL_LIST = "from Users ";
-    private static final String HQL_FIND_BY_USERNAME = HQL_LIST+"where user_name = ?";
+    private static final String HQL_FIND_BY_USERNAME = HQL_LIST+"u where u.userName = ?";
     private static final String HQL_COUNT = "select count(*) from Users ";
 
-    private static final String HQL_LIST_QUERY_CONDITION = " where username like ?";
+    private static final String HQL_LIST_QUERY_CONDITION = " u where u.userName like ?";
     private static final String HQL_LIST_QUERY_ALL = HQL_LIST + HQL_LIST_QUERY_CONDITION + "order by id desc";
     private static final String HQL_COUNT_QUERY_ALL = HQL_COUNT + HQL_LIST_QUERY_CONDITION;
-    private static final String HQL_LIST_QUERY_BY_KEYWORD = " from Users u where u.username like '%?%' or u.email like %?% or u.trueName like %?%";
+    private static final String HQL_LIST_QUERY_BY_KEYWORD = " from Users u where u.userName like '%?%' or u.email like %?% or u.trueName like %?%";
 
     @Override
     public List<Users> query(int pn, int pageSize, UserQueryModel command) {
@@ -53,5 +53,10 @@ public class UserInfoDaoImpl extends BaseHibernateDao<Users, Integer> implements
     @Override
     public List<Users> listByKeyword(String keyword) {
         return list(" from Users u where u.userName like '%"+keyword+"%' or u.email like '%"+keyword+"%' or u.trueName like '%"+keyword+"%'",-1,Integer.MAX_VALUE);
+    }
+
+    @Override
+    public void update(Users model) {
+        super.update(model);    //To change body of overridden methods use File | Settings | File Templates.
     }
 }

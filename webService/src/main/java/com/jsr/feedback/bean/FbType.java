@@ -15,7 +15,7 @@ import java.util.Collection;
  * Time: 下午9:37
  * To change this template use File | Settings | File Templates.
  */
-@javax.persistence.Table(name = "fb_type", schema = "", catalog = "jsr_rom_db")
+@javax.persistence.Table(name = "fb_type", schema = "")
 @Entity
 public class FbType extends AbstractModel {
     private int typeId;

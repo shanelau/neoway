@@ -1,22 +1,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
-
-<!--[if !IE]><!-->
-<html lang="en" class="no-js">
-<!--<![endif]-->
-
-<!-- BEGIN HEAD -->
-
-<head>
-    <meta charset="utf-8"/>
-    <title>错误页面</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <meta content="" name="description"/>
-    <meta content="" name="author"/>
-    <!-- END GLOBAL MANDATORY STYLES -->
-    <link href="css/error.css" rel="stylesheet" type="text/css"/>
+<%@include file="feedback/part/header.jsp" %>
+<title>错误页面</title>
+<%@include file="feedback/part/inc_css.jsp"%>
+<!-- END GLOBAL MANDATORY STYLES -->
+<link href="css/error.css" rel="stylesheet" type="text/css"/>
 </head>
-
 <!-- END HEAD -->
 
 <!-- BEGIN BODY -->
@@ -47,7 +35,7 @@
 
 
         </div>
-        <p><a href="javascript:void(0);" onclick="history.go(-1)">返回刚才页面</a><br/><br/></p>
+        <p><a href="index">返回主页</a> <span> | <span><a href="javascript:void(0);" onclick="history.go(-1)">返回刚才页面</a></p>
 
     </div>
 

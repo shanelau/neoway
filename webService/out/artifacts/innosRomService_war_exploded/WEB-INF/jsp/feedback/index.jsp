@@ -3,6 +3,8 @@
 <title>用户反馈</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <%@include file="part/inc_css.jsp"%>
+<!--数据表格-->
+<link rel="stylesheet" type="text/css" href="<c:url value='js/datatable/css/jquery.dataTables.css'/>" />
 <!--[if IE]>
  <link rel="stylesheet" type="text/css" href="<c:url value='css/index-ie.css'/>">
 <![endif]-->
@@ -54,9 +56,10 @@
 
 
 
-
-    <%@include file="part/footer.jsp"%>
 </div>
+
+<%@include file="part/footer.jsp"%>
+
 
 <%@include file="part/inc_js.jsp"%>
 <script src="<c:url value='js/datatable/js/jquery.dataTables.js'/>"></script>

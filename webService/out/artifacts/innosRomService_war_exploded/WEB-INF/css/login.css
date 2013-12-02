@@ -68,7 +68,6 @@ body.login{
 
 .web_login .form-signin .form-control,.web_pwd .forget_form .form-control{
 	height:42px;
-	margin-top:13px;
 }
 .web_pwd .forget_form .form-control{
 	margin-top:40px;

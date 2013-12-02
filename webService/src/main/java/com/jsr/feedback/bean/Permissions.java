@@ -16,6 +16,7 @@ import java.util.Collection;
  * To change this template use File | Settings | File Templates.
  */
 @Entity
+@javax.persistence.Table(name = "roles", schema = "")
 public class Permissions extends AbstractModel {
     private int permId;
 

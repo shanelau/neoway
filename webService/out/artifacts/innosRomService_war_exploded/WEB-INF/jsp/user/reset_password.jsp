@@ -28,21 +28,21 @@
         <div class="form-group">
           <label class="control-label col-sm-2 col-sm-offset-2" >用户名</label>
           <div class="col-sm-4">
-            <input placeholder="" name="userName" class="form-control" type="text" required autofocus>
+            <input placeholder="" name="userName" class="form-control" type="text" required value="${userName}" readonly>
             <p class="help-block"></p>
           </div>
         </div>
         <div class="form-group">
           <label class="control-label col-sm-2 col-sm-offset-2" >密码</label>
           <div class="col-sm-4">
-            <input placeholder="六位以上的数字和字母" name="password" class="form-control" type="text" required>
+            <input placeholder="六位以上的数字和字母" name="password" class="form-control" type="password" required>
             <p class="help-block"></p>
           </div>
         </div>
         <div class="form-group">
           <label class="control-label col-sm-2 col-sm-offset-2" >确认密码</label>
           <div class="col-sm-4">
-            <input placeholder="请再次输入密码"  name="passwordConfirm"class="form-control" type="text" required>
+            <input placeholder="请再次输入密码"  name="passwordConfirm"class="form-control" type="password" required>
             <p class="help-block"></p>
           </div>
         </div>
@@ -50,9 +50,8 @@
         
          <div class="form-group">
             <div class="col-sm-12">
-              <button type="submit" class="btn btn-success btn-lg">提交</button>
-              
-                <button type="submit" class="btn btn-primary btn-lg  col-xs-offset-1">返回登录</button>
+              <button type="submit" class="btn btn-success btn-lg" data-loading-text="正在加载...">提交</button>
+                <a href="login" class="btn btn-primary btn-lg  col-xs-offset-1">返回登录</a>
             </div>
   		</div>
         
@@ -77,29 +76,31 @@
         var pass1 =  $("input[name='password']").val();
         var confirmPass = $("input[name='passwordConfirm']").val();
         if(name=='' || pass1=='' || confirmPass == ''){
-            $("div .error-message").html("密码项不能为空.");
-            $("div .error-message").css("visibility","visible");
+            $("div.error-message").html("密码项不能为空.");
+            $("div.error-message").css("visibility","visible");
             return false;
         }
         if(pass1 != confirmPass){
-            $("div .error-message").html("两次输入的密码不相等.");
-            $("div .error-message").css("visibility","visible");
+            $("div.error-message").html("两次输入的密码不相等.");
+            $("div.error-message").css("visibility","visible");
             return false;
         }
         $("div .error-message").html("");
+        $("form button[type='submit']").button("loading");
         $.post(
                 'user/reset_password',
                 {'userName':name,'password':pass1,'passwordConfirm':confirmPass},
                 function(data){
-                    if(data.success == 'true'){
-                        $("div .success-message").html(data.msg);
-                        $("div .error-message").css("visibility","visible");
+                    if(data.status == 'OK'){
+                        $("div.success-message").html(data.message);
+                        $("div.success-message").css("visibility","visible");
                         setTimeout(function(){
                             location.href="login";
                         },3000);
                     }else{
-                        $("div .error-message").html(data.msg);
-                         $("div .error-message").css("visibility","visible");
+                        $("div.error-message").html(data.message);
+                        $("div.error-message").css("visibility","visible");
+                        $("form button[type='submit']").button("reset");
                     }
                 },
                 'json'

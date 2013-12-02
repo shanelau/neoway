@@ -37,7 +37,7 @@
        </div>
         <div class="col-lg-4">
           <h2>添加反馈</h2>
-          <p>您在论坛或者售后工作,有用户反馈了信息?在这里添加到系统</p>   <p><a class="btn btn-primary" href="feedback/add" role="button">点击我 &raquo;</a></p>
+          <p>您在论坛或者售后工作,有用户反馈了信息?在这里添加到系统</p>   <p><a class="btn btn-primary" href="feedback/addPage" role="button">点击我 &raquo;</a></p>
         </div>
       </div>
         </div>

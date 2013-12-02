@@ -69,9 +69,9 @@ public class FeedbackController {
         return model;
     }
 
-    @RequestMapping(value="/add")
+    @RequestMapping(value="/addPage")
     public ModelAndView addFeedbackController(){
-        ModelAndView model = new ModelAndView("feedback/add");
+        ModelAndView model = new ModelAndView("feedback/addPage");
         List<FbType> typeList = fbTypeService.listAll();
         model.addObject("typeList",typeList);
         return model;

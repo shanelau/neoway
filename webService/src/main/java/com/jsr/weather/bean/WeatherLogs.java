@@ -13,7 +13,7 @@ import java.sql.Timestamp;
  * Time: 下午2:12
  * To change this template use File | Settings | File Templates.
  */
-@javax.persistence.Table(name = "weather_logs", schema = "", catalog = "jsr_rom_db")
+@javax.persistence.Table(name = "weather_logs", schema = "")
 @Entity
 public class WeatherLogs extends AbstractModel {
     private int logId;

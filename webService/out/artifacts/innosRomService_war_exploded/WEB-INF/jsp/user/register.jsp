@@ -22,7 +22,7 @@
   <div class="container">
     <div class="inner">
         <div class="message">
-            <div class="error-message alert alert-danger "></div>
+            <div class="register_tip alert alert-danger "></div>
        </div>
        <form class="form-horizontal register-form" role="form" action="register" method="post">
         <div class="form-group">

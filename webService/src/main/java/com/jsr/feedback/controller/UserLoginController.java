@@ -81,11 +81,12 @@ public class UserLoginController{
         token.setRememberMe(true);
         try{
             SecurityUtils.getSubject().login(token);
+            logInfo(request,u.getUserName(),"登录成功");
             return FeedBackConstants.getMessage(true,"index");
         }catch (AuthenticationException e){
             e.printStackTrace();
             logInfo(request,u.getUserName(),"登录失败,密码验证不成功");
-            return FeedBackConstants.getMessage(true,"用户名或者密码错误");
+            return FeedBackConstants.getMessage(false,"用户名或者密码错误");
         }
     }
 
@@ -168,7 +169,7 @@ public class UserLoginController{
     private void setCommonData(Model model) {
         //设置通用属性
     }
-    @RequestMapping(value = "/logut")
+    @RequestMapping(value = "/logout")
     public ModelAndView logut(){
         ModelAndView model = new ModelAndView("user/login");
         Subject currentUser = SecurityUtils.getSubject();
@@ -289,81 +290,52 @@ public class UserLoginController{
     /**
      * 忘记密码,生成找回密码的链接
      * @param request
-     * @param userName
+     * @param username
      * @return
      */
     @RequestMapping(value = "/user/i_forget_password")
     @ResponseBody
-    public Map forgetPass(HttpServletRequest request,String userName){
-        Users users = userService.findUserByName(userName);
-        Map map = new HashMap<String ,String >();
-        String msg = "";
-        if(users == null){              //用户名不存在
-            msg = "用户名不存在,你不会忘记用户名了吧?";
-            map.put("msg",msg);
-            return map;
-        }
-        try{
-            String secretKey= UUID.randomUUID().toString();  //密钥
-            Timestamp outDate = new Timestamp(System.currentTimeMillis()+30*60*1000);//30分钟后过期
-            long date = outDate.getTime()/1000*1000;                  //忽略毫秒数
-            users.setValidataCode(secretKey);
-            users.setRegDate(outDate);
-            userService.update(users);    //保存到数据库
-            String key = users.getUserName()+"$"+date+"$"+secretKey;
-            String digitalSignature = MD5.MD5Encode(key);                 //数字签名
+    public Map forgetPass(HttpServletRequest request,String username){
 
-            String emailTitle = "有方云密码找回";
+        try{
             String path = request.getContextPath();
             String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
-            String resetPassHref =  basePath+"user/reset_password?sid="+digitalSignature+"&userName="+users.getUserName();
-            String emailContent = "请勿回复本邮件.点击下面的链接,重设密码<br/><a href="+resetPassHref +" target='_BLANK'>点击我重新设置密码</a>" +
-                    "<br/>tips:本邮件超过30分钟,链接将会失效，需要重新申请'找回密码'";
-            System.out.print(resetPassHref);
-            SendMail.getInstatnce().sendHtmlMail(emailTitle,emailContent,users.getEmail());
-            msg = "操作成功,已经发送找回密码链接邮箱"+users.getEmail()+"。请在30分钟内重置密码";
-            logInfo(request,userName,"申请找回密码");
+            String msg = userService.updateForgetPassword(username,basePath);
+            logInfo(request,username,msg);
+            return FeedBackConstants.getMessage(true,msg);
         }catch (Exception e){
             e.printStackTrace();
-            msg="邮箱不存在？未知错误,联系管理员吧。";
+            logInfo(request,username,"申请找回密码失败");
+            return FeedBackConstants.getMessage(false,"邮箱不存在？未知错误,联系管理员吧");
         }
-        map.put("msg",msg);
-        return map;
     }
 
     @RequestMapping(value = "/user/reset_password",method = RequestMethod.POST)
     @ResponseBody
     public Map resetPwd(String userName,String password,String passwordConfirm){
-        String msg = "";
-        Map map = new HashMap();
-        map.put("success","false");
         if(password == null || password.equals("") || passwordConfirm==null || passwordConfirm.equals("")){
-            msg = "密码和确认密码不能为空";
-            map.put("msg",msg);
-            return map;
+            return FeedBackConstants.getMessage(false,"密码和确认密码不能为空");
         }
         if(!password.equals(passwordConfirm)){
-            msg = "两次输入的密码不相等";
-            map.put("msg",msg);
-            return map;
+            return FeedBackConstants.getMessage(false,"两次输入的密码不相等");
         }
         try{
             Users users = userService.findUserByName(userName);
+            if(users == null){
+                return FeedBackConstants.getMessage(false,"用户名不存在");
+            }
             String pass = MD5.MD5Encode(password);
             users.setPassword(pass);
             users.setRegDate(null);
             users.setValidataCode("");
             userService.update(users);
-            msg = "修改成功,3秒后跳转到登录界面;。";
             logInfo(userName,"通过找回密码,重新设置密码成功");
+            return FeedBackConstants.getMessage(true,"修改成功,3秒后跳转到登录界面;。");
         }catch (Exception e){
             e.printStackTrace();
-            msg = "密码修改失败";
             logInfo(userName,"通过找回密码,重新设置密码失败");
+            return FeedBackConstants.getMessage(false,"密码修改失败");
         }
-        map.put("success","true");
-        map.put("msg",msg);
-        return map;
     }
 
     /**
@@ -390,6 +362,7 @@ public class UserLoginController{
             return model;
         }
         Timestamp outDate = users.getRegDate();
+        //logger.info(outDate.getTime()+"\t"+System.currentTimeMillis());
         if(outDate.getTime() <= System.currentTimeMillis()){         //表示已经过期
             msg = "链接已经过期,请重新申请找回密码.";
             model.addObject("msg",msg) ;
@@ -398,7 +371,7 @@ public class UserLoginController{
         }
         String key = users.getUserName()+"$"+outDate.getTime()/1000*1000+"$"+users.getValidataCode();          //数字签名
         String digitalSignature = MD5.MD5Encode(key);
-        System.out.println(key+"\t"+digitalSignature);
+        //System.out.println(key+"\t"+digitalSignature);
         if(!digitalSignature.equals(sid)) {
             msg = "链接不正确,是否已经过期了?重新申请吧";
             model.addObject("msg",msg) ;

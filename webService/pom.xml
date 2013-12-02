@@ -219,7 +219,19 @@
             <version>${fasterxml.jackson.version}</version>
         </dependency>
         <!-- end mail-->
-
+        <!-- apache mime-->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpmime</artifactId>
+            <version>4.3.1</version>
+        </dependency>
+        <!-- end apache mime-->
+        <!-- 本地jar 用来push 到客户端-->
+        <dependency>
+            <groupId>com.jsr</groupId>
+            <artifactId>server.push</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
 
 </project>

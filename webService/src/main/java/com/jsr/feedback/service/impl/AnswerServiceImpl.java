@@ -5,10 +5,15 @@ import com.jsr.common.service.impl.BaseService;
 import com.jsr.feedback.FeedBackConstants;
 import com.jsr.feedback.bean.FbAnswer;
 import com.jsr.feedback.bean.FbFeedbacks;
+import com.jsr.feedback.bean.Users;
 import com.jsr.feedback.dao.AnswerDao;
 import com.jsr.feedback.service.AnswerService;
 import com.jsr.feedback.service.FbFeedbacksService;
 import com.jsr.feedback.service.FbStatuService;
+import com.jsr.pushclient.PushManager;
+import org.apache.log4j.Logger;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -25,7 +30,7 @@ import java.util.List;
  */
 @Service("AnswerService")
 public class AnswerServiceImpl extends BaseService<FbAnswer,Integer> implements AnswerService {
-
+    Logger logger = Logger.getLogger(AnswerServiceImpl.class.getName());
     @Autowired
     @Qualifier("FbStatuService")
     FbStatuService fbStatuService;
@@ -52,7 +57,18 @@ public class AnswerServiceImpl extends BaseService<FbAnswer,Integer> implements 
         fbFeedbacks.setFbStatuByStatusId(fbStatuService.get(FeedBackConstants.FEEDBACK_STATUS_REPLYED));
         fbAnswer.setFbFeedbacksByFbId(fbFeedbacks);
         fbAnswer.setReplyTime(new Timestamp(System.currentTimeMillis()));
+
+        Subject currentUser = SecurityUtils.getSubject();
+        Users users = (Users) currentUser.getSession().getAttribute("currUser");
+        //Users u = userService.get(users.getUserId());
+        fbAnswer.setUsersByUserId(users);
         saveOrUpdate(fbAnswer);
+        //推送到终端
+        String imei = fbFeedbacks.getPhImei();
+        if(FeedBackConstants.CAN_PUSH_TO_CLENT && imei!=null && !imei.equals("")){
+            PushManager.getInstance().sendMessage(FeedBackConstants.PUSH_FROM,fbFeedbacks.getPhImei(),content);
+            logger.info("推送到"+imei+":"+content);
+        }
     }
 
     @Override

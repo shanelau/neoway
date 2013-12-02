@@ -39,9 +39,14 @@ public class SendMail {
 
         sms.sendTextMail(getSimpleMailInfo(title,content,toAddress));//发送文体格式
     }  */
-    public void sendHtmlMail(String title,String content,String toAddress){
+    public void sendHtmlMail(final String title, final String content, final String toAddress){
+        new Thread(){
+            @Override
+            public void run() {
+                sms.sendHtmlMail(getSimpleMailInfo(title,content,toAddress));//发送html格式
+            }
+        }.start();
 
-        sms.sendHtmlMail(getSimpleMailInfo(title,content,toAddress));//发送html格式
     }
     public static void init(){
         InputStream inputStream = SendMail.class.getClassLoader().getResourceAsStream("mail.properties");
