@@ -1,5 +1,11 @@
 package com.jsr.feedback.service.impl;
 
+import com.fasterxml.jackson.core.JsonEncoding;
+import com.fasterxml.jackson.core.JsonFactory;
+import com.fasterxml.jackson.core.JsonGenerator;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.util.JSONPObject;
 import com.jsr.common.dao.IBaseDao;
 import com.jsr.common.service.impl.BaseService;
 import com.jsr.feedback.FeedBackConstants;
@@ -18,9 +24,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
+import java.io.IOException;
 import java.sql.Timestamp;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
@@ -38,8 +47,12 @@ public class AnswerServiceImpl extends BaseService<FbAnswer,Integer> implements 
     @Autowired
     @Qualifier("FbFeedbacksService")
     FbFeedbacksService fbFeedbacksService;
-
+    Map pushMap = new HashMap();  //推送的map
+    ObjectMapper objectMapper = new ObjectMapper();
     private AnswerDao answerDao;
+
+
+
     @Autowired
     @Qualifier("AnswerDao")
     @Override
@@ -76,9 +89,9 @@ public class AnswerServiceImpl extends BaseService<FbAnswer,Integer> implements 
         fbAnswer.setFbFeedbacksByFbId(fbFeedbacks);
         fbAnswer.setReplyTime(new Timestamp(System.currentTimeMillis()));
 
-        Subject currentUser = SecurityUtils.getSubject();
-        Users users = (Users) currentUser.getSession().getAttribute("currUser");
-        fbAnswer.setUsersByUserId(users);
+        //Subject currentUser = SecurityUtils.getSubject();
+        //Users users = (Users) currentUser.getSession().getAttribute("currUser");
+        //fbAnswer.setUsersByUserId(users);
         saveOrUpdate(fbAnswer);
         return fbFeedbacks;
     }
@@ -91,8 +104,13 @@ public class AnswerServiceImpl extends BaseService<FbAnswer,Integer> implements 
     public void pushToPhone(FbFeedbacks fbFeedbacks,String message){
         String imei = fbFeedbacks.getPhImei();
         if(FeedBackConstants.CAN_PUSH_TO_CLENT && imei!=null && !imei.equals("")){
-            PushManager.getInstance().sendMessage(FeedBackConstants.PUSH_FROM,fbFeedbacks.getPhImei(),message);
-            logger.info("推送到"+imei+":"+message);
+            try {
+                PushManager.getInstance().sendMessage(FeedBackConstants.PUSH_FROM,imei,getPushMap(message));
+                logger.info("推送到"+imei+":"+getPushMap(message));
+            } catch (JsonProcessingException e) {
+                e.printStackTrace();
+            }
+
         }
     }
     /**
@@ -102,8 +120,12 @@ public class AnswerServiceImpl extends BaseService<FbAnswer,Integer> implements 
      */
     public void pushToPhone( List<String > imeis,String message){
         if(FeedBackConstants.CAN_PUSH_TO_CLENT && imeis!=null && imeis.size()>0){
-            PushManager.getInstance().sendMessage(FeedBackConstants.PUSH_FROM,imeis,message);
-            logger.info("推送到"+imeis.toArray()+":"+message);
+            try {
+                PushManager.getInstance().sendMessage(FeedBackConstants.PUSH_FROM,imeis,getPushMap(message));
+                logger.info("推送到"+imeis.toArray()+":"+getPushMap(message));
+            } catch (JsonProcessingException e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -123,5 +145,18 @@ public class AnswerServiceImpl extends BaseService<FbAnswer,Integer> implements 
               }
           }
         pushToPhone(imeis,message);//推送到手机
+    }
+
+    /**
+     *
+     * @param message    要推送的消息
+     * @return   json 对象
+     * @throws JsonProcessingException
+     */
+    public String getPushMap(String message) throws JsonProcessingException {
+        pushMap.clear();
+        pushMap.put("action",FeedBackConstants.FEEDBACK_PACKAGE);
+        pushMap.put("message",message);
+        return objectMapper.writeValueAsString(pushMap);
     }
 }

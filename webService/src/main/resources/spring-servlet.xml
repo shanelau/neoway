@@ -27,7 +27,7 @@
 
 
     <!-- 开启controller注解支持 -->
-    <!-- 注：如果base-package=com.neoway 则注解事务不起作用  -->
+    <!-- 注：如果base-excepttion=com.neoway 则注解事务不起作用  -->
     <context:component-scan base-package="com.jsr.*.controller">
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>

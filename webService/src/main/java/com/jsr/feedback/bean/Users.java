@@ -1,6 +1,7 @@
 package com.jsr.feedback.bean;
 
 import com.jsr.common.model.AbstractModel;
+import com.jsr.findPhone.bean.PhoneInfo;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
@@ -230,5 +231,15 @@ public class Users extends AbstractModel {
 
     public void setUsersRolesesByUserId(Collection<UsersRoles> usersRolesesByUserId) {
         this.usersRolesesByUserId = usersRolesesByUserId;
+    }
+    private Collection<PhoneInfo> phoneInfoByUserId;
+
+    @OneToMany(mappedBy = "usersByUserId",fetch = FetchType.EAGER)
+    public Collection<PhoneInfo> getPhoneInfoByUserId() {
+        return phoneInfoByUserId;
+    }
+
+    public void setPhoneInfoByUserId(Collection<PhoneInfo> phoneInfoByUserId) {
+        this.phoneInfoByUserId = phoneInfoByUserId;
     }
 }

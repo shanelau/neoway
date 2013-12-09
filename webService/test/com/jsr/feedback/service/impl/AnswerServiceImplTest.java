@@ -1,7 +1,9 @@
 package com.jsr.feedback.service.impl;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.jsr.feedback.bean.FbAnswer;
 import com.jsr.feedback.service.AnswerService;
+import com.jsr.pushclient.PushManager;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,5 +37,18 @@ public class AnswerServiceImplTest {
     public void testGetByFbId() throws Exception {
         List<FbAnswer> list = answerService.getByFbId(54);
         System.out.println(list.size());
+    }
+    @Test
+    public void testGetPushMap() throws JsonProcessingException {
+         System.out.println(new AnswerServiceImpl().getPushMap("什么飞机"));
+    }
+    @Test
+    public void testPush() throws Exception {
+        answerService.saveAndModifyStatus(6,"测试推送233333332222");
+    }
+    @Test
+    public void testPushA(){
+        PushManager.getInstance().sendMessage("demo", "A10000075CFBCA", "字符串");
+
     }
 }

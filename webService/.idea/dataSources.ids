@@ -78,6 +78,32 @@
       <primary-key name="PRIMARY" columns="perm_Id"/>
       <exported-key name="FK_roles_permissions2" table="roles_permissions" schema="" catalog="jsr_rom_db" columns="perm_Id"/>
     </table>
+    <table name="phone_info" schema="" catalog="jsr_rom_db" type="TABLE">
+      <column name="ph_Id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="user_Id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="imei_No" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="phone_No" sqlType="VARCHAR" length="30" precision="0" nullable="true" jdbcType="12"/>
+      <column name="bind_Time" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="pointX" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="pointY" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="point_Date" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="online" sqlType="BIT" length="0" precision="0" nullable="true" jdbcType="-7"/>
+      <primary-key name="PRIMARY" columns="ph_Id"/>
+      <foreign-key name="FK_Reference_10" columns="user_Id" ref-table="users" ref-schema="" ref-catalog="jsr_rom_db" ref-columns="user_Id" update-rule="3" delete-rule="3" deferrability="2"/>
+    </table>
+    <table name="phone_log" schema="" catalog="jsr_rom_db" type="TABLE">
+      <column name="log_Id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="ph_Id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="name" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12"/>
+      <column name="content" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12"/>
+      <column name="log_Time" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="pointX" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="pointY" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="online" sqlType="BIT" length="0" precision="0" nullable="true" jdbcType="-7"/>
+      <column name="client" sqlType="BIT" length="0" precision="0" nullable="true" jdbcType="-7"/>
+      <primary-key name="PRIMARY" columns="log_Id"/>
+      <index name="FK_Reference_9" unique="false" columns="ph_Id"/>
+    </table>
     <table name="roles" schema="" catalog="jsr_rom_db" type="TABLE">
       <column name="role_Id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
       <column name="role_Name" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
@@ -97,6 +123,7 @@
       <column name="user_Id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="user_Name" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
       <column name="password" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12"/>
+      <column name="pwd_Slat" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
       <column name="email" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
       <column name="phone" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
       <column name="nick" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
@@ -105,10 +132,11 @@
       <column name="other" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12"/>
       <column name="dept" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
       <column name="statu" sqlType="BIT" length="0" precision="0" nullable="true" jdbcType="-7"/>
-      <column name="validata_code" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="validata_code" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12"/>
       <column name="reg_date" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
       <primary-key name="PRIMARY" columns="user_Id"/>
       <exported-key name="FK_users_answer" table="fb_answer" schema="" catalog="jsr_rom_db" columns="user_Id"/>
+      <exported-key name="FK_Reference_10" table="phone_info" schema="" catalog="jsr_rom_db" columns="user_Id"/>
       <exported-key name="FK_users_Roles" table="users_roles" schema="" catalog="jsr_rom_db" columns="user_Id"/>
     </table>
     <table name="users_roles" schema="" catalog="jsr_rom_db" type="TABLE">

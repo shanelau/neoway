@@ -30,6 +30,7 @@ public class FeedBackConstants {
     //推送设置
     public static final boolean CAN_PUSH_TO_CLENT = true;
     public static final String PUSH_FROM = "feedback server";
+    public static final String FEEDBACK_PACKAGE = "com.jsr.Feedback.push.MESSAGE";
 
 
     public static Map getMessage(boolean isSuccess,String message){
@@ -43,7 +44,6 @@ public class FeedBackConstants {
         }
         return map;
     }
-
     public static final String SPLIT =",";
 
     public static final String TO ="to";

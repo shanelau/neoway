@@ -1,5 +1,6 @@
 package com.jsr.feedback.service;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.jsr.common.service.IBaseService;
 import com.jsr.feedback.bean.FbAnswer;
 
@@ -18,4 +19,5 @@ public interface AnswerService extends IBaseService<FbAnswer,Integer>{
     List<FbAnswer> getByFbId(int fbId);
 
     void saveReplyAll(int[] addr, String message);
+    String getPushMap(String message) throws JsonProcessingException;
 }
