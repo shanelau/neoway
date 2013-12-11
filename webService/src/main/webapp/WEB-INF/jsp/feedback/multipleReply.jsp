@@ -1,8 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@include file="part/header.jsp" %>
+<%@include file="../part/header.jsp" %>
 <title>批量回复用户反馈</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<%@include file="part/inc_css.jsp"%>
+<%@include file="../part/inc_css.jsp"%>
 <!--[if IE]>
  <link rel="stylesheet" type="text/css" href="<c:url value='css/index-ie.css'/>">
 <![endif]-->
@@ -57,7 +57,7 @@
 
 </div>
 <%@include file="part/footer.jsp"%>
-<%@include file="part/inc_js.jsp"%>
+<%@include file="../part/inc_js.jsp"%>
  <script>
 	(function(){
         $(document).ready(function() {

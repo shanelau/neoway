@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta content="" name="JSR云上的生活"/>
-<meta content="" name="liu.xing"/>
+<meta content="JSR云上的生活" name="description"/>
+<meta  content="liu.xing" name="author"/>
 <!-- Bootstrap -->
 <link href="<c:url value='dist/css/bootstrap.css'/>" type="text/css" rel="stylesheet"/>
 <!--[if IE ]>

@@ -7,16 +7,24 @@ import com.jsr.findPhone.bean.PhoneLog;
 import com.jsr.findPhone.service.PhoneInfoService;
 import com.jsr.findPhone.service.PhoneLogService;
 import com.jsr.pushclient.PushManager;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.ServletRequestUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -37,19 +45,81 @@ public class FindPhoneController {
     @Qualifier("PhoneLogService")
     PhoneLogService phoneLogService;
 
+    @RequestMapping(value = "/index")
+    public ModelAndView index(HttpServletRequest request){
+        ModelAndView model = new ModelAndView("findphone/index");
+        Subject  subject = SecurityUtils.getSubject();
+        List<PhoneInfo> list = phoneInfoService.getByUsername(subject.getPrincipal().toString());
+        model.addObject("phoneList",list);
+        return model;
+    }
+
+    /**
+     * 如果没有绑定，则提示绑定
+     * 如果用户绑定了有多个手机,则进行选择
+     * @return
+     */
+    @RequestMapping(value = "/getAllPhone")
+    @ResponseBody
+    public Map choosePhone(){
+        Subject  subject = SecurityUtils.getSubject();
+        List<PhoneInfo> list = phoneInfoService.getByUsername(subject.getPrincipal().toString());
+        if(list == null || list.size()==0){
+            return  FindPhoneConstants.getMessage(false,"没有绑定一个手机");
+        }else{
+            for(PhoneInfo phoneInfo:list){
+                phoneInfo.setUsersByUserId(null);
+                phoneInfo.setPhoneLogsByPhId(null);
+            }
+            return FindPhoneConstants.getMessage(true,list);
+        }
+    }
+
+    /**
+     *
+     * @param request
+     * @return   返回当前用户默认的设备
+     */
+    private PhoneInfo getDefaultDevice(HttpServletRequest request) {
+        HttpSession session = request.getSession();
+        Object phoneInfo = session.getAttribute("defaultDevice");
+        if(phoneInfo != null && phoneInfo instanceof PhoneInfo){
+            return (PhoneInfo)phoneInfo;
+        }
+        return null;
+    }
+
+    /**
+     *  获取系统当前操作的device
+     * @param request
+     * @return
+     */
+    @RequestMapping(value = "/setDefaultDevice")
+    @ResponseBody
+    public Boolean bingPhone(HttpServletRequest request,String imei){
+        PhoneInfo phoneInfo = phoneInfoService.getByImei(imei);
+        if(phoneInfo != null){
+            request.getSession().setAttribute("defaultDevice",phoneInfo);
+            return true;
+        }
+        return false;
+    }
+    @RequestMapping(value = "/update_location")
+    public String updateLocation(){
+        return "findphone/update_location";
+    }
+
     @RequestMapping(value = "/get_by_imei")
     @ResponseBody
-    public PhoneInfo getPhoneByImei(String imei,HttpServletResponse response){
+    public PhoneInfo getPhoneByImei(String imei ){
         PhoneInfo phoneInfo = phoneInfoService.getByImei(imei);
         phoneInfo.setPhoneLogsByPhId(null);
         phoneInfo.setUsersByUserId(null);
-        response.addHeader("Access-Control-Allow-Origin","*");
         return phoneInfo;
     }
     @RequestMapping(value = "/getlocation")
     @ResponseBody
-    public Map getLocation(String imei,HttpServletResponse response){
-        response.addHeader("Access-Control-Allow-Origin","*");
+    public Map getLocation(String imei ){
         return getResult(imei,FindPhoneConstants.LOCATION,"",FindPhoneConstants.LOCATION_Expiry_Date,FindPhoneConstants.PUSH_LOCATION_ITERVAL);
     }
     /**
@@ -81,9 +151,9 @@ public class FindPhoneController {
         return getResult(imei,FindPhoneConstants.LOCK,isopen,FindPhoneConstants.LOCATION_Expiry_Date,FindPhoneConstants.PUSH_LOCATION_ITERVAL);
     }
 
-    @RequestMapping(value = "/update_location")
+    @RequestMapping(value = "/update_location",method = RequestMethod.POST)
     @ResponseBody
-    public Map updateLocation(HttpServletRequest request,HttpServletResponse response){
+    public Map updateLocation(HttpServletRequest request ){
         String imei = ServletRequestUtils.getStringParameter(request,"imei","");
         String pointX = ServletRequestUtils.getStringParameter(request,"pointX","");
         String pointY = ServletRequestUtils.getStringParameter(request,"pointY","");
@@ -100,7 +170,6 @@ public class FindPhoneController {
         phoneLog.setName("location");
         phoneLog.setPhoneInfoByPhId(phoneInfo);
 
-        response.addHeader("Access-Control-Allow-Origin","*");
         try{
             phoneLogService.save(phoneLog);
             return FindPhoneConstants.getMessage(true,"update success");
@@ -124,7 +193,7 @@ public class FindPhoneController {
                 }
             }catch (Exception e) {
                 e.printStackTrace();
-                return  FindPhoneConstants.getMessage(false,"something wrong!");
+                return  FindPhoneConstants.getMessage(false,"maybe imei not found!");
             }
         }
     }
@@ -139,11 +208,15 @@ public class FindPhoneController {
      */
     public Map canPush(String imei,String motion,long pushExpiryDate ,String value) {
         PhoneLog  pushLocationLog = phoneLogService.getTopByImei(imei,motion,false); //push log信息
-        boolean pushOutDate = outDate(pushLocationLog,pushExpiryDate); // 位置是否过期
-        if(pushOutDate){    //push 是否过期
+        if(pushLocationLog == null){         //是否已经发送push
             return  pushMotion(imei, motion, value, "push success,please wait");
-        }else {
-            return FindPhoneConstants.getMessage(false,"The Server is located your phone,please wait for a few minutes!");
+        }else{
+            boolean pushOutDate = outDate(pushLocationLog,pushExpiryDate);
+            if(pushOutDate){    //push 是否过期
+                return  pushMotion(imei, motion, value, "push success,please wait");
+            }else {
+                return FindPhoneConstants.getMessage(false,"The Server is located your phone,please wait for a few minutes!");
+            }
         }
     }
     public Map pushMotion(String imei, String motion, String value, Object obj){

@@ -18,10 +18,10 @@ import java.util.List;
  */
 @Repository("userRolesDao")
 public class UserRolesDaoImpl extends BaseHibernateDao<UsersRoles,Integer> implements UserRolesDao {
-    private static final String HQL_LIST = "from UserRoles ";
-    private static final String HQL_FIND_BY_USERId = HQL_LIST+"where user_id = ?";
-    private static final String HQL_DELETE_BY_USERID_ROLEID = "delete from UserRoles ur where ur.rolesByRoleId.roleId=? and ur.usersByUserId.userId=?";
-    private static final String HQL_ADD_BY_USERID_ROLEID = "insert into UserRoles(rolesByRoleId.roleId,usersByUserId.userId) values(?,?)" ;
+    private static final String HQL_LIST = "from UsersRoles ur ";
+    private static final String HQL_FIND_BY_USERId = HQL_LIST+"where ur.userId = ?";
+    private static final String HQL_DELETE_BY_USERID_ROLEID = "delete from UsersRoles ur where ur.rolesByRoleId.roleId=? and ur.usersByUserId.userId=?";
+    private static final String HQL_ADD_BY_USERID_ROLEID = "insert into UsersRoles(rolesByRoleId.roleId,usersByUserId.userId) values(?,?)" ;
     @Override
     public List<UsersRoles> query(int pn, int pageSize, UserRolesQueryModel command) {
         return null;

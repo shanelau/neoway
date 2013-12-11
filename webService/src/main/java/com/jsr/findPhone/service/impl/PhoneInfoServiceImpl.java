@@ -9,6 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: liu.xing
@@ -31,4 +33,9 @@ public class PhoneInfoServiceImpl extends BaseService<PhoneInfo,Integer> impleme
     @Override
     public PhoneInfo getByImei(String imei) {
         return phoneInfoDao.getByImei(imei);    }
+
+    @Override
+    public List<PhoneInfo> getByUsername(String username) {
+       return phoneInfoDao.listByUsername(username);
+    }
 }

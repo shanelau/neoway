@@ -1,0 +1,29 @@
+body, html {
+    margin: 0;
+    background: #51565c url(../images/findphone/phone-bg.png) 0 0 repeat-x;
+    font: 12px/1 "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+.center{
+    padding-top: 50px;
+}
+#allmap {
+    height: 700px;
+    margin: 0 auto;
+    box-shadow: -10px 10px 45px rgba(0,0,0,1);
+}
+#control {
+    height: 100%;
+}
+#control input {
+    clear: both;
+}
+#control input,#control button{
+    margin-top: 10px;
+    clear: both;
+}
+#control .motion{
+    max-width: 150px;
+}
+@media (min-width:768px){.navbar{min-height:44px}.navbar .navbar-header{float:right} .navbar .navbar-nav>li>a{padding-top:12px;padding-bottom:12px} .navbar .navbar-brand{padding-top:12px;padding-bottom:12px}}.carousel{height:460px}
+
+.btn_imei_choose{ margin-left: 10px;}

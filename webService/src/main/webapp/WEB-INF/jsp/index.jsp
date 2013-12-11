@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@include file="feedback/part/header.jsp" %>
+<%@include file="part/header.jsp" %>
 <title>主页</title>
-<%@include file="feedback/part/inc_css.jsp"%>
+<%@include file="part/inc_css.jsp"%>
 
 <!--[if IE]>
 <link rel="stylesheet" type="text/css" href="<c:url value='css/index-ie.css'/>">
@@ -42,7 +42,7 @@
       </div>
         </div>
 <%@include file="feedback/part/footer.jsp"%>
-        <%@include file="feedback/part/inc_js.jsp"%>
+        <%@include file="part/inc_js.jsp"%>
         <script>
             (function(){
                 $(document).ready(function() {

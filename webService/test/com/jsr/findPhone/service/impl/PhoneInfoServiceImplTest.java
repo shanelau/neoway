@@ -17,6 +17,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.sql.Timestamp;
 import java.util.Collection;
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -76,5 +77,10 @@ public class PhoneInfoServiceImplTest extends AbstractJUnit4SpringContextTests{
     }
     public void print(PhoneInfo phoneInfo){
         System.out.println(phoneInfo.getPhId()+"\t"+phoneInfo.getImeiNo()+"\t");
+    }
+    @Test
+    public void listByUserId(){
+        List<PhoneInfo> list = phoneInfoService.getByUsername("test1");
+        Assert.assertEquals(list.size(),2);
     }
 }

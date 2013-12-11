@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@include file="feedback/part/header.jsp" %>
+<%@include file="../part/header.jsp" %>
 <title>错误页面</title>
-<%@include file="feedback/part/inc_css.jsp"%>
+<%@include file="../part/inc_css.jsp"%>
 <!-- END GLOBAL MANDATORY STYLES -->
 <link href="css/error.css" rel="stylesheet" type="text/css"/>
 </head>

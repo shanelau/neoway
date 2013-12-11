@@ -52,7 +52,7 @@ public class WeatherController {
             return saveLogs(wrModel);
         } catch (Exception e) {
             e.printStackTrace();
-            return "error";
+            return "";
         }
     }
 
@@ -64,7 +64,7 @@ public class WeatherController {
             return saveLogs(wrModel);
         } catch (Exception e) {
             e.printStackTrace();
-            return "error";
+            return "";
         }
     }
 
@@ -97,7 +97,7 @@ public class WeatherController {
             return saveLogs(wrModel);
         } catch (Exception e) {
             e.printStackTrace();
-            return "error";
+            return "";
         }
     }
 
@@ -115,7 +115,7 @@ public class WeatherController {
             return saveLogs(wrModel);
         } catch (Exception e) {
             e.printStackTrace();
-            return "error";
+            return "";
         }
     }
 

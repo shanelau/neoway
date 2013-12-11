@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@include file="../feedback/part/header.jsp" %>
+<%@include file="../part/header.jsp" %>
 <title>JSR云上的生活</title>
-<%@include file="../feedback/part/inc_css.jsp" %>
+<%@include file="../part/inc_css.jsp" %>
 <!-- my css-->
 <link rel="stylesheet" href="<c:url value='css/login.css'/>">
 
@@ -25,7 +25,7 @@
                 <div class="web_login col-xs-12 col-md-4 col-ls-4 ">
                     <div class="" id="web_login">
                         <div class="login_form">
-                            <form class="form-signin login-form" action="login" method="post">
+                            <form class="form-signin login-form" action="user_login" method="post">
                                 <h2 class="form-signin-heading text-center">账号登录</h2>
 
                                 <div class="form-group" name="username">
@@ -75,7 +75,7 @@
 </div>
 </div>
 
-<%@include file="../feedback/part/inc_js.jsp" %>
+<%@include file="../part/inc_js.jsp" %>
 <!--my js-->
 <script src="<c:url value='js/login.js'/>" type="text/javascript"></script>
 <script>

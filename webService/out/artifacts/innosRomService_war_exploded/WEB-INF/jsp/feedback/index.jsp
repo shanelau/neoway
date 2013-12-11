@@ -1,8 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@include file="part/header.jsp" %>
+<%@include file="../part/header.jsp" %>
 <title>用户反馈</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<%@include file="part/inc_css.jsp"%>
+<%@include file="../part/inc_css.jsp"%>
 <!--数据表格-->
 <link rel="stylesheet" type="text/css" href="<c:url value='js/datatable/css/jquery.dataTables.css'/>" />
 <!--[if IE]>
@@ -64,7 +64,7 @@
 <%@include file="part/footer.jsp"%>
 
 
-<%@include file="part/inc_js.jsp"%>
+<%@include file="../part/inc_js.jsp"%>
 <script src="<c:url value='js/datatable/js/jquery.dataTables.js'/>"></script>
 <script src="<c:url value='js/moment.min.js'/>"></script>
 <script src="<c:url value='js/lang/zh-cn.js'/>"></script>

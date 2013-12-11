@@ -1,5 +1,6 @@
 package com.jsr.feedback.service.impl;
 
+import com.jsr.common.Constants;
 import com.jsr.common.dao.IBaseDao;
 import com.jsr.common.mail.SendMail;
 import com.jsr.common.pagination.Page;
@@ -8,9 +9,11 @@ import com.jsr.common.service.impl.BaseService;
 import com.jsr.common.shiro.realm.MD5;
 import com.jsr.feedback.FeedBackConstants;
 import com.jsr.feedback.bean.Users;
+import com.jsr.feedback.bean.UsersRoles;
 import com.jsr.feedback.dao.UserInfoDao;
 import com.jsr.feedback.model.UserQueryModel;
 import com.jsr.feedback.service.UserInfoService;
+import com.jsr.feedback.service.UserRolesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -29,6 +32,12 @@ import java.util.UUID;
 @Service("UserInfoService")
 public class UserInfoServiceImpl extends BaseService<Users, Integer> implements UserInfoService {
     private UserInfoDao userInfoDao;
+    @Autowired
+    @Qualifier("UserRolesService")
+    UserRolesService userRolesService;
+    @Autowired
+    @Qualifier("RoleService")
+    com.jsr.feedback.service.RoleService roleService;
 
     @Autowired
     @Qualifier("UserInfoDao")
@@ -77,4 +86,20 @@ public class UserInfoServiceImpl extends BaseService<Users, Integer> implements 
     }
 
 
+    public Users save(Users model,int roleId) {
+        Users users = save(model);
+        addRoles(users.getUserId(),roleId);
+        return users;
+    }
+    /**
+     *
+     * @param userId   用户编号
+     * @param roleId    角色编号
+     */
+    public void addRoles(int userId,int roleId){
+        UsersRoles ur = new UsersRoles();
+        ur.setRoleId(roleId);
+        ur.setUserId(userId);
+        userRolesService.save(ur);
+    }
 }

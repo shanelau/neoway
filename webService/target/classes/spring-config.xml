@@ -129,8 +129,9 @@
                 /images/** = anon
                 /css/** = anon
                 /dist/**=anon
+                /user_login = anon
                 /register = anon
-                /findphone/** = anon
+                /findphone/** = authc
                 /user/i_forget_password = anon
                 /user/reset_password = anon
                 /error_all = anon
@@ -138,8 +139,8 @@
                 /generatImage = anon
                 /weather/** = anon
                 /feedback/add = anon
-                /index = authc
-                /feedback/** =authc
+                /index = authc ,roles[rom]
+                /feedback/** =authc, roles[rom]
                 /user/** =  authc
                 /admin/** = authc, roles[admin]
                 /docs/** = authc, perms[document:read]
@@ -156,7 +157,14 @@
     <bean id="jdbcRealm" class="com.jsr.common.shiro.realm.SaltAwareJdbcRealm">
         <property name="name" value="jdbcRealm"/>
         <property name="dataSource" ref="dataSource"/>
+        <property name="credentialsMatcher" ref="passwordMatcher"/>
     </bean>
+
+    <bean id="passwordMatcher" class="com.jsr.common.shiro.realm.PasswordMatcherEx" >
+        <property name="passwordService" ref="passwordService"></property>
+    </bean>
+    <bean id="passwordService" class="org.apache.shiro.authc.credential.DefaultPasswordService"></bean>
+
 
     <bean id="imageCaptchaService" class="com.octo.captcha.service.image.DefaultManageableImageCaptchaService">
         <constructor-arg type="com.octo.captcha.service.captchastore.CaptchaStore" index="0">

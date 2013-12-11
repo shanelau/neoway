@@ -3,6 +3,8 @@ package com.jsr.findPhone.service;
 import com.jsr.common.service.IBaseService;
 import com.jsr.findPhone.bean.PhoneInfo;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: liu.xing
@@ -12,4 +14,6 @@ import com.jsr.findPhone.bean.PhoneInfo;
  */
 public interface PhoneInfoService extends IBaseService<PhoneInfo,Integer>{
     PhoneInfo getByImei(String imei);
+
+    List<PhoneInfo> getByUsername(String username);
 }

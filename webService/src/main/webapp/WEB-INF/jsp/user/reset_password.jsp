@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@include file="../feedback/part/header.jsp" %>
+<%@include file="../part/header.jsp" %>
 <title>JSR云上的生活--重置密码</title>
-<%@include file="../feedback/part/inc_css.jsp"%>
+<%@include file="../part/inc_css.jsp"%>
 <!-- my css-->
 <link rel="stylesheet" href="<c:url value='css/login.css'/>">
 
@@ -67,7 +67,7 @@
   </footer>
 </section>
 
-<%@include file="../feedback/part/inc_js.jsp"%>
+<%@include file="../part/inc_js.jsp"%>
 <!--my js-->
 <script src="<c:url value='js/login.js'/>" type="text/javascript"></script>
 <script>

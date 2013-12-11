@@ -119,6 +119,6 @@
     </servlet-mapping>
     <error-page>
         <error-code>404</error-code>
-        <location>/WEB-INF/jsp/error_all.jsp</location>
+        <location>/WEB-INF/jsp/error/status404.jsp</location>
     </error-page>
 </web-app>

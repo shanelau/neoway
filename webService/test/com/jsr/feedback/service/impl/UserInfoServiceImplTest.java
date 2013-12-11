@@ -1,5 +1,6 @@
 package com.jsr.feedback.service.impl;
 
+import com.jsr.common.Constants;
 import com.jsr.feedback.bean.Users;
 import com.jsr.feedback.service.UserInfoService;
 import org.junit.Assert;
@@ -51,5 +52,13 @@ public class UserInfoServiceImplTest {
         } catch (Exception e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         }
+    }
+    @Test
+    public void testAdd(){
+        Users users = new Users();
+        users.setUserName("test");
+        users.setPassword("ads");
+        users.setStatu(true);
+        userInfoService.save(users, Constants.ROLE_USER);
     }
 }

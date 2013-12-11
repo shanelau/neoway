@@ -3,6 +3,8 @@ package com.jsr.findPhone.dao;
 import com.jsr.common.dao.IBaseDao;
 import com.jsr.findPhone.bean.PhoneInfo;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: liu.xing
@@ -12,4 +14,6 @@ import com.jsr.findPhone.bean.PhoneInfo;
  */
 public interface PhoneInfoDao extends IBaseDao<PhoneInfo,Integer>{
     PhoneInfo getByImei(String imei);
+
+    List<PhoneInfo> listByUsername(String username);
 }

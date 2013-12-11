@@ -20,4 +20,5 @@ public interface UserInfoService extends IBaseService<Users, Integer> {
     List<Users> listByKeyword(String keyword);
 
     String updateForgetPassword(String username,String basePath) throws Exception;
+    Users save(Users users,int roleId);
 }

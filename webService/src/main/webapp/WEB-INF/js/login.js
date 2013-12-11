@@ -37,9 +37,7 @@ jQuery(document).ready(function() {
             success:function(data){
                 $(".login-form button[type='submit']").button('reset');
                 if(data.status=="OK"){
-                    setTimeout(function(){
-                        location.href="index";
-                    },0);
+                        window.location=data.message;
                 }else{
                     $(".login-form div[name='username']").removeClass("has-success").addClass("has-error");
                     $(".login-form div[name='username'] label.control-label").text(data.message);

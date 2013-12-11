@@ -3,6 +3,7 @@ package com.jsr.feedback.controller;
 
 import com.jsr.feedback.FeedBackConstants;
 import com.jsr.feedback.bean.Users;
+import com.jsr.feedback.bean.UsersRoles;
 import com.jsr.feedback.model.LoginCommand;
 import com.jsr.feedback.model.UserRegisterModel;
 import com.jsr.feedback.service.UserInfoService;
@@ -10,12 +11,15 @@ import com.jsr.common.Constants;
 import com.jsr.common.mail.SendMail;
 import com.jsr.common.pagination.Page;
 import com.jsr.common.shiro.realm.MD5;
+import com.jsr.feedback.service.UserRolesService;
 import com.octo.captcha.service.CaptchaServiceException;
 import org.apache.log4j.Logger;
 import org.apache.log4j.MDC;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
+import org.apache.shiro.authc.LockedAccountException;
 import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.authc.credential.PasswordService;
 import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -50,21 +54,23 @@ public class UserLoginController{
     @Autowired
     @Qualifier("UserInfoService")
     private UserInfoService userService;
+    @Autowired
+    @Qualifier("passwordService")
+    private PasswordService passwordService;
+
 
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String login() {
         return "user/login";
     }
-    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    @RequestMapping(value = "/user_login", method = RequestMethod.POST)
     @ResponseBody
     public Map login( LoginCommand model, HttpServletRequest request) {
-
-        Session session = SecurityUtils.getSubject().getSession();     //用户session
-
-       boolean isResponseCorrect  = validateCaptchaImage(request);
-        isResponseCorrect = true;
+        Subject currentuser = SecurityUtils.getSubject();     //用户session
+      //  isResponseCorrect  = validateCaptchaImage(request);
+        boolean isResponseCorrect = true;
        if(!isResponseCorrect){      //验证失败
-           return FeedBackConstants.getMessage(false,"验证码错误");
+           return FeedBackConstants.getMessage(false, "验证码错误");
        }
         //检查是否被冻结
         Users u = userService.findUserByName(model.getUsername());
@@ -72,22 +78,38 @@ public class UserLoginController{
             return FeedBackConstants.getMessage(false,"用户名不存在。");
         }else if(!u.getStatu()){
             logInfo(request,u.getUserName(),"登录失败尝试登录,账号被冻结");
-            return FeedBackConstants.getMessage(false,"您的账号被冻结了,等待管理员处理。");
+            return FeedBackConstants.getMessage(false, "您的账号被冻结了,等待管理员处理。");
 
         }
         LoginCommand command = model;
-        String password = MD5.MD5Encode(command.getPassword().trim());
-        UsernamePasswordToken token = new UsernamePasswordToken(command.getUsername(),password);
+       // String password = MD5.MD5Encode(command.getPassword().trim());
+        UsernamePasswordToken token = new UsernamePasswordToken(command.getUsername(),command.getPassword());
         token.setRememberMe(true);
         try{
+            if (currentuser.isAuthenticated())
+                currentuser.logout();
             SecurityUtils.getSubject().login(token);
             logInfo(request,u.getUserName(),"登录成功");
-            return FeedBackConstants.getMessage(true,"index");
+            return FeedBackConstants.getMessage(true,redirect(currentuser));
+        }catch (LockedAccountException e){
+            e.printStackTrace();
+            return FeedBackConstants.getMessage(false,"账号已经被冻结了");
         }catch (AuthenticationException e){
             e.printStackTrace();
             logInfo(request,u.getUserName(),"登录失败,密码验证不成功");
             return FeedBackConstants.getMessage(false,"用户名或者密码错误");
         }
+    }
+
+    /**
+     * 用户登录时 根据用户身份，跳转到不同界面
+     * @param subject
+     * @return
+     */
+    public String redirect(Subject subject){
+        if(subject.hasRole(Constants.ROLE_NAME_ROM)) return "index";
+        if(subject.hasRole(Constants.ROLE_NAME_USER) ) return "findphone/index";
+        throw new LockedAccountException("you have no roles");     //没有任何身份
     }
 
     @RequestMapping(value = "/register", method = {RequestMethod.GET})
@@ -106,20 +128,24 @@ public class UserLoginController{
             return map;
         }
         Users user_info = new Users();
-        String password = MD5.MD5Encode(registerModel.getPassword().trim());
+        //String password = MD5.MD5Encode(registerModel.getPassword().trim());
         user_info.setUserName(registerModel.getUsername());
-        user_info.setPassword(password);
+        //user_info.setPassword(password);
         user_info.setEmail(registerModel.getEmail());
         user_info.setTrueName(registerModel.getTrueName());
         user_info.setDept(registerModel.getDept());
         user_info.setPhone(registerModel.getPhone());
-        user_info.setStatu(false);  //默认设置为冻结状态  无法登录  需要管理审核
+        user_info.setStatu(true);  //默认设置为冻结状态  无法登录  需要管理审核
         user_info.setRegDate(new Timestamp(System.currentTimeMillis()));
+        //设置密码
+        String encrypted = passwordService.encryptPassword(registerModel.getPassword());
+        user_info.setPassword(encrypted);
+
         try{
-            userService.save(user_info);
-            SendMail.getInstatnce().sendHtmlMail("用户注册，请审核","有一个用户注册了JSR系统，请审核。<br/><br/>"+"用户名:<a>"+user_info.getUserName()+"</a>",SendMail.getUserName());   //发送邮件到管理员
+            userService.save(user_info,Constants.ROLE_USER);  //设置了默认用户身份为 user
+          //  SendMail.getInstatnce().sendHtmlMail("用户注册，请审核","有一个用户注册了JSR系统，请审核。<br/><br/>"+"用户名:<a>"+user_info.getUserName()+"</a>",SendMail.getUserName());   //发送邮件到管理员
             logInfo(request,user_info.getUserName(),"注册成功");
-            return FeedBackConstants.getMessage(true,"注册成功,等待管理员审核");
+            return FeedBackConstants.getMessage(true,"恭喜您,注册成功");
         }catch (Exception e){
             e.printStackTrace();
             return FeedBackConstants.getMessage(true,"注册失败,用户名和邮箱可能已经存在");
