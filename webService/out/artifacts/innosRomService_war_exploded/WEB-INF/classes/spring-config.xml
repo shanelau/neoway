@@ -131,7 +131,7 @@
                 /dist/**=anon
                 /user_login = anon
                 /register = anon
-                /findphone/** = authc
+                /findphone/** = anon
                 /user/i_forget_password = anon
                 /user/reset_password = anon
                 /error_all = anon

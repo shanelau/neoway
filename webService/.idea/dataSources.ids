@@ -84,15 +84,12 @@
       <column name="imei_No" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
       <column name="phone_No" sqlType="VARCHAR" length="30" precision="0" nullable="true" jdbcType="12"/>
       <column name="bind_Time" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
-      <column name="pointX" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
-      <column name="pointY" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
-      <column name="point_Date" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
-      <column name="online" sqlType="BIT" length="0" precision="0" nullable="true" jdbcType="-7"/>
+      <column name="phone_Model" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="ph_Id"/>
       <foreign-key name="FK_Reference_10" columns="user_Id" ref-table="users" ref-schema="" ref-catalog="jsr_rom_db" ref-columns="user_Id" update-rule="3" delete-rule="3" deferrability="2"/>
     </table>
     <table name="phone_log" schema="" catalog="jsr_rom_db" type="TABLE">
-      <column name="log_Id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="log_Id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="ph_Id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
       <column name="name" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12"/>
       <column name="content" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12"/>

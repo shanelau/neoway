@@ -5,6 +5,9 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
           http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
 
+    <welcome-file-list>
+        <welcome-file>index</welcome-file>
+    </welcome-file-list>
     <!-- log4j 配置  开始 -->
     <context-param>
         <param-name>log4jConfigLocation</param-name>
@@ -108,6 +111,10 @@
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
+    <servlet-mapping>
+        <servlet-name>spring</servlet-name>
+        <url-pattern>/index</url-pattern>
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>default</servlet-name>
         <url-pattern>*.html</url-pattern>

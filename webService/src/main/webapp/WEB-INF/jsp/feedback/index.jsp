@@ -5,11 +5,13 @@
 <%@include file="../part/inc_css.jsp"%>
 <!--数据表格-->
 <link rel="stylesheet" type="text/css" href="<c:url value='js/datatable/css/jquery.dataTables.css'/>" />
+<link rel="stylesheet" type="text/css" href="<c:url value='js/datatable/extra/tableTool/media/css/TableTools.css'/>" />
 <!--[if IE]>
  <link rel="stylesheet" type="text/css" href="<c:url value='css/index-ie.css'/>">
 <![endif]-->
 <!-- my css-->
 <link rel="stylesheet" href="<c:url value='css/index.css'/>">
+<link rel="stylesheet" href="<c:url value='css/feedback-index.css'/>">
 </head>
 
 <body>
@@ -17,26 +19,26 @@
 
 <div class="container bs-docs-container">
   <div class="row">
-    <div class="col-md-2">
-      <div class="bs-sidebar hidden-print affix" role="complementary">
-        <ul class="nav bs-sidenav status_ul">
-          <li class="active"> <a href="javascript:void(0);" value="">全部反馈</a> </li>
-            <c:forEach var="statusModel" items="${statusList}">
-                <li class=""> <a href="javascript:void(0);" value="${statusModel.statusId}">${statusModel.statusName}</a> </li>
-            </c:forEach>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="col-md-10" role="main">
+
+    <div class="col-md-12" role="main">
       <div id="less" class="bs-docs-section">
         <div class="page-header">
           <h1>反馈列表</h1>     
         </div>
         <form class="form-horizontal">
             <div class="form-group fb_type_choose">
-             	 <label class="control-label fb_lable_text col-lg-2"><p class="text-danger">反馈类型</p></label>
+             	 <label class="control-label fb_lable_text col-lg-2"><p class="text-danger">反馈状态</p></label>
                     <div class="col-lg-3">
+                    <select name="fb_status" class="form-control ">
+                      <option value="">全部反馈</option>
+                        <c:forEach var="statusModel" items="${statusList}">
+                            <option value="${statusModel.statusId}">${statusModel.statusName}</option>
+                        </c:forEach>
+                  </select>
+                  </div>
+
+                <label class="control-label fb_lable_text col-lg-2"><p class="text-danger">反馈类型</p></label>
+                <div class="col-lg-3">
                     <select name="fb_type" class="form-control ">
                       <option value="">全部</option>
                         <c:forEach var="fbType" items="${typeList}">
@@ -69,7 +71,9 @@
 <script src="<c:url value='js/moment.min.js'/>"></script>
 <script src="<c:url value='js/lang/zh-cn.js'/>"></script>
 <script src="<c:url value='js/my-fb-dataTable.js'/>"></script>
- 
+<script src="<c:url value='js/datatable/extra/tableTool/media/js/TableTools.js'/>"></script>
+<script src="<c:url value='js/datatable/extra/tableTool/media/js/ZeroClipboard.js'/>"></script>
+
  <script>
 	(function(){
         $(document).ready(function() {

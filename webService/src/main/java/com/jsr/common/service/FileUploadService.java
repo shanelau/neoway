@@ -11,13 +11,13 @@ import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 
 import javax.servlet.http.HttpServletRequest;
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.zip.GZIPInputStream;
 
 /**
  * Created with IntelliJ IDEA.
@@ -32,6 +32,9 @@ public class FileUploadService {
     @Autowired
     @Qualifier("multipartResolver")
     CommonsMultipartResolver multipartResolver;
+    String logImageName;
+    String fileName;
+    SimpleDateFormat sdf = new SimpleDateFormat("YYYYMMddHHmmssS");
 
     public Map addFileToDisk(HttpServletRequest request) {
         Map filesMap = new HashMap<String,String >();
@@ -51,12 +54,7 @@ public class FileUploadService {
                     if(originalFilename !=null && !originalFilename.equals("")){          //上传文件处不为空
                         String name =  originalFilename.substring(0,originalFilename.lastIndexOf("."));
                         String suffix = originalFilename.substring(originalFilename.lastIndexOf("."));
-                        //String logImageName = UUID.randomUUID().toString() + suffix;// 构建文件名称
-                        //                 /** 使用UUID生成文件名称* */
-                        SimpleDateFormat sdf = new SimpleDateFormat("YYYYMMddHHmmssS");
-                        String logImageName =  name+"-"+ sdf.format(new Date())+suffix;   //文件命名 加上时间
-                        String fileName = fileDirectory + File.separator + logImageName;                       /** 拼成完整的文件保存路径加文件* */
-                        mfile.transferTo(new File(fileName));
+                        initFileName(mfile,fileDirectory, name, suffix);//初始化文件名和路径
                         String relativePath =logoPathDir+File.separator+srcfname+File.separator+ logImageName; //相对路径
                         if(Constants.DEBUG_LOG){
                             logger.info(relativePath);
@@ -74,6 +72,50 @@ public class FileUploadService {
         }
         return filesMap;
     }
+
+    /**
+     * 初始化文件名,保存到相对路径
+     * @param mfile 上传的文件流
+     * @param fileDirectory 需要保存的绝对路径
+     * @param name 文件名
+     * @param suffix 文件后缀
+     * @throws IOException
+     */
+    public void initFileName(MultipartFile mfile,String fileDirectory,String name,String suffix) throws IOException {
+        boolean gz = suffix.equals(".gz");
+        logImageName = gz?(name+"-"+ sdf.format(new Date())+".txt"):(name+"-"+ sdf.format(new Date())+suffix);
+        fileName = fileDirectory + File.separator + logImageName;  /** 拼成完整的文件保存路径加文件* */
+        if(gz){
+            saveGZ(mfile,fileName);
+        }else {
+            mfile.transferTo(new File(fileName));
+        }
+    }
+
+    /**
+     * 有些上传的文件时gz格式，需要解压后保存
+     * @param mfile    上传的文件流
+     * @param fileName 保存的文件相路径
+     */
+    private void saveGZ(MultipartFile mfile,String fileName) {
+        {
+            try {
+                GZIPInputStream in = new GZIPInputStream(mfile.getInputStream());
+                OutputStream out = new FileOutputStream(fileName);
+                // Transfer bytes from the compressed file to the output file
+                byte[] buf = new byte[1024];
+                int len;
+                while ((len = in.read(buf)) > 0) {
+                    out.write(buf, 0, len);
+                }
+                // Close the file and stream
+                in.close();
+                out.close();
+            } catch (IOException e) {
+            }
+        }
+    }
+
     public String mkDir(String logoRealPathDir,String srcfname){
         logoRealPathDir =logoRealPathDir+File.separator+srcfname;
         File logoSaveFile = new File(logoRealPathDir);                               /** 根据真实路径创建目录* */

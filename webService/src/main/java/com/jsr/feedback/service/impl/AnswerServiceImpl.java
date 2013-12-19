@@ -47,8 +47,7 @@ public class AnswerServiceImpl extends BaseService<FbAnswer,Integer> implements 
     @Autowired
     @Qualifier("FbFeedbacksService")
     FbFeedbacksService fbFeedbacksService;
-    Map pushMap = new HashMap();  //推送的map
-    ObjectMapper objectMapper = new ObjectMapper();
+
     private AnswerDao answerDao;
 
 
@@ -89,9 +88,9 @@ public class AnswerServiceImpl extends BaseService<FbAnswer,Integer> implements 
         fbAnswer.setFbFeedbacksByFbId(fbFeedbacks);
         fbAnswer.setReplyTime(new Timestamp(System.currentTimeMillis()));
 
-        //Subject currentUser = SecurityUtils.getSubject();
-        //Users users = (Users) currentUser.getSession().getAttribute("currUser");
-        //fbAnswer.setUsersByUserId(users);
+        Subject currentUser = SecurityUtils.getSubject();
+        Users users = (Users) currentUser.getSession().getAttribute("currUser");
+        fbAnswer.setUsersByUserId(users);
         saveOrUpdate(fbAnswer);
         return fbFeedbacks;
     }
@@ -105,8 +104,8 @@ public class AnswerServiceImpl extends BaseService<FbAnswer,Integer> implements 
         String imei = fbFeedbacks.getPhImei();
         if(FeedBackConstants.CAN_PUSH_TO_CLENT && imei!=null && !imei.equals("")){
             try {
-                PushManager.getInstance().sendMessage(FeedBackConstants.PUSH_FROM,imei,getPushMap(message));
-                logger.info("推送到"+imei+":"+getPushMap(message));
+                PushManager.getInstance().sendMessage(FeedBackConstants.PUSH_FROM,imei,FeedBackConstants.getPushMap(message));
+                logger.info("推送到"+imei+":"+FeedBackConstants.getPushMap(message));
             } catch (JsonProcessingException e) {
                 e.printStackTrace();
             }
@@ -121,8 +120,8 @@ public class AnswerServiceImpl extends BaseService<FbAnswer,Integer> implements 
     public void pushToPhone( List<String > imeis,String message){
         if(FeedBackConstants.CAN_PUSH_TO_CLENT && imeis!=null && imeis.size()>0){
             try {
-                PushManager.getInstance().sendMessage(FeedBackConstants.PUSH_FROM,imeis,getPushMap(message));
-                logger.info("推送到"+imeis.toArray()+":"+getPushMap(message));
+                PushManager.getInstance().sendMessage(FeedBackConstants.PUSH_FROM,imeis,FeedBackConstants.getPushMap(message));
+                logger.info("推送到"+imeis.toArray()+":"+FeedBackConstants.getPushMap(message));
             } catch (JsonProcessingException e) {
                 e.printStackTrace();
             }
@@ -147,16 +146,5 @@ public class AnswerServiceImpl extends BaseService<FbAnswer,Integer> implements 
         pushToPhone(imeis,message);//推送到手机
     }
 
-    /**
-     *
-     * @param message    要推送的消息
-     * @return   json 对象
-     * @throws JsonProcessingException
-     */
-    public String getPushMap(String message) throws JsonProcessingException {
-        pushMap.clear();
-        pushMap.put("action",FeedBackConstants.FEEDBACK_PACKAGE);
-        pushMap.put("message",message);
-        return objectMapper.writeValueAsString(pushMap);
-    }
+
 }

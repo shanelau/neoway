@@ -32,7 +32,6 @@
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
 
-    <mvc:view-controller path="/" view-name="/index"/>
     <!-- 当在web.xml 中   DispatcherServlet使用 <url-pattern>/</url-pattern> 映射时，能映射静态资源 -->
 
     <!-- 静态资源映射 -->
@@ -62,6 +61,7 @@
     </bean>
 
     <!-- 根据客户端的不同的请求决定不同的 view进行响应, 如 /blog/1.json /blog/1.xml -->
+    <mvc:view-controller path="/" view-name="index"/>
     <bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver" p:order="1">
         <property name="viewResolvers">
             <list>

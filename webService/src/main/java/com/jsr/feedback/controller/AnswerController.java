@@ -53,6 +53,7 @@ public class AnswerController {
            Users users = fbAnswer.getUsersByUserId();
             users.setFbAnswersByUserId(null);
             users.setUsersRolesesByUserId(null);
+            users.setPhoneInfoByUserId(null);
             fbAnswer.setFbFeedbacksByFbId(null);
         }
         return list;

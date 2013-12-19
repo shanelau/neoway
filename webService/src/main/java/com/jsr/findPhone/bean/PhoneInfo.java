@@ -65,8 +65,16 @@ public class PhoneInfo extends AbstractModel{
     public void setBindTime(Timestamp bindTime) {
         this.bindTime = bindTime;
     }
+    private String phoneModel;
+    @javax.persistence.Column(name = "phone_model")
+    @Basic
+    public String getPhoneModel() {
+        return phoneModel;
+    }
 
-
+    public void setPhoneModel(String phoneModel) {
+        this.phoneModel = phoneModel;
+    }
 
     @Override
     public boolean equals(Object o) {

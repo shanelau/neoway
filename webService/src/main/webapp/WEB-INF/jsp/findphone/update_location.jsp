@@ -5,7 +5,7 @@
 </head>
 <body>
 <form name="pointForm" action="findphone/update_location" method="post">
-    <input type="text" name="imei" class="" value="ABCD"/>
+    <input type="text" name="imei" class="" value="864134012306637"/>
     <input type="text" name="pointX" class="pointX" value="115.987055"/>
     <input type="text" name="pointY" class="pointY" value="23.590852"/>
     <input type="submit" class="pointTo" value="更新坐标"/>

@@ -1,23 +1,25 @@
 /* CSS Document */
 
-
-body.login{
-	background:url(../images/login_bg.jpg) no-repeat;
-	background-size:auto;
+html,body{
+    height:100%;
+    width:100%;}
+body{
+    margin: 0;
+    background:url(../images/login_bg.png) no-repeat center;
 }
 /*登陆界面开始*/
-.lay_main{
-	position: relative;
-	top: 30px;
-	z-index:999;
-}
+
 .twocol img{
 	width: 13.45%;
 	margin-right: 3.8%;
 	float: left;
 	min-height: 1px;
+    margin-top: 10px;
 }
 /*logo start*/
+div.logo_head{
+    height: 251px;
+}
 .twocol .logo img{
 	cursor: pointer;
 	-webkit-transition: -webkit-transform 1s;
@@ -41,29 +43,12 @@ body.login{
 }
 /*logo end*/
 
-.login_img{
-	overflow: hidden;
-	border:none;
-}
-.login_img .img_slogan {
-	background: url(../images/slogan_dark.png) no-repeat;
-	display: block;
-	height: 235px;
-	cursor:default;
-}
-
-.login_msg{
-	clear:left;
-	margin:0 auto;
-}
 .web_login {
-	
-	padding:10px 40px;
-	padding-bottom: 65px;
 	background:#FFF;
 	border: 2px solid #EEE;
-	position: relative;
 	border-radius:10px;
+    min-height: 348px;
+    margin-top: 10px;
 }
 
 .web_login .form-signin .form-control,.web_pwd .forget_form .form-control{
@@ -133,8 +118,13 @@ header .container a{
 .register .container .inner{
 	height: 595px;
 }
-
-
+.form-signin-heading{
+    font-family: Courier, monospace;
+    line-height: 1em;
+    color: #595659;
+    font-weight:bold;
+    font-size: 33px;
+}
 
 /* ie 问题	*/
 .ie_tip{

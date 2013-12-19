@@ -123,6 +123,8 @@
     <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
         <property name="securityManager" ref="securityManager"/>
         <property name="loginUrl" value="/login"/>
+        <property name="successUrl" value="/findphone/index"/>
+        <property name="unauthorizedUrl" value="/login"/>
         <property name="filterChainDefinitions">
             <value>
                 /js/** = anon
@@ -131,11 +133,10 @@
                 /dist/**=anon
                 /user_login = anon
                 /register = anon
-                /findphone/** = authc
+                /findphone/** = anon
                 /user/i_forget_password = anon
                 /user/reset_password = anon
-                /error_all = anon
-                /error = anon
+                /error/** = anon
                 /generatImage = anon
                 /weather/** = anon
                 /feedback/add = anon
@@ -152,6 +153,7 @@
     <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
         <!-- Single realm app.  If you have multiple realms, use the 'realms' property instead. -->
         <property name="realm" ref="jdbcRealm"/>
+        <property name="cacheManager" ref="cacheManager"/>
     </bean>
     <bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor"/>
     <bean id="jdbcRealm" class="com.jsr.common.shiro.realm.SaltAwareJdbcRealm">
@@ -159,12 +161,12 @@
         <property name="dataSource" ref="dataSource"/>
         <property name="credentialsMatcher" ref="passwordMatcher"/>
     </bean>
-
+    <!-- 用户授权信息Cache -->
+    <bean id="cacheManager" class="org.apache.shiro.cache.MemoryConstrainedCacheManager" />
     <bean id="passwordMatcher" class="com.jsr.common.shiro.realm.PasswordMatcherEx" >
         <property name="passwordService" ref="passwordService"></property>
     </bean>
     <bean id="passwordService" class="org.apache.shiro.authc.credential.DefaultPasswordService"></bean>
-
 
     <bean id="imageCaptchaService" class="com.octo.captcha.service.image.DefaultManageableImageCaptchaService">
         <constructor-arg type="com.octo.captcha.service.captchastore.CaptchaStore" index="0">

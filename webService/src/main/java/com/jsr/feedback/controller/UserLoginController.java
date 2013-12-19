@@ -246,16 +246,14 @@ public class UserLoginController{
         if(currentPassword !=null && newPassword!=null && confimPassword != null){
             Subject currentUser = SecurityUtils.getSubject();
             Users users = (Users) currentUser.getSession().getAttribute("currUser");
-            String currPassword =  MD5.MD5Encode(currentPassword.trim());     //当前用户密码
+            String currPassword = passwordService.encryptPassword(currentPassword.trim());
             if(!currPassword.equals(users.getPassword())){
                 msg = "当前密码不正确!";
                 redirectAttributes.addAttribute("msg", msg);
                 //model.addObject("msg",msg);
                 return model;
             }
-
-            String password = MD5.MD5Encode(newPassword.trim());
-
+            String password = passwordService.encryptPassword(newPassword.trim());
             Users u = userService.get(users.getUserId());
             u.setPassword(password);
             try{
@@ -350,7 +348,7 @@ public class UserLoginController{
             if(users == null){
                 return FeedBackConstants.getMessage(false,"用户名不存在");
             }
-            String pass = MD5.MD5Encode(password);
+            String pass = passwordService.encryptPassword(password);
             users.setPassword(pass);
             users.setRegDate(null);
             users.setValidataCode("");

@@ -98,7 +98,7 @@ function fnGetReplyInput(oTable, nTr ){
 					'success':function(data){
 						if ( oTable.fnIsOpen(this_Tr) )
 						{
-							oTable.fnClose( this_Tr );
+							oTable.fnClose(this_Tr );
 						}
 					}		 
 				});
@@ -126,6 +126,10 @@ $(document).ready(function() {
 		"bProcessing": true,
 		"bServerSide": true,
 		"sAjaxSource": "feedback/list",
+        "sDom":'T<"clear">lfrtip',
+        "oTableTools": {
+            "sSwfPath": "js/datatable/extra/tableTool/media/swf/copy_csv_xls_pdf.swf"
+        },
 		"fnServerData": function ( sSource, aoData, fnCallback ) {
 			$.ajax( {
 				"dataType":'json', 
@@ -148,12 +152,12 @@ $(document).ready(function() {
 			},
 			{"sTitle":"","mDataProp":"imgPath","bVisible":false },
 			{"sTitle":"","mDataProp":"logPath","bVisible":false },
-			{"sTitle":"编号","mDataProp": "fbId","sWidth":"8.2%"},
-			{"sTitle":"内容","mDataProp": "content","sWidth":"30%"},
-            {"sTitle":"IMEI","mDataProp": "phImei","sWidth":"10%"},
-			{"sTitle":"版本","mDataProp": "version","sWidth":"10%"},
-			{"sTitle":"联系","mDataProp": "contact","sWidth":"10%"},
-			{"sTitle":"时间","mDataProp": "fbDate","sWidth":"10%",
+			{"sTitle":"编号","mDataProp": "fbId","sWidth":"8%"},
+			{"sTitle":"内容","mDataProp": "content","sWidth":"40%"},
+            {"sTitle":"IMEI","mDataProp": "phImei","sWidth":"8%"},
+			{"sTitle":"版本","mDataProp": "version","sWidth":"8%"},
+			{"sTitle":"联系","mDataProp": "contact","sWidth":"8%"},
+			{"sTitle":"时间","mDataProp": "fbDate","sWidth":"8%",
 				  "mRender": function ( data, type, full ) {
 					return moment.unix(data/1000).fromNow();
 				  }
@@ -191,11 +195,9 @@ $(document).ready(function() {
 	 
 	 $("select[name='fb_type']").change(function(){
 		 oTable.fnFilter($(this).val(), 0 ); 
-	});
-	$(".status_ul li a").bind("click",function(){
-        $(".status_ul li").removeClass("active");
-        $(this).parent("li").addClass("active");
-		oTable.fnFilter($(this).attr("value"), 1 );
+	  });
+	$("select[name='fb_status']").change(function(){
+		oTable.fnFilter($(this).val(), 1 );
 	});
 	
 });	

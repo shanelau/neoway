@@ -34,7 +34,7 @@
                         <li><a href="#">Separated link</a></li>
                     </ul>
                 </li>--%>
-                <li> <a href="#">手机找回</a> </li>
+                <li> <a href="findphone/index">手机找回</a> </li>
                 <li> <a href="#">云存储</a> </li>
                 <li> <a href="#">统计</a> </li>
                 <li class="logout">

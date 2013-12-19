@@ -1,5 +1,8 @@
 package com.jsr.feedback;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -30,7 +33,8 @@ public class FeedBackConstants {
     //推送设置
     public static final boolean CAN_PUSH_TO_CLENT = true;
     public static final String PUSH_FROM = "feedback server";
-    public static final String FEEDBACK_PACKAGE = "com.jsr.Feedback.push.MESSAGE";
+    public static final String FEEDBACK_PACKAGE = "com.jsr.feedback.push.MESSAGE";
+    public static final String FEEDBACK_PUSH_TITLE = "反馈回复";
 
 
     public static Map getMessage(boolean isSuccess,String message){
@@ -47,4 +51,19 @@ public class FeedBackConstants {
     public static final String SPLIT =",";
 
     public static final String TO ="to";
+    static Map pushMap = new HashMap();  //推送的map
+    static ObjectMapper objectMapper = new ObjectMapper();
+    /**
+     *
+     * @param message    要推送的消息
+     * @return   json 对象
+     * @throws com.fasterxml.jackson.core.JsonProcessingException
+     */
+    public static String getPushMap(String message) throws JsonProcessingException {
+        pushMap.clear();
+        pushMap.put("action",FeedBackConstants.FEEDBACK_PACKAGE);
+        pushMap.put("message",message);
+        pushMap.put("title",FeedBackConstants.FEEDBACK_PUSH_TITLE);
+        return objectMapper.writeValueAsString(pushMap);
+    }
 }

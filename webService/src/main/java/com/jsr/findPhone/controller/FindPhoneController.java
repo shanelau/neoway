@@ -9,6 +9,7 @@ import com.jsr.findPhone.service.PhoneLogService;
 import com.jsr.pushclient.PushManager;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.subject.Subject;
+import org.jboss.logging.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -19,10 +20,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.sql.Timestamp;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -37,6 +36,7 @@ import java.util.Map;
 @Controller
 @RequestMapping(value = "/findphone")
 public class FindPhoneController {
+    Logger logger = Logger.getLogger(FindPhoneController.class.getName());
     @Autowired
     @Qualifier("PhoneInfoService")
     PhoneInfoService phoneInfoService;
@@ -50,8 +50,38 @@ public class FindPhoneController {
         ModelAndView model = new ModelAndView("findphone/index");
         Subject  subject = SecurityUtils.getSubject();
         List<PhoneInfo> list = phoneInfoService.getByUsername(subject.getPrincipal().toString());
-        model.addObject("phoneList",list);
+        if(list == null){                    //无设备
+            model.addObject("defaultPhone",null);
+        }else if(list.size() == 1){                  //一个设备
+            model.addObject("defaultPhone",list.get(0));
+        }else{                                       //多个设备
+            model.addObject("phoneList",list);
+        }
         return model;
+    }
+
+
+    /**
+     * 获取最近一次定位的结果
+     * @param imei
+     * @return
+     */
+    @RequestMapping(value = "/getLastLocation",method = RequestMethod.POST)
+    @ResponseBody
+    public Map getLastLoaction(String imei){
+        PhoneLog phoneLog = phoneLogService.getTopByImei(imei, FindPhoneConstants.LOCATION, true);
+        if(phoneLog!=null){
+            phoneLog.setPhoneInfoByPhId(null);
+        }
+        Boolean online = PushManager.getInstance().checkOnlineForImei(imei);
+        Map map = new HashMap();
+        map.put("phoneLog",phoneLog);
+        map.put("status",online);
+        return map;
+    }
+    @RequestMapping(value = "/update_status")
+    public String updateStatus(){
+        return "findphone/update_status";
     }
 
     /**
@@ -76,7 +106,6 @@ public class FindPhoneController {
     }
 
     /**
-     *
      * @param request
      * @return   返回当前用户默认的设备
      */
@@ -96,7 +125,7 @@ public class FindPhoneController {
      */
     @RequestMapping(value = "/setDefaultDevice")
     @ResponseBody
-    public Boolean bingPhone(HttpServletRequest request,String imei){
+    public Boolean setDefaultDevice(HttpServletRequest request,String imei){
         PhoneInfo phoneInfo = phoneInfoService.getByImei(imei);
         if(phoneInfo != null){
             request.getSession().setAttribute("defaultDevice",phoneInfo);
@@ -104,23 +133,25 @@ public class FindPhoneController {
         }
         return false;
     }
+
+    /**
+     * 手机绑定用户
+     * @param username
+     * @param password
+     * @param imei
+     */
+    @RequestMapping(value = "/bindUser")
+    public void bindUser(String username,String password ,String imei){
+
+    }
     @RequestMapping(value = "/update_location")
     public String updateLocation(){
         return "findphone/update_location";
     }
-
-    @RequestMapping(value = "/get_by_imei")
-    @ResponseBody
-    public PhoneInfo getPhoneByImei(String imei ){
-        PhoneInfo phoneInfo = phoneInfoService.getByImei(imei);
-        phoneInfo.setPhoneLogsByPhId(null);
-        phoneInfo.setUsersByUserId(null);
-        return phoneInfo;
-    }
     @RequestMapping(value = "/getlocation")
     @ResponseBody
     public Map getLocation(String imei ){
-        return getResult(imei,FindPhoneConstants.LOCATION,"",FindPhoneConstants.LOCATION_Expiry_Date,FindPhoneConstants.PUSH_LOCATION_ITERVAL);
+        return getResult(imei,FindPhoneConstants.LOCATION,FindPhoneConstants.TAG_STATUS,FindPhoneConstants.LOCATION_EXPIRY_DATE,FindPhoneConstants.PUSH_LOCATION_ITERVAL);
     }
     /**
      * 判断该log是否过期
@@ -136,31 +167,57 @@ public class FindPhoneController {
     }
     /**
      * @param imei      imei号
-     * @param isopen    发出声响状态 {true,false}
+     * @param status    发出声响状态 {true,false}
      * @return
      */
     @RequestMapping(value = "/voice")
     @ResponseBody
-    public Map makeVoice(String imei,String isopen){
-        return getResult(imei,FindPhoneConstants.VOICE,isopen,FindPhoneConstants.LOCATION_Expiry_Date,FindPhoneConstants.PUSH_LOCATION_ITERVAL);
+    public Map makeVoice(String imei,String status){
+        return getResult(imei,FindPhoneConstants.VOICE,status,FindPhoneConstants.PUSH_OTHER_ITERVAL,FindPhoneConstants.PUSH_OTHER_EXPIRY_DATE);
+    }
+    @RequestMapping(value = "/clean")
+    @ResponseBody
+    public Map clean(String imei,String status){
+        return getResult(imei,FindPhoneConstants.CLEAN,status,FindPhoneConstants.PUSH_OTHER_ITERVAL,FindPhoneConstants.PUSH_OTHER_EXPIRY_DATE);
     }
 
     @RequestMapping(value = "/lock")
     @ResponseBody
-    public Map clock(String imei,String isopen){
-        return getResult(imei,FindPhoneConstants.LOCK,isopen,FindPhoneConstants.LOCATION_Expiry_Date,FindPhoneConstants.PUSH_LOCATION_ITERVAL);
+    public Map clock(String imei,String pass){
+        return getResult(imei,FindPhoneConstants.LOCK,pass,FindPhoneConstants.PUSH_OTHER_ITERVAL,FindPhoneConstants.PUSH_OTHER_EXPIRY_DATE);
     }
-
+    @RequestMapping(value = "/update_status",method =  RequestMethod.POST)
+    @ResponseBody
+    public Boolean updatePhoneStatus(String imei,String motion,String status,String date){
+        PhoneInfo phoneInfo = phoneInfoService.getByImei(imei);
+        if(phoneInfo == null)
+            return false;
+        PhoneLog phoneLog = new PhoneLog();
+        phoneLog.setLogTime(new Timestamp(System.currentTimeMillis()));
+        phoneLog.setPhoneInfoByPhId(phoneInfo);
+        phoneLog.setClient(true);
+        phoneLog.setName(motion);
+        phoneLog.setContent(status);
+        phoneLogService.save(phoneLog);
+        return true;
+    }
     @RequestMapping(value = "/update_location",method = RequestMethod.POST)
     @ResponseBody
     public Map updateLocation(HttpServletRequest request ){
         String imei = ServletRequestUtils.getStringParameter(request,"imei","");
         String pointX = ServletRequestUtils.getStringParameter(request,"pointX","");
         String pointY = ServletRequestUtils.getStringParameter(request,"pointY","");
+        logger.info(imei+"-location- X:"+pointX+"  Y:"+pointY);
+        if(pointX.equals("0.0") || pointY.equals("0.0")){       //不能等于0.0
+            return FindPhoneConstants.getMessage(false,imei+":position should not be 0.0!");
+        }
+        if(pointX.equals("") || pointY.equals("")){//不能等于空字符串
+            return FindPhoneConstants.getMessage(false,imei+":position should not be empty String!");
+        }
 
         PhoneInfo phoneInfo = phoneInfoService.getByImei(imei);
         if(phoneInfo == null)
-            return FindPhoneConstants.getMessage(false,"imei not found!");
+            return FindPhoneConstants.getMessage(false,imei+":imei not found!");
 
         PhoneLog phoneLog = new PhoneLog();
         phoneLog.setPointX(pointX);
@@ -198,6 +255,7 @@ public class FindPhoneController {
         }
     }
 
+
     /**
      *   服务器端是否执行push 指令的操作
      * @param imei       imei NO
@@ -233,11 +291,11 @@ public class FindPhoneController {
         phoneLogService.save(phoneLog);
         String message = null;
         try {
-            message = FindPhoneConstants.getPushMap(FindPhoneConstants.FIND_PHONE_PACKAGE, motion);
+            message = FindPhoneConstants.getPushMap(FindPhoneConstants.FIND_PHONE_PACKAGE, motion,value);
+            PushManager.getInstance().sendMessage(FindPhoneConstants.PUSH_FROM,phoneInfo.getImeiNo(),message);
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         }
-        PushManager.getInstance().sendMessage(FindPhoneConstants.PUSH_FROM,phoneInfo.getImeiNo(),message);
         return FindPhoneConstants.getMessage(false,obj);
     }
 }

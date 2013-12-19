@@ -1,6 +1,7 @@
 package com.jsr.feedback.service.impl;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.jsr.feedback.FeedBackConstants;
 import com.jsr.feedback.bean.FbAnswer;
 import com.jsr.feedback.service.AnswerService;
 import com.jsr.pushclient.PushManager;
@@ -40,7 +41,7 @@ public class AnswerServiceImplTest {
     }
     @Test
     public void testGetPushMap() throws JsonProcessingException {
-         System.out.println(new AnswerServiceImpl().getPushMap("什么飞机"));
+         System.out.println(FeedBackConstants.getPushMap("什么飞机"));
     }
     @Test
     public void testPush() throws Exception {

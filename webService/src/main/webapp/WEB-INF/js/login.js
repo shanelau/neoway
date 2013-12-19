@@ -35,13 +35,13 @@ jQuery(document).ready(function() {
         $(".login-form button[type='submit']").button('loading');
         $(this).ajaxSubmit({
             success:function(data){
-                $(".login-form button[type='submit']").button('reset');
                 if(data.status=="OK"){
                         window.location=data.message;
                 }else{
                     $(".login-form div[name='username']").removeClass("has-success").addClass("has-error");
                     $(".login-form div[name='username'] label.control-label").text(data.message);
                 }
+                $(".login-form button[type='submit']").button('reset');
             }
         });
 

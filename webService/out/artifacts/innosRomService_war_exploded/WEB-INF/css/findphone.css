@@ -3,8 +3,8 @@ body, html {
     background: #51565c url(../images/findphone/phone-bg.png) 0 0 repeat-x;
     font: 12px/1 "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
-.center{
-
+.mapCenter{
+    padding-top: 120px;
 }
 #allmap {
     height: 700px;
@@ -24,6 +24,22 @@ body, html {
 #control .motion{
     max-width: 150px;
 }
-@media (min-width:768px){.navbar{min-height:44px}.navbar .navbar-header{float:right} .navbar .navbar-nav>li>a{padding-top:12px;padding-bottom:12px} .navbar .navbar-brand{padding-top:12px;padding-bottom:12px}}.carousel{height:460px}
+.btn_imei_choose{ margin: 10px;}
 
-.btn_imei_choose{ margin-left: 10px;}
+.find-phone-container{width:207px; height:439px; padding:60px 0 0 31px; position:absolute; top:38px; right:-56px; z-index:9; background:url(../images/findphone/fpbigbg.png) no-repeat;
+    box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+}
+.my-device{width:140px; height:133px; text-align:center; color:#fff; line-height:26px;}
+.device-name{color:#ffefbf; font-size:14px; padding-top:4px; font-weight:bold;}
+.my-device-edit{border:1px solid #922909; background:#fff; color:#000; border-radius:3px;}
+.fpc-intro{color:#fff; text-shadow:0 1px 1px #9f2b0b; text-align:center; margin-bottom:14px; line-height:1.1;}
+.fpc-intro em{font-size:16px; display:block; margin-bottom:2px;}
+.fpc-intro em.font-small{font-size:14px; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+.fpc-note-area{color:#f4d6cf; display:block; overflow:hidden; cursor:pointer; white-space:nowrap; text-overflow:ellipsis;}
+.fpc-note-area:hover{text-decoration:underline; color:#fff;}
+/* 找回手机手机里面的按钮配置 */
+
+.del-div {
+    padding: 2px 0 30px 60px;
+    background: url(../images/findphone/pho_att.png) no-repeat;
+}

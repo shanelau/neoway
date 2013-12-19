@@ -1,5 +1,6 @@
 package com.jsr.findPhone.service.impl;
 
+import com.jsr.findPhone.FindPhoneConstants;
 import com.jsr.findPhone.bean.PhoneInfo;
 import com.jsr.findPhone.bean.PhoneLog;
 import com.jsr.findPhone.service.PhoneInfoService;
@@ -58,5 +59,18 @@ public class PhoneLogServiceImplTest {
     public void getTop(){
         PhoneLog phoneLog = phoneLogService.getTopByImei("A1000012345678", "location", true);
         System.out.println(phoneLog.getLogId());
+    }
+    @Test
+    public void saveLogVoice(){
+        PhoneInfo phoneInfo = phoneInfoService.getByImei("A1000012345678");
+        if(phoneInfo == null)
+            return;
+        PhoneLog phoneLog = new PhoneLog();
+        phoneLog.setName("voice");
+        phoneLog.setLogTime(new Timestamp(System.currentTimeMillis()));
+        phoneLog.setClient(false); //服务器端发出的定位操作
+        phoneLog.setContent("a");
+        phoneLog.setPhoneInfoByPhId(phoneInfo);
+        PhoneLog phoneLog2 = phoneLogService.save(phoneLog);
     }
 }
