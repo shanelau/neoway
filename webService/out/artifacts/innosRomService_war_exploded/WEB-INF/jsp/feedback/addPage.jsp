@@ -11,7 +11,7 @@
 </head>
 
 <body>
-<%@include file="part/head_menu.jsp"%>
+<%@include file="../part/head_menu.jsp"%>
 
 <div class="container ">
 
@@ -85,7 +85,7 @@
 
 
 </div>
-<%@include file="part/footer.jsp"%>
+<%@include file="../part/footer.jsp"%>
 <%@include file="../part/inc_js.jsp"%>
  <script>
 	(function(){

@@ -81,7 +81,7 @@
   </div>
 
 </section>
-<%@include file="../feedback/part/footer.jsp"%>
+<%@include file="../part/footer.jsp"%>
 <%@include file="../part/inc_js.jsp"%>
 <!--my js-->
 <script src="<c:url value='js/login.js'/>" type="text/javascript"></script>

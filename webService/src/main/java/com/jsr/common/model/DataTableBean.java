@@ -23,6 +23,12 @@ public class DataTableBean {
         this.aaData = page.getItems();
         this.sEcho = sEcho;
     }
+    public DataTableBean(Page page) {
+        this.iTotalRecords = page.getContext().getTotal();
+        this.iTotalDisplayRecords = page.getContext().getTotal();
+        this.aaData = page.getItems();
+        this.sEcho = 1;
+    }
 
     public int getiTotalRecords() {
         return iTotalRecords;

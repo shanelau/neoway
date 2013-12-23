@@ -179,6 +179,12 @@ h1[id] {
 li.logout{
     background-color: #5CB85C;
 }
+button.add{
+    margin-bottom: 10px;
+}
+table tr td a.btn{
+    margin: 0 10px;
+}
 
 
 

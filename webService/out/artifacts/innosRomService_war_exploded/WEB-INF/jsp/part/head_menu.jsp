@@ -22,19 +22,19 @@
             <ul class="nav navbar-nav navbar-right">
                 <li name="index"> <a href="index">主页</a> </li>
                 <li name="feedback"> <a href="feedback/index">用户反馈</a> </li>
-      <%--          <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        Dropdown <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                    </ul>
-                </li>--%>
+
                 <li> <a href="findphone/index">手机找回</a> </li>
+                <li name="fota" class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                     fota升级 <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu" role="menu">
+                      <li><a href="fota/brand">项目管理</a></li>
+                      <li><a href="fota/version/index">版本管理</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">配置IMEI</a></li>
+                  </ul>
+             </li>
                 <li> <a href="#">云存储</a> </li>
                 <li> <a href="#">统计</a> </li>
                 <li class="logout">

@@ -13,7 +13,7 @@
   </head>
 
 <body>
-<%@include file="feedback/part/head_menu.jsp"%>
+<%@include file="part/head_menu.jsp"%>
 	    <div class="container">
       <!-- Jumbotron -->
       <div class="jumbotron">
@@ -41,7 +41,7 @@
         </div>
       </div>
         </div>
-<%@include file="feedback/part/footer.jsp"%>
+<%@include file="part/footer.jsp"%>
         <%@include file="part/inc_js.jsp"%>
         <script>
             (function(){

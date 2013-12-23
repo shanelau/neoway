@@ -134,6 +134,7 @@
                 /user_login = anon
                 /register = anon
                 /findphone/** = anon
+                /fota/** = anon
                 /user/i_forget_password = anon
                 /user/reset_password = anon
                 /error/** = anon

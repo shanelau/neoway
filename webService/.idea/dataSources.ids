@@ -71,6 +71,52 @@
       <primary-key name="PRIMARY" columns="type_Id"/>
       <exported-key name="FK_feedBack_type" table="fb_feedbacks" schema="" catalog="jsr_rom_db" columns="type_Id"/>
     </table>
+    <table name="fota_brand" schema="" catalog="jsr_rom_db" type="TABLE">
+      <column name="brand_Id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="brand_Name" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="oem" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="product" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="language" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="operator" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="brand_Id"/>
+      <exported-key name="FK_PK_brand_Version" table="fota_version" schema="" catalog="jsr_rom_db" columns="brand_Id"/>
+    </table>
+    <table name="fota_file" schema="" catalog="jsr_rom_db" type="TABLE">
+      <column name="file_Id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="version_Id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="file_Name" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="bcs_Object" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="url" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12"/>
+      <column name="size" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <column name="update_To" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="status" sqlType="BIT" length="0" precision="0" nullable="true" jdbcType="-7"/>
+      <column name="file_Date" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" version="true"/>
+      <primary-key name="PRIMARY" columns="file_Id"/>
+      <foreign-key name="FK_PK_version_File" columns="version_Id" ref-table="fota_version" ref-schema="" ref-catalog="jsr_rom_db" ref-columns="version_Id" update-rule="3" delete-rule="3" deferrability="2"/>
+    </table>
+    <table name="fota_imei" schema="" catalog="jsr_rom_db" type="TABLE">
+      <column name="imei" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="imei_Date" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" version="true"/>
+      <primary-key name="PRIMARY" columns="imei"/>
+    </table>
+    <table name="fota_log" schema="" catalog="jsr_rom_db" type="TABLE">
+      <column name="log_Id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="version_From" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="version_To" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="content" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" version="true"/>
+      <primary-key name="PRIMARY" columns="log_Id"/>
+    </table>
+    <table name="fota_version" schema="" catalog="jsr_rom_db" type="TABLE">
+      <column name="version_Id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="brand_Id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="version_Name" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
+      <column name="version_desc" sqlType="VARCHAR" length="500" precision="0" nullable="true" jdbcType="12"/>
+      <column name="tips" sqlType="VARCHAR" length="500" precision="0" nullable="true" jdbcType="12"/>
+      <column name="version_Date" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" version="true"/>
+      <primary-key name="PRIMARY" columns="version_Id"/>
+      <foreign-key name="FK_PK_brand_Version" columns="brand_Id" ref-table="fota_brand" ref-schema="" ref-catalog="jsr_rom_db" ref-columns="brand_Id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FK_PK_version_File" table="fota_file" schema="" catalog="jsr_rom_db" columns="version_Id"/>
+    </table>
     <table name="permissions" schema="" catalog="jsr_rom_db" type="TABLE">
       <column name="perm_Id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
       <column name="perm_Name" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12"/>
