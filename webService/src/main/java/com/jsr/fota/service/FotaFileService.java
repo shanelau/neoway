@@ -3,6 +3,8 @@ package com.jsr.fota.service;
 import com.jsr.common.service.IBaseService;
 import com.jsr.fota.bean.FotaFile;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: liu.xing
@@ -11,4 +13,9 @@ import com.jsr.fota.bean.FotaFile;
  * coding for fun and coding my life!
  */
 public interface FotaFileService extends IBaseService<FotaFile,Integer> {
+    List<FotaFile> listUpdateTo(int versionId);
+
+    FotaFile getByFileIdAndToId(int startVersionId, int versionId);
+
+    Boolean pushToPhone(FotaFile fotaFile,List<String> imes);
 }

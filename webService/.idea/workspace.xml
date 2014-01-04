@@ -11,89 +11,89 @@
   <component name="ChangeListManager">
     <list default="true" id="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/weather/controller/WeatherController.java" />
-      <change type="DELETED" beforePath="E:\git\weather\weatherService\webService\src\main\webapp\WEB-INF\a.html" afterPath="" />
       <change type="DELETED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\controller\WeatherController.java" afterPath="" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\web\JavassContentNegotiatingViewResolver.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/web/JavassContentNegotiatingViewResolver.java" />
+      <change type="DELETED" beforePath="E:\git\weather\weatherService\webService\src\main\webapp\WEB-INF\a.html" afterPath="" />
       <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\model\WeatherRequestModel.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/weather/model/WeatherRequestModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\bean\WeatherInfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/weather/bean/WeatherInfo.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\Constants.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/Constants.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\service\ICommonService.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/service/ICommonService.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\service\impl\CommonService.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/service/impl/CommonService.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\model\AbstractModel.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/model/AbstractModel.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\web\filter\GZIPResponseWrapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/web/filter/GZIPResponseWrapper.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\controller\IndexController.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/controller/IndexController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\service\impl\LogsServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/weather/service/impl/LogsServiceImpl.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\dao\hibernate4\CommonHibernateDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/dao/hibernate4/CommonHibernateDao.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\pagination\PageUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/pagination/PageUtil.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\dao\LogsDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/weather/dao/LogsDao.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\pagination\PageContext.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/pagination/PageContext.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\web\support\editor\DateTimeEditor.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/web/support/editor/DateTimeEditor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\exception\NoCityFoundException.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/weather/exception/NoCityFoundException.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\web\validator\DateFormatValidator.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/web/validator/DateFormatValidator.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\pagination\Page.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/pagination/Page.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\dao\CityDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/weather/dao/CityDao.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\dao\hibernate4\BaseHibernateDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/dao/hibernate4/BaseHibernateDao.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\shiro\realm\MD5.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/shiro/realm/MD5.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\service\WeatherInfoService.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/weather/service/WeatherInfoService.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\weatherService.iml" afterPath="$PROJECT_DIR$/innosRomService.iml" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\test\cn\jsr\cloud\service\NetWeatherServiceTest.java" afterPath="$PROJECT_DIR$/test/com/jsr/cloud/service/NetWeatherServiceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\util\SpringContextUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/util/SpringContextUtil.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\service\FileService.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/weather/service/FileService.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\dao\util\OrderBy.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/dao/util/OrderBy.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\service\CityService.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/weather/service/CityService.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\pagination\NavigationTagV2.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/pagination/NavigationTagV2.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\service\NetWeatherService.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/weather/service/NetWeatherService.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\web\view\JavassJstlView.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/web/view/JavassJstlView.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\shiro\realm\SaltAwareJdbcRealm.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/shiro/realm/SaltAwareJdbcRealm.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\dao\WeatherInfoDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/weather/dao/WeatherInfoDao.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\web\validator\DateTimeFormatValidator.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/web/validator/DateTimeFormatValidator.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\web\filter\ImageResponseWrapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/web/filter/ImageResponseWrapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring-servlet.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring-servlet.xml" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\util\Assert.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/util/Assert.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\service\IBaseService.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/service/IBaseService.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\dao\impl\LogsImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/weather/dao/impl/LogsImpl.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\dao\impl\CityDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/weather/dao/impl/CityDaoImpl.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\web\validator\DateTimeFormat.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/web/validator/DateTimeFormat.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\service\impl\WeatherInfoServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/weather/service/impl/WeatherInfoServiceImpl.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\web\filter\ImageFilter.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/web/filter/ImageFilter.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\pagination\IPageContext.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/pagination/IPageContext.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\web\filter\GZIPFilter.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/web/filter/GZIPFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/ehcache_hibernate.xml" afterPath="$PROJECT_DIR$/src/main/resources/ehcache_hibernate.xml" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\service\impl\BaseService.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/service/impl/BaseService.java" />
       <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\web\filter\BackURLFilter.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/web/filter/BackURLFilter.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\web\validator\DateFormat.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/web/validator/DateFormat.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\dao\impl\WeatherInfoDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/weather/dao/impl/WeatherInfoDaoImpl.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\web\support\editor\EnumEditor.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/web/support/editor/EnumEditor.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\web\filter\GZIPResponseStream.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/web/filter/GZIPResponseStream.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\service\impl\CityServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/weather/service/impl/CityServiceImpl.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\test\cn\jsr\cloud\service\impl\LogsServiceImplTest.java" afterPath="$PROJECT_DIR$/test/com/jsr/cloud/service/impl/LogsServiceImplTest.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\web\support\editor\DateEditor.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/web/support/editor/DateEditor.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\pagination\QuickPageContext.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/pagination/QuickPageContext.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\util\KeySynchronizer.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/util/KeySynchronizer.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\bean\City.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/weather/bean/City.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/resources.properties" afterPath="$PROJECT_DIR$/src/main/resources/resources.properties" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\bean\Logs.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/weather/bean/WeatherLogs.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\dao\util\ConditionQuery.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/dao/util/ConditionQuery.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring-config.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring-config.xml" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\test\cn\jsr\cloud\service\impl\WeatherInfoServiceImplTest.java" afterPath="$PROJECT_DIR$/test/com/jsr/cloud/service/impl/WeatherInfoServiceImplTest.java" />
-      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\web\filter\ImageResponseStream.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/web/filter/ImageResponseStream.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\dao\impl\LogsImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/weather/dao/impl/LogsImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\web\support\editor\DateEditor.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/web/support/editor/DateEditor.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\service\ICommonService.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/service/ICommonService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\exception\NoCityFoundException.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/weather/exception/NoCityFoundException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/ehcache_hibernate.xml" afterPath="$PROJECT_DIR$/src/main/resources/ehcache_hibernate.xml" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\dao\hibernate4\CommonHibernateDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/dao/hibernate4/CommonHibernateDao.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\service\impl\CityServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/weather/service/impl/CityServiceImpl.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\web\view\JavassJstlView.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/web/view/JavassJstlView.java" />
       <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\pagination\NavigationTag.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/pagination/NavigationTag.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\web\support\editor\EnumEditor.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/web/support/editor/EnumEditor.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\dao\WeatherInfoDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/weather/dao/WeatherInfoDao.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\model\AbstractModel.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/model/AbstractModel.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\Constants.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/Constants.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\test\cn\jsr\cloud\service\impl\WeatherInfoServiceImplTest.java" afterPath="$PROJECT_DIR$/test/com/jsr/cloud/service/impl/WeatherInfoServiceImplTest.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\controller\IndexController.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/controller/IndexController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\web\validator\DateFormat.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/web/validator/DateFormat.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\dao\CityDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/weather/dao/CityDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/resources.properties" afterPath="$PROJECT_DIR$/src/main/resources/resources.properties" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\service\NetWeatherService.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/weather/service/NetWeatherService.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\dao\util\OrderBy.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/dao/util/OrderBy.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\web\filter\GZIPFilter.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/web/filter/GZIPFilter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\service\FileService.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/weather/service/FileService.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\service\impl\LogsServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/weather/service/impl/LogsServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\bean\WeatherInfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/weather/bean/WeatherInfo.java" />
       <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\service\LogsService.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/weather/service/LogsService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\dao\ICommonDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/dao/ICommonDao.java" />
       <change type="MODIFICATION" beforePath="E:\git\weather\weatherService\webService\.idea\artifacts\weatherService_war_exploded.xml" afterPath="E:\git\weather\weatherService\webService\.idea\artifacts\weatherService_war_exploded.xml" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\web\filter\ImageFilter.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/web/filter/ImageFilter.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\pagination\PageUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/pagination/PageUtil.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\pagination\PageContext.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/pagination/PageContext.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\service\IBaseService.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/service/IBaseService.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\service\impl\WeatherInfoServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/weather/service/impl/WeatherInfoServiceImpl.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\service\CityService.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/weather/service/CityService.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\pagination\NavigationTagV2.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/pagination/NavigationTagV2.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\web\filter\GZIPResponseWrapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/web/filter/GZIPResponseWrapper.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\web\JavassContentNegotiatingViewResolver.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/web/JavassContentNegotiatingViewResolver.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\web\filter\ImageResponseWrapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/web/filter/ImageResponseWrapper.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\util\KeySynchronizer.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/util/KeySynchronizer.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\bean\City.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/weather/bean/City.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\test\cn\jsr\cloud\service\impl\LogsServiceImplTest.java" afterPath="$PROJECT_DIR$/test/com/jsr/cloud/service/impl/LogsServiceImplTest.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\pagination\IPageContext.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/pagination/IPageContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring-servlet.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring-servlet.xml" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\service\impl\BaseService.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/service/impl/BaseService.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\shiro\realm\SaltAwareJdbcRealm.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/shiro/realm/SaltAwareJdbcRealm.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\util\SpringContextUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/util/SpringContextUtil.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\util\Assert.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/util/Assert.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\dao\util\ConditionQuery.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/dao/util/ConditionQuery.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\dao\LogsDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/weather/dao/LogsDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\service\impl\CommonService.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/service/impl/CommonService.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\pagination\QuickPageContext.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/pagination/QuickPageContext.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\shiro\realm\MD5.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/shiro/realm/MD5.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\web\validator\DateTimeFormat.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/web/validator/DateTimeFormat.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\dao\hibernate4\BaseHibernateDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/dao/hibernate4/BaseHibernateDao.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\dao\impl\CityDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/weather/dao/impl/CityDaoImpl.java" />
       <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\dao\IBaseDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/dao/IBaseDao.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\bean\Logs.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/weather/bean/WeatherLogs.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\web\support\editor\DateTimeEditor.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/web/support/editor/DateTimeEditor.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\test\cn\jsr\cloud\service\NetWeatherServiceTest.java" afterPath="$PROJECT_DIR$/test/com/jsr/cloud/service/NetWeatherServiceTest.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\web\filter\ImageResponseStream.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/web/filter/ImageResponseStream.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\dao\impl\WeatherInfoDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/weather/dao/impl/WeatherInfoDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\web\filter\GZIPResponseStream.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/web/filter/GZIPResponseStream.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\web\validator\DateFormatValidator.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/web/validator/DateFormatValidator.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\pagination\Page.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/pagination/Page.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\weatherService.iml" afterPath="$PROJECT_DIR$/innosRomService.iml" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\cloud\service\WeatherInfoService.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/weather/service/WeatherInfoService.java" />
+      <change type="MOVED" beforePath="E:\git\weather\weatherService\webService\src\main\java\cn\jsr\common\web\validator\DateTimeFormatValidator.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsr/common/web/validator/DateTimeFormatValidator.java" />
     </list>
     <ignored path="mavenTest.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/pom.xml" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387357356312" ignored="false" />
+    <file path="/pom.xml" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387876205921" ignored="false" />
     <file path="$PROJECT_DIR$/../assm/src/cn/com/workway/web/action/business/ServiceOrderAction.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1364177171249" ignored="false" />
     <file path="$PROJECT_DIR$/../assm/src/jdbc.properties" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1364202634537" ignored="false" />
     <file path="/jdbc.properties" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367981235371" ignored="false" />
@@ -106,10 +106,10 @@
     <file path="/MainAction.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1364260059972" ignored="false" />
     <file path="$PROJECT_DIR$/../assm/src/beans.xml" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1367111458457" ignored="false" />
     <file path="$PROJECT_DIR$/../assm/WebRoot/index.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1364260267544" ignored="false" />
-    <file path="/fragment.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387761956968" ignored="false" />
+    <file path="/fragment.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387864063484" ignored="false" />
     <file path="$PROJECT_DIR$/../abc/.idea/modules.xml" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1364268477065" ignored="false" />
     <file path="$PROJECT_DIR$/../abc/.idea/workspace.xml" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1364268477065" ignored="false" />
-    <file path="/resources.properties" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1385634005625" ignored="false" />
+    <file path="/resources.properties" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387954349250" ignored="false" />
     <file path="$PROJECT_DIR$/../testmaven/pom.xml" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1364369319917" ignored="false" />
     <file path="/UserHibernate4DaoImplTest.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1364372298270" ignored="false" />
     <file path="$PROJECT_DIR$/../assm/src/log4j.properties" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1364449774913" ignored="false" />
@@ -480,7 +480,7 @@
     <file path="/WeatherInfoDaoImpl.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383277042156" ignored="false" />
     <file path="/WeatherInfoService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383357999062" ignored="false" />
     <file path="/WeatherInfoServiceImpl.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383358145734" ignored="false" />
-    <file path="/spring-config.xml" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387500622732" ignored="false" />
+    <file path="/spring-config.xml" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387933469640" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/java/cn/jsr/cloud/common/pagination/QuickPageContext.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383268810953" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/java/cn/jsr/cloud/common/web/validator/DateFormat.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383268810953" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/java/cn/jsr/cloud/common/pagination/PageUtil.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1383268810953" ignored="false" />
@@ -595,7 +595,7 @@
     <file path="/FbFeedbacks.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1385473180437" ignored="false" />
     <file path="/ControllerTestCase.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1384915243953" ignored="false" />
     <file path="/add.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1385642394218" ignored="false" />
-    <file path="/FileUploadService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1385512896312" ignored="false" />
+    <file path="/FileUploadService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387877185171" ignored="false" />
     <file path="/Roles.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1384932493937" ignored="false" />
     <file path="/UserRolesDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1384930751046" ignored="false" />
     <file path="/UserRolesService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1384930897718" ignored="false" />
@@ -606,7 +606,7 @@
     <file path="/UserLoginController.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387009185484" ignored="false" />
     <file path="/IgnorePropertyAspect.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1385111686104" ignored="false" />
     <file path="/JavassistFilterPropertyHandler.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1385111738870" ignored="false" />
-    <file path="/DataTableBean.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387788367453" ignored="false" />
+    <file path="/DataTableBean.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387846105234" ignored="false" />
     <file path="/DataTableRequestBean.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1385178633984" ignored="false" />
     <file path="/error_all.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1385619542875" ignored="false" />
     <file path="/AnswerDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1385463472765" ignored="false" />
@@ -621,7 +621,7 @@
     <file path="/ehcache_hibernate.xml" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1385514845890" ignored="false" />
     <file path="/my-fb-dataTable.js" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1386900025587" ignored="false" />
     <file path="/index.css" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387779449234" ignored="false" />
-    <file path="/head_menu.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387770634093" ignored="false" />
+    <file path="/head_menu.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387962918265" ignored="false" />
     <file path="/login.html" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1385535953765" ignored="false" />
     <file path="/inc_css.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1386549823468" ignored="false" />
     <file path="/register.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1385603261453" ignored="false" />
@@ -666,27 +666,41 @@
     <file path="/FotaBrand.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387786989625" ignored="false" />
     <file path="/FotaBrandDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387438230250" ignored="false" />
     <file path="/FotaVersion.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387780026109" ignored="false" />
-    <file path="/FotaFileDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387438328156" ignored="false" />
-    <file path="/FotaFileDaoImpl.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387438408484" ignored="false" />
-    <file path="/FotaVersionDaoImpl.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387790338515" ignored="false" />
+    <file path="/FotaFileDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387951361828" ignored="false" />
+    <file path="/FotaFileDaoImpl.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387951837281" ignored="false" />
+    <file path="/FotaVersionDaoImpl.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387954498968" ignored="false" />
     <file path="/FotaBrandDaoImpl.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387438625812" ignored="false" />
     <file path="/FotaBrandService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387438769984" ignored="false" />
-    <file path="/FotaFileService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387438799125" ignored="false" />
-    <file path="/FotaVersionDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387789014875" ignored="false" />
+    <file path="/FotaFileService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387960563031" ignored="false" />
+    <file path="/FotaVersionDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387856301250" ignored="false" />
     <file path="/FotaBrandServiceImpl.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387439446343" ignored="false" />
-    <file path="/FotaFileServiceImpl.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387439357671" ignored="false" />
-    <file path="/FotaVersionServiceImpl.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387788992953" ignored="false" />
+    <file path="/FotaFileServiceImpl.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387960550203" ignored="false" />
+    <file path="/FotaVersionServiceImpl.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387856295703" ignored="false" />
     <file path="/FotaBrandServiceImplTest.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387439934265" ignored="false" />
-    <file path="/FotaVersionServiceImplTest.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387443470296" ignored="false" />
+    <file path="/FotaVersionServiceImplTest.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387856898187" ignored="false" />
     <file path="/FotaController.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387769972796" ignored="false" />
     <file path="/brand.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387787982671" ignored="false" />
     <file path="/brandManager.js" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387787450859" ignored="false" />
-    <file path="/FotaVersionController.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387790536828" ignored="false" />
-    <file path="/version.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387786140656" ignored="false" />
-    <file path="/versionManager.js" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387785358140" ignored="false" />
+    <file path="/FotaVersionController.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387870869437" ignored="false" />
+    <file path="/version.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387952382234" ignored="false" />
+    <file path="/versionManager.js" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387956731062" ignored="false" />
     <file path="/FotaBrandController.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387788744390" ignored="false" />
     <file path="/FotaVersionQueryModel.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387788917531" ignored="false" />
-    <file path="/FotaVersionService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387788969515" ignored="false" />
+    <file path="/FotaVersionService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387866235968" ignored="false" />
+    <file path="/FotaFileController.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387960606593" ignored="false" />
+    <file path="/FotaFileServiceImplTest.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1388027370031" ignored="false" />
+    <file path="/versionUpload.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387952030187" ignored="false" />
+    <file path="/versionUploadManager.js" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387958290218" ignored="false" />
+    <file path="/FileUploadToBcsService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387940300796" ignored="false" />
+    <file path="/FotaConstants.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1388027511265" ignored="false" />
+    <file path="/FotaImeiDao.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387960792234" ignored="false" />
+    <file path="/FotaImeiDaoImpl.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387960965812" ignored="false" />
+    <file path="/FotaImeiService.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387960851343" ignored="false" />
+    <file path="/FotaImeiServiceImpl.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387960952875" ignored="false" />
+    <file path="/FotaImeiController.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387964400078" ignored="false" />
+    <file path="/imei.jsp" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387964799906" ignored="false" />
+    <file path="/imeiManager.js" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387965013625" ignored="false" />
+    <file path="/FotaImei.java" changelist="eef77efc-3b1f-4c87-ba3b-a4aca2ae2e7c" time="1387964322703" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -711,23 +725,6 @@
     <sortChildren value="false" />
   </component>
   <component name="DebuggerManager">
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/jsr/findPhone/controller/FindPhoneController.java" line="175" class="com.jsr.findPhone.controller.FindPhoneController" package="com.jsr.findPhone.controller">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -764,6 +761,23 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/jsr/findPhone/controller/FindPhoneController.java" line="175" class="com.jsr.findPhone.controller.FindPhoneController" package="com.jsr.findPhone.controller">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
@@ -780,66 +794,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FotaVersionDaoImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jsr/fota/dao/impl/FotaVersionDaoImpl.java">
+      <file leaf-file-name="FotaFileController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jsr/fota/controller/FotaFileController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="69" selection-start="1328" selection-end="1328" vertical-scroll-proportion="0.0">
+            <state line="130" column="42" selection-start="5016" selection-end="5027" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseHibernateDao.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jsr/common/dao/hibernate4/BaseHibernateDao.java">
+      <file leaf-file-name="FotaConstants.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jsr/fota/FotaConstants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="351" column="0" selection-start="11431" selection-end="11431" vertical-scroll-proportion="0.0">
+            <state line="37" column="86" selection-start="1349" selection-end="1349" vertical-scroll-proportion="0.7044335">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FotaVersionController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jsr/fota/controller/FotaVersionController.java">
+      <file leaf-file-name="FotaFileServiceImplTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/jsr/fota/service/impl/FotaFileServiceImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="34" selection-start="2373" selection-end="2373" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FotaVersionDao.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jsr/fota/dao/FotaVersionDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="20" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FeedbackController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jsr/feedback/controller/FeedbackController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="155" column="27" selection-start="6446" selection-end="6446" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataTableBean.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jsr/common/model/DataTableBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="27" selection-start="613" selection-end="613" vertical-scroll-proportion="0.79565215">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FotaVersionService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jsr/fota/service/FotaVersionService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="24" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0">
+            <state line="58" column="22" selection-start="1901" selection-end="1901" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -863,22 +839,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/part/head_menu.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/index.css" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jsr/fota/bean/FotaVersion.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/fota/versionManager.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jsr/fota/bean/FotaBrand.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/fota/brandManager.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/fota/brand.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/fota/version.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jsr/fota/controller/FotaBrandController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jsr/fota/model/FotaVersionQueryModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jsr/fota/dao/FotaVersionDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jsr/fota/service/FotaVersionService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jsr/fota/service/impl/FotaVersionServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jsr/fota/dao/impl/FotaVersionDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jsr/fota/controller/FotaVersionController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jsr/common/model/DataTableBean.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/fota/versionUploadManager.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsr/fota/service/impl/FotaFileServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsr/fota/service/FotaFileService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsr/fota/controller/FotaFileController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsr/fota/dao/FotaImeiDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsr/fota/service/FotaImeiService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsr/fota/service/impl/FotaImeiServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsr/fota/dao/impl/FotaImeiDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/part/head_menu.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsr/fota/bean/FotaImei.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsr/fota/controller/FotaImeiController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/fota/imei.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/fota/imeiManager.js" />
+        <option value="$PROJECT_DIR$/test/com/jsr/fota/service/impl/FotaFileServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsr/fota/FotaConstants.java" />
       </list>
     </option>
   </component>
@@ -973,6 +949,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Problems" />
         <subPane subId="Production">
@@ -1035,50 +1012,6 @@
               <option name="myItemId" value="weatherService" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weatherService" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: org.hibernate:hibernate-core:4.2.4.Final" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hibernate-core-4.2.4.Final.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hibernate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weatherService" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: org.hibernate:hibernate-core:4.2.4.Final" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hibernate-core-4.2.4.Final.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1100,15 +1033,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
+              <option name="myItemId" value="jsr" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1184,257 +1113,16 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="fota" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weatherService" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webService" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fota" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weatherService" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webService" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="feedback" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weatherService" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webService" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="feedback" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weatherService" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webService" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weatherService" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webService" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weatherService" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webService" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weatherService" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webService" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hibernate4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weatherService" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/jsr" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
@@ -1449,12 +1137,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -1497,44 +1185,76 @@
       <recent name="cn.jsr.cloud.bean" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 7.0">
-    <configuration default="false" name="PushTest" type="Application" factoryName="Application" temporary="true">
+  <component name="RunManager" selected="JUnit.FotaFileServiceImplTest.testGet">
+    <configuration default="false" name="FotaVersionServiceImplTest.testGetCanUpdateList" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.jsr.findPhone.service.impl.*" />
+          <option name="PATTERN" value="com.jsr.fota.service.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.jsr.findPhone.service.impl.PushTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <module name="innosRomService" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="PACKAGE_NAME" value="com.jsr.fota.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.jsr.fota.service.impl.FotaVersionServiceImplTest" />
+      <option name="METHOD_NAME" value="testGetCanUpdateList" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="innosRomService" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
       <envs />
-      <RunnerSettings RunnerId="JRebel" />
+      <patterns />
       <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="JRebel" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="PhoneLogServiceImplTest.saveLogVoice" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="FotaFileServiceImplTest.testSave" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.jsr.findPhone.service.impl.*" />
+          <option name="PATTERN" value="com.jsr.fota.service.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="innosRomService" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.jsr.findPhone.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.jsr.findPhone.service.impl.PhoneLogServiceImplTest" />
-      <option name="METHOD_NAME" value="saveLogVoice" />
+      <option name="PACKAGE_NAME" value="com.jsr.fota.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.jsr.fota.service.impl.FotaFileServiceImplTest" />
+      <option name="METHOD_NAME" value="testSave" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="FotaFileServiceImplTest.listUpdateTo" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.jsr.fota.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="innosRomService" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.jsr.fota.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.jsr.fota.service.impl.FotaFileServiceImplTest" />
+      <option name="METHOD_NAME" value="listUpdateTo" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1567,7 +1287,7 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="FotaBrandServiceImplTest.testSave" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="FotaFileServiceImplTest.testGet" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.jsr.fota.service.impl.*" />
@@ -1578,36 +1298,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.jsr.fota.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.jsr.fota.service.impl.FotaBrandServiceImplTest" />
-      <option name="METHOD_NAME" value="testSave" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="FotaVersionServiceImplTest.testSave" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.jsr.fota.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="innosRomService" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.jsr.fota.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.jsr.fota.service.impl.FotaVersionServiceImplTest" />
-      <option name="METHOD_NAME" value="testSave" />
+      <option name="MAIN_CLASS_NAME" value="com.jsr.fota.service.impl.FotaFileServiceImplTest" />
+      <option name="METHOD_NAME" value="testGet" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1659,19 +1351,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -1698,6 +1377,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1741,12 +1433,6 @@
       </option>
       <envs />
       <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
-      <option name="VM_PARAMETERS" value="" />
-      <option name="USER_CFG_CLASS" />
-      <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local">
@@ -1844,6 +1530,12 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
+      <method />
+    </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
     <configuration default="false" name="Tomcat 7.0" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0">
@@ -1956,19 +1648,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 7.0" />
-      <item index="1" class="java.lang.String" itemvalue="Application.PushTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.PhoneLogServiceImplTest.saveLogVoice" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Sample" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.FotaBrandServiceImplTest.testSave" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.FotaVersionServiceImplTest.testSave" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.FotaVersionServiceImplTest.testGetCanUpdateList" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.FotaFileServiceImplTest.testSave" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.FotaFileServiceImplTest.listUpdateTo" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Sample" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.FotaFileServiceImplTest.testGet" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.FotaVersionServiceImplTest.testSave" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.FotaBrandServiceImplTest.testSave" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Sample" />
-        <item index="3" class="java.lang.String" itemvalue="Application.PushTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.PhoneLogServiceImplTest.saveLogVoice" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.FotaFileServiceImplTest.testGet" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Sample" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.FotaFileServiceImplTest.listUpdateTo" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.FotaFileServiceImplTest.testSave" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.FotaVersionServiceImplTest.testGetCanUpdateList" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -2009,8 +1701,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1288" height="1002" extended-state="1" />
-    <editor active="false" />
+    <frame x="-4" y="-4" width="1288" height="1002" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32979977" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -2023,10 +1715,9 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23381877" sideWeight="0.30388692" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2991755" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="JRebel" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40047115" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3121319" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928804" sideWeight="0.606596" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32979977" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48881036" sideWeight="0.46054628" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30177993" sideWeight="0.2932862" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286219" sideWeight="0.4969651" order="10" side_tool="false" content_ui="tabs" />
@@ -2034,14 +1725,15 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13754046" sideWeight="0.30388692" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33568904" sideWeight="0.4908953" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33009708" sideWeight="0.59952885" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2638398" sideWeight="0.4939302" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2435275" sideWeight="0.614841" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38515902" sideWeight="0.4939302" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="96" y="96" width="1088" height="802" />
       <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31685576" sideWeight="0.4640754" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22168285" sideWeight="0.6442874" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32979977" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48881036" sideWeight="0.46054628" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928804" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35384616" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -2112,116 +1804,92 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/fota/version.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsr/fota/controller/FotaImeiController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="32" selection-start="599" selection-end="599" vertical-scroll-proportion="-3.677966">
+        <state line="47" column="14" selection-start="1506" selection-end="1520" vertical-scroll-proportion="0.030303031">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/fota/version.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="56" selection-start="2662" selection-end="2662" vertical-scroll-proportion="0.032133676" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/fota/imei.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="83" selection-start="1868" selection-end="1868" vertical-scroll-proportion="0.032133676" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="39" selection-start="1166" selection-end="1181" vertical-scroll-proportion="0.52681994" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/fota/versionManager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="43" selection-start="2413" selection-end="2413" vertical-scroll-proportion="1.5091864">
+        <state line="30" column="64" selection-start="1181" selection-end="1223" vertical-scroll-proportion="0.4789272" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/fota/imeiManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="22" selection-start="1966" selection-end="1966" vertical-scroll-proportion="0.5073892" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsr/fota/service/impl/FotaImeiServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="25" selection-start="550" selection-end="565" vertical-scroll-proportion="0.34246576">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/js/fota/brandManager.js">
+    <entry file="file://$USER_HOME$/My Documents/Downloads/apiclient/example/java/tebie/examples/APIDemoLoginServletWithCommonPool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="86" selection-start="704" selection-end="704" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/My Documents/Downloads/apiclient/example/java/tebie/examples/APIDemoWithClientAuth.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/My Documents/Downloads/apiclient/example/java/tebie/examples/SMTPDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/My Documents/Downloads/apiclient/example/java/tebie/examples/SSLAPIDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/My Documents/Downloads/apiclient/example/java/tebie/examples/APIDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/My Documents/Downloads/apiclient/example/java/tebie/examples/APIDemoLoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.97402596" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsr/fota/controller/FotaFileController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="130" column="42" selection-start="5016" selection-end="5027" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsr/fota/model/FotaVersionQueryModel.java">
+    <entry file="file://$PROJECT_DIR$/test/com/jsr/fota/service/impl/FotaFileServiceImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="63" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0">
+        <state line="58" column="22" selection-start="1901" selection-end="1901" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsr/fota/controller/FotaBrandController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsr/fota/FotaConstants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="85" selection-start="1719" selection-end="1719" vertical-scroll-proportion="0.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsr/fota/bean/FotaVersion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="24" selection-start="629" selection-end="640" vertical-scroll-proportion="0.26048285">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/apache-maven-3.1.0/.m2/repository/org/hibernate/hibernate-core/4.2.4.Final/hibernate-core-4.2.4.Final-sources.jar!/org/hibernate/Query.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="371" column="17" selection-start="14070" selection-end="14070" vertical-scroll-proportion="0.3329098">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsr/common/dao/hibernate4/BaseHibernateDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="351" column="0" selection-start="11431" selection-end="11431" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsr/fota/dao/impl/FotaVersionDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="69" selection-start="1328" selection-end="1328" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsr/fota/controller/FotaVersionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="34" selection-start="2373" selection-end="2373" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsr/feedback/dao/impl/FbFeedbacksDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="61" selection-start="1963" selection-end="2016" vertical-scroll-proportion="0.6912325">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsr/fota/dao/FotaVersionDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="20" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsr/fota/service/impl/FotaVersionServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1184" selection-end="1184" vertical-scroll-proportion="0.7058824">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsr/fota/service/FotaVersionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="24" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsr/feedback/controller/FeedbackController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="155" column="27" selection-start="6446" selection-end="6446" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsr/common/model/DataTableBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="27" selection-start="613" selection-end="613" vertical-scroll-proportion="0.79565215">
+        <state line="37" column="86" selection-start="1349" selection-end="1349" vertical-scroll-proportion="0.7044335">
           <folding />
         </state>
       </provider>

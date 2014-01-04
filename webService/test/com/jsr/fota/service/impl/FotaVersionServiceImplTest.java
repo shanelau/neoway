@@ -12,6 +12,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.sql.Timestamp;
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -59,5 +60,10 @@ public class FotaVersionServiceImplTest {
     @Test
     public void testGet() throws Exception {
 
+    }
+    @Test
+    public void testGetCanUpdateList(){
+        List<FotaVersion> list = fotaVersionService.getCanUpdateList(13);
+        System.out.println(list.size());
     }
 }

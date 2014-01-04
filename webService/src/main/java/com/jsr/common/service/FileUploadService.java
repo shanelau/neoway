@@ -118,7 +118,7 @@ public class FileUploadService {
 
     public String mkDir(String logoRealPathDir,String srcfname){
         logoRealPathDir =logoRealPathDir+File.separator+srcfname;
-        File logoSaveFile = new File(logoRealPathDir);                               /** 根据真实路径创建目录* */
+        File logoSaveFile = new File(logoRealPathDir); /** 根据真实路径创建目录* */
         if (!logoSaveFile.exists())
             logoSaveFile.mkdirs();
         return logoRealPathDir;

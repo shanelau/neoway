@@ -32,7 +32,7 @@
                       <li><a href="fota/brand">项目管理</a></li>
                       <li><a href="fota/version/index">版本管理</a></li>
                       <li class="divider"></li>
-                      <li><a href="#">配置IMEI</a></li>
+                      <li><a href="fota/imei/index">配置IMEI</a></li>
                   </ul>
              </li>
                 <li> <a href="#">云存储</a> </li>

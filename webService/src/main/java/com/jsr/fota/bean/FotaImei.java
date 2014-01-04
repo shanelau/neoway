@@ -19,6 +19,14 @@ import java.sql.Timestamp;
 public class FotaImei extends AbstractModel {
     private String imei;
 
+    public FotaImei() {
+    }
+
+    public FotaImei(String imei) {
+       this.imei = imei;
+       this.imeiDate = new Timestamp(System.currentTimeMillis());
+    }
+
     @javax.persistence.Column(name = "imei")
     @Id
     public String getImei() {

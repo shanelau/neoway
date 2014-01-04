@@ -4,6 +4,7 @@ import com.jsr.common.dao.IBaseDao;
 import com.jsr.common.pagination.Page;
 import com.jsr.common.service.impl.BaseService;
 import com.jsr.feedback.bean.FbFeedbacks;
+import com.jsr.fota.bean.FotaFile;
 import com.jsr.fota.bean.FotaVersion;
 import com.jsr.fota.dao.FotaVersionDao;
 import com.jsr.fota.model.FotaVersionQueryModel;
@@ -11,6 +12,8 @@ import com.jsr.fota.service.FotaVersionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -35,4 +38,11 @@ public class FotaVersionServiceImpl extends BaseService<FotaVersion,Integer> imp
     public Page<FotaVersion> list(int pn, int pageSize, FotaVersionQueryModel fvModel) {
         return fotaVersionDao.listAll(pn,pageSize,fvModel);
     }
+
+    @Override
+    public List<FotaVersion> getCanUpdateList(int versionId) {
+        return fotaVersionDao.getCanUpdateList(versionId);
+    }
+
+
 }

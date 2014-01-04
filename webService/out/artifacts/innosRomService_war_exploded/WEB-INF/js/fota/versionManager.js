@@ -22,7 +22,7 @@ $(document).ready(function() {
             });
         },
         "aoColumns": [
-            {"sTitle":"编号","mDataProp": "versionId","sWidth":"10%","asSorting": [ "desc" ]},
+            {"sTitle":"编号","mDataProp": "versionId","sWidth":"10%"},
             {"sTitle":"型号名","mDataProp": "fotaBrandByBrandId.product","sWidth":"10%"},
             {"sTitle":"版本号","mDataProp": "versionName","sWidth":"20%"},
             {"sTitle":"版本描述","mDataProp": "versionDesc","sWidth":"20%"},
@@ -31,10 +31,13 @@ $(document).ready(function() {
                     return moment.unix(data/1000).fromNow();
                 }
             },
-            {"sTitle":"操作","mDataProp": null,"sWidth":"20%",
-                "sDefaultContent": "<a class='btn btn-primary btn-sm btn_update_version'><span class='glyphicon glyphicon-edit'></span></a>" +
-                    "<a class='btn btn-default btn-sm btn_delete_version'><span class='glyphicon glyphicon-trash'></a>"+
-                    "<a class='btn btn-default btn-sm btn_upload_version'><span class='glyphicon glyphicon-arrow-up'></a>"
+            {"sTitle":"操作","mDataProp": "versionId","sWidth":"20%",
+                "mRender": function ( data, type, full ) {
+
+                    return "<a class='btn btn-primary btn-sm btn_update_version'><span class='glyphicon glyphicon-edit'></span></a>" +
+                        "<a class='btn btn-default btn-sm btn_delete_version'><span class='glyphicon glyphicon-trash'></a>"+
+                        "<a class='btn btn-default btn-sm btn_upload_version' target='_blank' href='fota/file/index/"+data+"'><span class='glyphicon glyphicon-arrow-up'></a>";
+                }
             }
         ],
         "aaSorting": [[ 0, "asc" ]],

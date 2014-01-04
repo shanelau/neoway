@@ -112,5 +112,21 @@ public class FotaVersionController {
         }
     }
 
+    /**
+     * 获取比该vrsionId 小的软件版本，并且是同一品牌（brand） .
+     * 用来进行差分升级
+     * @param versionId
+     * @return
+     */
+    @RequestMapping("/lessList/{versionId}")
+    @ResponseBody
+    public List getLessListByVersionId(@PathVariable int versionId){
+        List<FotaVersion> list = fotaVersionService.getCanUpdateList(versionId);
+        for(FotaVersion fotaVersion:list){
+            jsonFilter(fotaVersion);
+        }
+        return list;
+    }
+
 
 }

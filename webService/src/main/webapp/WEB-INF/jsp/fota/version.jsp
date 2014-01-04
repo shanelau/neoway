@@ -27,7 +27,7 @@
         <div class="page-header">
           <h1>版本管理</h1>
         </div>
-          <button class="btn btn-primary pull-right add" target="_blank" data-toggle="modal" data-target="#addVersionModal">添加型号</button>
+          <button class="btn btn-primary pull-right add" target="_blank" data-toggle="modal" data-target="#addVersionModal">添加版本</button>
           <span class="span10"></span>
           <table id="tb_fota_version"  class="table-striped table table-hover table-responsive" >
 		</table>

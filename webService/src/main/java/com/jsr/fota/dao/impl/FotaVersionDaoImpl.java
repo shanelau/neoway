@@ -22,14 +22,25 @@ import java.util.List;
 @Repository("FotaVersionDao")
 public class FotaVersionDaoImpl extends BaseHibernateDao<FotaVersion,Integer> implements FotaVersionDao {
     String HQL_LIST = "from FotaVersion fv ";
+    String HQL_GET_UPDATE_LIST = " from FotaVersion fv where fv.fotaBrandByBrandId.brandId = (select fv2.fotaBrandByBrandId.brandId from FotaVersion fv2 where fv2.versionId=?) " +
+            "and fv.versionId < ?";
 
     @Override
     public Page<FotaVersion> listAll(int pn, int pageSize, FotaVersionQueryModel fvModel) {
-        String QUERY = HQL_LIST+ " where fv.versionId like '%"+fvModel.getSearch()+"%' or fv.versionName like '%"+fvModel.getSearch()+"%'order by fv.versionId "+fvModel.getOrder();
+        String QUERY = HQL_LIST+ " where fv.versionId like '%"+fvModel.getSearch()+"%' or " +
+                "fv.versionName like '%"+fvModel.getSearch()+"%' " +
+                "or fv.fotaBrandByBrandId.brandName like  '%"+fvModel.getSearch()+"%' " +
+                "order by fv.fotaBrandByBrandId.brandName "+fvModel.getOrder();
         String COUNT = "select count(*) "+QUERY;
         Query query = getSession().createQuery(COUNT);
         int count=(int)((long)query.uniqueResult());
-        List<FotaVersion> items = list(HQL_LIST, pn, pageSize);
+        List<FotaVersion> items = list(QUERY, pn, pageSize);
+        System.out.println(count+"==="+items.size());
         return  PageUtil.getPage(count, pn, items, pageSize);
+    }
+
+    @Override
+    public List<FotaVersion> getCanUpdateList(int versionId) {
+       return list(HQL_GET_UPDATE_LIST,-1,-1,versionId,versionId);
     }
 }

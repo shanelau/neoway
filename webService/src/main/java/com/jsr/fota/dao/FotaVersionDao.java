@@ -6,6 +6,8 @@ import com.jsr.feedback.bean.FbFeedbacks;
 import com.jsr.fota.bean.FotaVersion;
 import com.jsr.fota.model.FotaVersionQueryModel;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: liu.xing
@@ -15,4 +17,6 @@ import com.jsr.fota.model.FotaVersionQueryModel;
  */
 public interface FotaVersionDao extends IBaseDao<FotaVersion,Integer>{
     Page<FotaVersion> listAll(int pn, int pageSize, FotaVersionQueryModel fvModel);
+
+    List<FotaVersion> getCanUpdateList(int versionId);
 }

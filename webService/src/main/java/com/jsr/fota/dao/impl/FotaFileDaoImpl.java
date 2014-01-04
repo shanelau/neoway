@@ -5,6 +5,8 @@ import com.jsr.fota.bean.FotaFile;
 import com.jsr.fota.dao.FotaFileDao;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: liu.xing
@@ -14,4 +16,15 @@ import org.springframework.stereotype.Repository;
  */
 @Repository("FotaFileDao")
 public class FotaFileDaoImpl extends BaseHibernateDao<FotaFile,Integer> implements FotaFileDao {
+    String HQL_LIST_CAN_UPDATE_TO_VERSION = " from FotaFile ff where ff.updateTo = ? and ff.fotaVersionByVersionId.fotaBrandByBrandId.brandId = ?";
+    String HQL_FIND_FILE = " from FotaFile ff where ff.fotaVersionByVersionId.versionId = ? and ff.updateTo =?";
+    @Override
+    public List<FotaFile> listUpdateTo(int versionId, int brandId) {
+        return list(HQL_LIST_CAN_UPDATE_TO_VERSION,-1,-1,versionId,brandId);
+    }
+
+    @Override
+    public FotaFile getByFileIdAndToId(int startVersionId, int versionId) {
+        return unique(HQL_FIND_FILE,startVersionId,versionId);
+    }
 }
